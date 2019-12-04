@@ -59,3 +59,4 @@ CREATE TABLE PRICES (
         REFERENCES CUSTOMERS(customer)
 );
 
+-- bg
