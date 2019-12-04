@@ -23,7 +23,7 @@ CREATE TABLE CUSTOMERS  (
   
   CREATE TABLE COLOURS (
   colour INT NOT NULL,
-  Colour VARCHAR(30) NOT NULL,
+  Colors VARCHAR(30) NOT NULL,
    PRIMARY KEY(colour)
   ); 
   
