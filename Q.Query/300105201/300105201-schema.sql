@@ -43,3 +43,15 @@ CREATE TABLE PRICES (
     FOREIGN KEY(colour)
       REFERENCES COLOURS(colour)
   );
+  
+  CREATE TABLE PAYMENTS (
+    payment INT AUTO_INCREMENT,
+    transaction_date DATE,
+    price INT, 
+    customer INT,
+    PRIMARY KEY(payment),
+      FOREIGN KEY(price)
+        REFERENCES PRICES(price),
+      FOREIGN KEY(customer)
+        REFERENCES CUSTOMERS(customer)
+);
