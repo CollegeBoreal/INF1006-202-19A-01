@@ -28,7 +28,7 @@ CREATE TABLE CUSTOMERS  (
   );
   
  CREATE TABLE COLOURS (
-  colour INT AUTO_INCREMENT,
+  colour INT NOT NULL,
   Colour VARCHAR(30) NOT NULL,
    PRIMARY KEY(colour)
   ); 
