@@ -20,6 +20,14 @@ CREATE TABLE CUSTOMERS  (
   PRIMARY KEY(customer)
   );
   
+  
+  CREATE TABLE COLOURS (
+  colour INT NOT NULL,
+  Colour VARCHAR(30) NOT NULL,
+   PRIMARY KEY(colour)
+  ); 
+  
+  
    CREATE TABLE INSTRUMENTS (
   instrument INT AUTO_INCREMENT,
   Types TEXT NOT NULL,
@@ -27,11 +35,6 @@ CREATE TABLE CUSTOMERS  (
     PRIMARY KEY(instrument)
   );
   
- CREATE TABLE COLOURS (
-  colour INT NOT NULL,
-  Colour VARCHAR(30) NOT NULL,
-   PRIMARY KEY(colour)
-  ); 
 
 CREATE TABLE PRICES (
   price  INT AUTO_INCREMENT,
