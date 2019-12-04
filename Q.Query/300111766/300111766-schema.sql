@@ -20,14 +20,14 @@ GRANT ALL ON vente_portable.* TO 'thiam'@'localhost' ;
 CREATE TABLE MARKS (
                    mark INT NOT NULL AUTO_INCREMENT,
                    marks VARCHAR(30) NOT NULL,
-                   PRIMARY KEY mark
+                   PRIMARY KEY (mark)
                    );
 	
 	
 CREATE TABLE MODELS (
                    model INT NOT NULL AUTO_INCREMENT,
                    models VARCHAR(30) NOT NULL,
-                   PRIMARY KEY model
+                   PRIMARY KEY (model)
                    );
 	
 	
@@ -35,7 +35,7 @@ CREATE TABLE INVOICES (
                    invoice INT NOT NULL AUTO_INCREMENT,
                    Nom VARCHAR(30) NOT NULL,
                    Date INT,
-                   PRIMARY KEY invoice
+                   PRIMARY KEY (invoice)
                    );
    
    
