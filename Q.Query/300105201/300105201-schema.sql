@@ -58,3 +58,4 @@ CREATE TABLE PRICES (
       FOREIGN KEY(customer)
         REFERENCES CUSTOMERS(customer)
 );
+
