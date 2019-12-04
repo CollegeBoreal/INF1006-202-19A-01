@@ -40,6 +40,7 @@ CREATE TABLE PRICES (
   price  INT AUTO_INCREMENT,
   instrument INT,
   colour INT,
+  Prices INT,
   PRIMARY KEY(price, instrument),
     FOREIGN KEY(instrument)
       REFERENCES INSTRUMENTS(instrument),
