@@ -20,6 +20,7 @@ GRANT ALL ON vente_portable.* TO 'thiam'@'localhost' ;
 CREATE TABLE MARKS (
                    mark INT NOT NULL AUTO_INCREMENT,
                    marks VARCHAR(30) NOT NULL,
+	           serie VARCHAR(25) NOT NULL,
                    PRIMARY KEY (mark)
                    );
 	
@@ -27,6 +28,7 @@ CREATE TABLE MARKS (
 CREATE TABLE MODELS (
                    model INT NOT NULL AUTO_INCREMENT,
                    models VARCHAR(30) NOT NULL,
+	           colours VARCHAR(25),
                    PRIMARY KEY (model)
                    );
 	
