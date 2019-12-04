@@ -51,12 +51,14 @@ CREATE TABLE JEUX (
   
 Jeux VARCHAR (4) NOT NULL,
 categorie VARCHAR (4) NOT NULL,
-jeux INT, 
+jeux INT,
+ console INT,
+ diffusion INT,
  PRIMARY KEY(jeux),
   FOREIGN KEY(console)
-     REFERENCES CONSOLE(console),
+     REFERENCES CONSOLES(console),
   FOREIGN KEY(diffusion)
-     REFERENCE DIFFUSION(diffusion)
+     REFERENCE DIFFUSIONS(diffusion)
   
 );
 
