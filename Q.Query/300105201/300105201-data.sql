@@ -6,7 +6,7 @@ use musicshop;
 
 INSERT INTO SERVICES_OFFERED (service_offered, Services) VALUES (1, 'Instruments');
 
-INSERT INTO CUSTOMERS (customer, Name, Phone_number) VALUES (1, 'John', 6477765643);
+INSERT INTO CUSTOMERS (customer, Name, Phone_number) VALUES (1, 'John', 64773);
 
 INSERT INTO INSTRUMENTS (instrument, Types, Name) VALUES (1, 'Percusion', 'Piano');
 INSERT INTO INSTRUMENTS (instrument, Types, Name) VALUES (2, 'Strings', 'Guitar');
