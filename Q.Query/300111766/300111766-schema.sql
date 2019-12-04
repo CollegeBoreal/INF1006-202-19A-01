@@ -31,8 +31,14 @@ CREATE TABLE MODELS (
 	           colours VARCHAR(25),
                    PRIMARY KEY (model)
                    );
-	
-	
+		   
+CREATE TABLE CUSTOMERS (
+	             customer INT NOT NULL AUTO_INCREMENT, 
+                     customerName VARCHAR(30) NOT NULL,
+		     city VARCHAR(30),
+                     address VARCHAR(30) NOT NULL, 
+                     PRIMARY KEY(customer)
+                     );
 CREATE TABLE INVOICES (
                    invoice INT NOT NULL AUTO_INCREMENT,
                    Nom VARCHAR(30) NOT NULL,
@@ -50,6 +56,18 @@ CREATE TABLE PRIX (mark INT,
               FOREIGN KEY(model)
               REFERENCES MODELS(model)
               );
+	      CREATE TABLE ORDERS( mark INT,
+                                customer INT,
+                                invoice INT,
+                                orders INT,
+    
+                 PRIMARY KEY(customer, mark),
+                 FOREIGN KEY(customer)
+                 REFERENCES CUSTOMERS(customer),
+                 FOREIGN KEY(mark)
+                 REFERENCES MARKS (mark)
+                 );
+
  
 
 
