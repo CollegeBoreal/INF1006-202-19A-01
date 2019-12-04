@@ -11,10 +11,10 @@ INSERT INTO CUSTOMERS (customer, Name, Phone_number) VALUES (1, 'John', 64773);
 INSERT INTO INSTRUMENTS (instrument, Types, Name) VALUES (1, 'Percusion', 'Piano');
 INSERT INTO INSTRUMENTS (instrument, Types, Name) VALUES (2, 'Strings', 'Guitar');
 
-INSERT INTO COLOURS (color, Colors) VALUES (1, 'White');
-INSERT INTO COLOURS (color, Colors) VALUES (2, 'Black');
+INSERT INTO COLOURS (colour, Colors) VALUES (1, 'White');
+INSERT INTO COLOURS (colour, Colors) VALUES (2, 'Black');
 
-INSERT INTO  PRICES (price, Prices, instrument, color) VALUES (1, 7000, 1, 2);
-INSERT INTO  PRICES (price, Prices, instrument, color) VALUES (2, 5000, 2, 1);
+INSERT INTO  PRICES (price, Prices, instrument, colour) VALUES (1, 7000, 1, 2);
+INSERT INTO  PRICES (price, Prices, instrument, colour) VALUES (2, 5000, 2, 1);
 
 INSERT INTO PAYMENTS (payment, transaction_date, price, customer) VALUES (1, '2019-04-08', 1, 1);
