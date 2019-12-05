@@ -21,12 +21,12 @@ CREATE TABLE SOLUTIONS ( solution INT NOT NULL AUTO_INCREMENT, date Date,
                        );
   
 CREATE TABLE PRODUCTS ( IDproduit INT AUTO_INCREMENT,
-                       Nom VARCHAR(30) NOT NULL, total_en_stock INT, date Date,
+                       Nom_produit VARCHAR(30) NOT NULL, total_en_stock INT, date Date,
                       PRIMARY KEY(IDproduit)
                       );
 
 CREATE TABLE CLIENTS (IDclient INT NOT NULL AUTO_INCREMENT, 
-                      Nom VARCHAR(30) NOT NULL, Ville VARCHAR(30) NOT NULL,
+                      Nom_client VARCHAR(30) NOT NULL, Ville VARCHAR(30) NOT NULL,
                       téléphone  INT,
                       PRIMARY KEY(IDclient)
                      );
