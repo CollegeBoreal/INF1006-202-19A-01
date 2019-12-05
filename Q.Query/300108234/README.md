@@ -1,4 +1,4 @@
-## Capture d'écran de ma base de données
+## :🤳: Capture d'écran de ma base de données
 
 ![image](schema.jpg)
 
