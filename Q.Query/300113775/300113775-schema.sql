@@ -87,6 +87,7 @@ CREATE TABLE CUSTOMERS(
 
 
 CREATE TABLE PRICES (
+  invoice INT,
   price INT,
   image INT,
   delivery INT,
@@ -94,7 +95,9 @@ CREATE TABLE PRICES (
   FOREIGN KEY(image)
      REFERENCES IMAGES(image),
   FOREIGN KEY(delivery)
-     REFERENCES DELIVERIES(delivery)
+     REFERENCES DELIVERIES(delivery),
+  FOREIGN KEY(invoice)
+      REFERENCES INVOICES(invoice)
   );
        
        
