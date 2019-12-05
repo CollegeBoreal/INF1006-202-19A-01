@@ -22,10 +22,16 @@ CREATE TABLE USES (
   PRIMARY KEY(utilisation)
   );
   
+  CREATE TABLE FORMATS (
+        format VARCHAR (50),
+        PRIMARY KEY (format)
+       );
+  
 CREATE TABLE FRAMES (
       frame VARCHAR (40) NOT NULL ,
       woodframe VARCHAR (40) NOT NULL ,
       metalframe VARCHAR (40) NOT NULL ,
+      format VARCHAR (50),
       papier VARCHAR (40),
       PRIMARY KEY(frame),
             FOREIGN KEY(papier)
@@ -43,10 +49,7 @@ CREATE TABLE FRAMES (
         
         
         
- CREATE TABLE FORMATS (
-        format VARCHAR (50),
-        PRIMARY KEY (format)
-       );
+ 
  
 
 
