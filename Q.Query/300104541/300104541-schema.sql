@@ -42,14 +42,14 @@ PRIMARY KEY(vente_physique)
 
 
 CREATE TABLE DIFFUSIONS (
-Diffusion VARCHAR (2) NOT NULL,
+Diffusions VARCHAR (2) NOT NULL,
 diffusion INT,
 PRIMARY KEY(diffusion) 
 );
 
 CREATE TABLE JEUX (
   
-Jeux VARCHAR (4) NOT NULL,
+Jeux_Videos VARCHAR (4) NOT NULL,
 Categorie VARCHAR (4) NOT NULL,
 jeux INT AUTO_INCREMENT,
  console INT,
@@ -65,7 +65,7 @@ jeux INT AUTO_INCREMENT,
 CREATE TABLE SUPPORTS (
 support INT AUTO_INCREMENT,
 vente_virtuelle INT,
-Support VARCHAR(250),
+Supports VARCHAR(250),
 vente_physique INT,
 PRIMARY KEY(support),
   FOREIGN KEY(vente_physique)
