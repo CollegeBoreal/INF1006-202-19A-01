@@ -1,6 +1,6 @@
 ## Capture d'écran de ma base de données
 
-![image](schema.png)
+![image](schema.jpg)
 
 ## Nom de domaine: 
 
