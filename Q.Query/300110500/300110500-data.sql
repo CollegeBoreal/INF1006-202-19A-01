@@ -15,8 +15,10 @@ INSERT INTO HONORAIRE_PAYMENTS (Honoraire_Payment, Periode, Montant, Commentaire
 INSERT INTO VILLE_RESIDENCE (Code, Ville_Residence, Ville_immigration) VALUES ('AAAA', 'Ouagadougou', 'New_York'); 
 INSERT INTO VILLE_RESIDENCE () VALUES ('AAAB', 'Portugal', 'Europe'); 
 
-INSERT INTO TYPE_SERVICES (Type_service, Duree) VALUES ('Etudiant_international', 'Temporaire');
-INSERT INTO TYPE_SERVICES (Type_service, Duree) VALUES ('Travailleur_qualifie', 'permanent');0
+INSERT INTO TYPE_SERVICES (Type_visa, Honoraire_payment, Type_service) VALUES ('1', '100', 'Documentation');
+INSERT INTO TYPE_SERVICES (Type_visa, Honoraire_payment, Type_service) VALUES ('2', '101', 'Demande_officielle');
+INSERT INTO TYPE_SERVICES (Type_visa, Honoraire_payment, Type_service) VALUES ('3', '105', 'Formation');
+
 
 INSERT INTO CLIENTS (Id_client,Nom, Prenom, Age, Email) VALUES ('201', 'Ronaldo', 'Christiano', '32', 'ronaldochristano@yahoo.fr');
 INSERT INTO CLIENTS (Id_client,Nom, Prenom, Age, Email) VALUES ('251', 'Abass', 'Sadissou', '22', 'abasssadisou@monboreal.ca');
