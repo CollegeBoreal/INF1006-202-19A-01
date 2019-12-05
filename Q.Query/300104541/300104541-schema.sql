@@ -58,7 +58,7 @@ jeux INT AUTO_INCREMENT,
   FOREIGN KEY(console)
      REFERENCES CONSOLES(console),
   FOREIGN KEY(diffusion)
-     REFERENCE DIFFUSIONS(diffusion)
+     REFERENCES DIFFUSIONS(diffusion)
   
 );
 
