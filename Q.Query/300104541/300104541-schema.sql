@@ -65,6 +65,7 @@ jeux INT AUTO_INCREMENT,
 CREATE TABLE SUPPORTS (
 support INT AUTO_INCREMENT,
 vente_virtuelle INT,
+ Support VARCHAR(250),
 vente_physique INT,
 PRIMARY KEY(support),
   FOREIGN KEY(vente_physique)
