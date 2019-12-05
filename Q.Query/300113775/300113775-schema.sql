@@ -22,6 +22,37 @@ CREATE TABLE USES (
   PRIMARY KEY(utilisation)
   );
   
+CREATE TABLE FRAMES (
+      frame VARCHAR (40) NOT NULL ,
+      woodframe VARCHAR (40) NOT NULL ,
+      metalframe VARCHAR (40) NOT NULL ,
+      PRIMARY KEY(frame),
+            FOREIGN KEY(papier)
+              REFERENCES PAPIERS(papier),
+            FOREIGN KEY(format)
+              REFERENCES FORMATS(format)
+      );
+      
+      
+ CREATE TABLE PAPIERS (
+      papier VARCHAR (40),
+      nomdupapier VARCHAR (40),
+      PRIMARY KEY (papier)
+        );
+        
+        
+        
+ CREATE TABLE FORMATS (
+        format VARCHAR VARCHAR (50),
+        PRIMARY KEY (format)
+       );
+ 
+
+
+
+
+
+
 CREATE TABLE DELIVERIES (
    delivery INT AUTO_INCREMENT,
    image INT,
@@ -43,10 +74,16 @@ shipp DATE,
 PRIMARY KEY(shipping)
 
 );
+       
+CREATE TABLE CUSTOMERS(
+  customer VARCHAR(4) NOT NULL,
+  nom VARCHAR(40),
+  prenom VARCHAR(40),
+  PRIMARY KEY(customer)
+);
 
 
 
-    
 
 CREATE TABLE PRICES (
   price INT,
@@ -58,3 +95,16 @@ CREATE TABLE PRICES (
   FOREIGN KEY(delivery)
      REFERENCES DELIVERIES(delivery)
   );
+       
+       
+       
+CREATE TABLE INVOICES (
+  invoice INT AUTO_INCREMENT,
+  customer VARCHAR(4),
+  price INT,
+  PRIMARY KEY(invoice),
+     FOREIGN KEY(customer)
+        REFERENCES CUSTOMERS(customer),
+     FOREIGN KEY(price)
+        REFERENCES PRICES(price)
+ );
