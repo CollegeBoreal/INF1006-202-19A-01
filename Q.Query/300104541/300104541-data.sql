@@ -18,7 +18,6 @@ INSERT INTO DIFFUSIONS (Diffusions, diffusion) VALUES ('Mode Story' , 2);
 INSERT INTO JEUX (Jeux_Videos, Categorie, jeux, console, diffusion) VALUES ('Modern Combat', 'Action', 1, 1, 2);
 INSERT INTO JEUX (Jeux_Videos, Categorie, jeux, console, diffusion) VALUES ('FIFA19', 'Sport', 2, 3, 1);
 INSERT INTO JEUX (Jeux_Videos, Categorie, jeux, console, diffusion) VALUES ('Naruto', 'Adventure', 3, 2, 2);
-INSERT INTO JEUX (Jeux_Videos, Categorie, jeux, console, diffusion) VALUES (''
 
 INSERT INTO SUPPORTS (support, vente_virtuelle, Supports) VALUES(1, 1, 'Clavardage');
 INSERT INTO SUPPORTS (support, vente_virtuelle, Supports) VALUES(2, 2, 'Appel');
