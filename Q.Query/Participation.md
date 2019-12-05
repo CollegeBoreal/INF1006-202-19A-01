@@ -31,10 +31,10 @@ $ docker container exec --interactive some-mysql \
 | 06   | [300108234](300108234) | :heavy_check_mark: | [:heavy_check_mark:](Corrections#etudiant-300108234) | [:bar_chart:](300108234) | [Hijabfashion](Corrections/Hijabfashion.png) |
 | 07   | [300110500](300110500) | :heavy_check_mark: | [:x:](Corrections#etudiant-300110500)                | [:bar_chart:](300110500) | [immigration_consulting](Corrections/immigration_consulting.png) |
 | 08   | [300110529](300110529) | :heavy_check_mark: | [:x:](Corrections#etudiant-300110529)                | [:bar_chart:](300110529) | [Carte_graphique](Corrections/Carte_graphique.png) |
-| 09   | [300111671](300111671) | :heavy_check_mark: | [:heavy_check_mark:](Corrections#etudiant-300111671) | [:o:](300111671) | [Boubou](Corrections/Boubou.png) |
+| 09   | [300111671](300111671) | :x: | [:x:](Corrections#etudiant-300111671) | [:bar_chart:](300111671) | [Boubou](Corrections/Boubou.png) |
 | 10   | [300111766](300111766) | :heavy_check_mark: | [:x:](Corrections#etudiant-300111766)                | [:bar_chart:](300111766) | [vente_portable](Corrections/vente_portable.png) |
 | 11   | [300112017](300112017) | :heavy_check_mark: | [:x:](Corrections#etudiant-300112017)                | [:bar_chart:](300112017) | [magasin](Corrections/magasin.png) |
-| 12   | [300112687](300112687) | :heavy_check_mark: | [:x:](Corrections#etudiant-300112687)                | [:o:](300112687) | [Assurance](Corrections/Assurance.png) | 
+| 12   | [300112687](300112687) | :heavy_check_mark: | [:x:](Corrections#etudiant-300112687)                | [:bar_chart:](300112687) | [Assurance](Corrections/Assurance.png) | 
 | 13   | [300112917](300112917) | :heavy_check_mark: | [:x:](Corrections#etudiant-300112917) | [:bar_chart:](300112917) | [hairasset](Corrections/hairasset.png) |
 | 14   | [300113775](300113775) | :heavy_check_mark: | [:heavy_check_mark:](Corrections#etudiant-300113775) | [:bar_chart:](300113775) | [widesign](Corrections/widesign.png) |
 
