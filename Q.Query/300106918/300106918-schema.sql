@@ -48,12 +48,18 @@ CREATE TABLE INSTALLATIONS (installation INT NOT NULL AUTO_INCREMENT,
                            PRIMARY KEY(installation)
                            );
   
-CREATE TABLE PRIX  ( solution INT,
-                   installation INT, 
-                   prix INT,
-            PRIMARY KEY( solution, installation),
-            FOREIGN KEY(solution) 
-            REFERENCES SOLUTIONS (solution),
-            FOREIGN KEY(installation) 
-            REFERENCES INSTALLATIONS (installation)
-                  );
+CREATE TABLE PRIX (
+        solution INT,
+        installation INT,
+        IDclient INT,
+        prix INT,
+ 
+        PRIMARY KEY (solution, installation, IDclient),
+        FOREIGN KEY(solution)
+        REFERENCES SOLUTIONS(solution),
+        FOREIGN KEY(installation)
+        REFERENCES INSTALLATIONS(installation),
+        FOREIGN KEY(IDclient)
+        REFERENCES CLIENTS(IDclient)
+    
+       );
