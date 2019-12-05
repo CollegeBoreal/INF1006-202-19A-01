@@ -25,7 +25,7 @@ use immigration_consulting;
   Honoraire_payment INT AUTO_INCREMENT,
   Periode Date,
   Montant INT,
-  Commentaire 
+  Commentaire TEXT,
   PRIMARY KEY(Honoraire_payment)
   );  
                                                                                                                                                                                                                       
@@ -48,9 +48,9 @@ use immigration_consulting;
   );
                                                                                        
   CREATE TABLE CLIENTS (
-  Id_client VARCHAR(30) NOT NULL,
+  Id_client INT AUTO_INCREMENT,
   Nom VARCHAR(30) NOT NULL, 
   Prenom VARCHAR(30) NOT NULL,
   Age INT,
-  Email VARCHAR(30) NOT NUL,
+  Email VARCHAR(30) NOT NUL
    );
