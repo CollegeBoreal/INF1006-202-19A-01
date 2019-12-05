@@ -1,8 +1,12 @@
+## Capture d'écran de ma base de données
+
+![image](schema.png)
+
 ## Nom de domaine: 
 
 HIJABFASHION
 
-## Requetes à chercher:
+## :ab: Requetes à chercher:
 
 1- imprimer les villes des clients qui ont fait une commande au mois octobre 
 
