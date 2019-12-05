@@ -90,7 +90,7 @@ CREATE TABLE PRICES (
   price INT,
   image INT,
   delivery INT,
-  PRIMARY KEY(image, delivery),
+  PRIMARY KEY(image, delivery,price),
   FOREIGN KEY(image)
      REFERENCES IMAGES(image),
   FOREIGN KEY(delivery)
