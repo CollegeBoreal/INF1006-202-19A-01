@@ -4,8 +4,9 @@ use immigration_consulting;
 
 -- Données des tables
 
-INSERT INTO TYPE_VISAS (Type_visa, Name, Etudiant) VALUES ('BFA', 'Hamidou_Zongo', 'VE');
-INSERT INTO TYPE_VISAS (Type_visa, Name, Resident_permanent) VALUES ('POR', 'Cristiano_Ronaldo', 'VRP');
+INSERT INTO TYPE_VISAS (Type_visa, Passport, Profession) VALUES ('1', 'Diplomate', 'Ambassadeur');
+INSERT INTO TYPE_VISAS (Type_visa, Passport, profession) VALUES ('2', 'ordinaire', 'Commercant');
+INSERT INTO TYPE_VISAS (Type_visa, Passport, Profession) VALUES ('3', 'Diplomate', 'Etudiant');
 
 INSERT INTO HONORAIRE_PAYMENTS ( Name, Periode, Especes) VALUES ('Reglement_partiel', '18-10-2019', '1000$');
 INSERT INTO HONORAIRE_PAYMENTS ( Name, Periode, Especes) VALUES ('Reglement_pour_solde', '31-10-2019', '1000$');
