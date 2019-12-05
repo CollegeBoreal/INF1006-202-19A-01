@@ -4,15 +4,17 @@
 
 ## Nom de domaine: 
 
+```
 #### Hijabfashion 🧕
+```
 
 ## :ab: Requetes à chercher:
 
-1- imprimer les pays des clients qui ont fait une commande au 2019-11-10
+:1: imprimer les pays des clients qui ont fait une commande au 2019-11-10
 
-2- imprimer les dates de livraison des tissus en couleur pale 
+:2: imprimer les dates de livraison des tissus en couleur pale 
 
-3- imprimer les accessoires des tissus fabriqués au maroc 
+:3: imprimer les accessoires des tissus fabriqués au maroc 
 
 
 ## Requetes SQL:
