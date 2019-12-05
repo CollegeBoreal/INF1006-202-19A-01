@@ -28,6 +28,8 @@ INSERT INTO COMMANDES (IDproduit,IDclient, Quantit, Date_livraison) VALUES (30, 
 INSERT INTO CLIENTS ( IDclient, nom, ville) VALUES (40, 'olitan', 'toronto');
 INSERT INTO CLIENTS ( IDclient, nom, ville) VALUES (50, 'aek', 'northyork');
 INSERT INTO CLIENTS (IDclient, nom, ville) VALUES (60, 'jemma', 'mississauga');
+INSERT INTO CLIENTS ( IDclient, nom, ville) VALUES (40, 'check', 'toronto');
+INSERT INTO CLIENTS ( IDclient, nom, ville) VALUES (40, 'abbas', 'toronto');
 
 
 -- Données de la table insttalation
