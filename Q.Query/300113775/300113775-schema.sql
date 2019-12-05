@@ -103,7 +103,7 @@ CREATE TABLE INVOICES (
   invoice INT AUTO_INCREMENT,
   customer VARCHAR(4),
   price INT,
-  PRIMARY KEY(invoice),
+  PRIMARY KEY(invoice,price),
      FOREIGN KEY(customer)
         REFERENCES CUSTOMERS(customer),
      FOREIGN KEY(price)
