@@ -18,7 +18,7 @@ use Jeuxvideos;
 
 CREATE TABLE CONSOLES (
   
-Consoles VARCHAR (4) NOT NULL, 
+Consoles VARCHAR (250) NOT NULL, 
 console INT, 
 PRIMARY KEY(console)   
 );
@@ -26,7 +26,7 @@ PRIMARY KEY(console)
 
 
 CREATE TABLE VENTE_VIRTUELLES (
-Ventes VARCHAR (2) NOT NULL,
+Ventes VARCHAR (250) NOT NULL,
 vente_virtuelle INT,
 PRIMARY KEY(vente_virtuelle) 
 );
@@ -34,7 +34,7 @@ PRIMARY KEY(vente_virtuelle)
 
 
 CREATE TABLE VENTE_PHYSIQUES (
-Ventes VARCHAR (3) NOT NULL,
+Ventes VARCHAR (250) NOT NULL,
 vente_physique INT,
 PRIMARY KEY(vente_physique) 
 );
@@ -42,15 +42,15 @@ PRIMARY KEY(vente_physique)
 
 
 CREATE TABLE DIFFUSIONS (
-Diffusions VARCHAR (2) NOT NULL,
+Diffusions VARCHAR (250) NOT NULL,
 diffusion INT,
 PRIMARY KEY(diffusion) 
 );
 
 CREATE TABLE JEUX (
   
-Jeux_Videos VARCHAR (4) NOT NULL,
-Categorie VARCHAR (4) NOT NULL,
+Jeux_Videos VARCHAR (250) NOT NULL,
+Categorie VARCHAR (250) NOT NULL,
 jeux INT AUTO_INCREMENT,
  console INT,
  diffusion INT,
