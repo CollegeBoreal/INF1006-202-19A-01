@@ -50,8 +50,8 @@ PRIMARY KEY(diffusion)
 CREATE TABLE JEUX (
   
 Jeux VARCHAR (4) NOT NULL,
-categorie VARCHAR (4) NOT NULL,
-jeux INT,
+Categorie VARCHAR (4) NOT NULL,
+jeux INT AUTO_INCREMENT,
  console INT,
  diffusion INT,
  PRIMARY KEY(jeux),
@@ -63,7 +63,7 @@ jeux INT,
 );
 
 CREATE TABLE SUPPORTS (
-support INT,
+support INT AUTO_INCREMENT,
 vente_virtuelle INT,
 vente_physique INT,
 PRIMARY KEY(support),
