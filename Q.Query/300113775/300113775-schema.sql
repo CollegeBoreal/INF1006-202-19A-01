@@ -26,6 +26,7 @@ CREATE TABLE FRAMES (
       frame VARCHAR (40) NOT NULL ,
       woodframe VARCHAR (40) NOT NULL ,
       metalframe VARCHAR (40) NOT NULL ,
+      papier VARCHAR (40),
       PRIMARY KEY(frame),
             FOREIGN KEY(papier)
               REFERENCES PAPIERS(papier),
