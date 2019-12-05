@@ -6,7 +6,7 @@ CREATE SCHEMA IF NOT EXISTS `etudiants`;
 -- -----------------------------------------------------
 -- Mon utilisateur
 -- -----------------------------------------------------
-CREATE USER IF NOT EXISTS 'etudiants'@'localhost' IDENTIFIED BY 'etudiants_1';
+CREATE USER  'etudiants'@'localhost' IDENTIFIED BY 'etudiants_1';
 GRANT ALL ON etudiants.* TO 'etudiants'@'localhost';
 
 USE `etudiants` ;
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `etudiants`.`ETUDIANTS` (
   `programme` INT(11) NULL DEFAULT NULL,
   `age` INT(11) NULL DEFAULT NULL,
   PRIMARY KEY (`etudiant`),
-  INDEX `programme` (`programme` ASC) VISIBLE,
+  INDEX `programme` (`programme` ASC),
   CONSTRAINT `ETUDIANTS_ibfk_1`
     FOREIGN KEY (`programme`)
     REFERENCES `etudiants`.`PROGRAMMES` (`programme`)
@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `etudiants`.`NOTES` (
   `devoir` INT(11) NOT NULL DEFAULT '0',
   `note` INT(11) NULL DEFAULT NULL,
   PRIMARY KEY (`etudiant`, `devoir`),
-  INDEX `devoir` (`devoir` ASC) VISIBLE,
+  INDEX `devoir` (`devoir` ASC),
   CONSTRAINT `NOTES_ibfk_1`
     FOREIGN KEY (`etudiant`)
     REFERENCES `etudiants`.`ETUDIANTS` (`etudiant`),
@@ -68,5 +68,3 @@ CREATE TABLE IF NOT EXISTS `etudiants`.`NOTES` (
 ); 
 
   -- A vous de jouer
-
-  
