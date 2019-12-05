@@ -26,7 +26,7 @@ INSERT INTO CLIENTS ( IDclient, nom_client, ville) VALUES (80, 'abbas', 'toronto
 
 -- Données de la table COMMANDES
 
-INSERT INTO COMMANDES (IDproduit, IDclient, Quantit, Date_livraison) VALUES (10, 40, 200, '2020-09-13');
+INSERT INTO COMMANDES (IDfacture, IDproduit, IDclient, Quantit, Date_livraison) VALUES (2011, 10, 40, 200, '2020-09-13');
 INSERT INTO COMMANDES (IDproduit, IDclient, Quantit, Date_livraison) VALUES (20, 50, 100, '2020-09-13');
 INSERT INTO COMMANDES (IDproduit, IDclient, Quantit, Date_livraison) VALUES (30, 60, 100, '2020-09-13');
 
