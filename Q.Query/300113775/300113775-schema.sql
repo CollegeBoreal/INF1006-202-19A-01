@@ -43,7 +43,7 @@ CREATE TABLE FRAMES (
         
         
  CREATE TABLE FORMATS (
-        format VARCHAR VARCHAR (50),
+        format VARCHAR (50),
         PRIMARY KEY (format)
        );
  
