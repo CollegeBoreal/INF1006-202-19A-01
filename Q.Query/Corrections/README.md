@@ -4,16 +4,17 @@
 ###  =[BEGIN]============== Exécution du script 300098957 =============== 
 ```
 mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1396 (HY000) at line 9: Operation CREATE USER failed for 'etudiants'@'localhost'
 mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1146 (42S02) at line 7: Table 'etudiants.ETUDIANTS' doesn't exist
 ```
 ###  =[END]============== Exécution du script 300098957 =============== 
 
 ## Etudiant 300104524 
 ###  =[BEGIN]============== Exécution du script 300104524 =============== 
 ```
-mysql: [Warning] Using a password on the command line interface can be insecure.
-mysql: [Warning] Using a password on the command line interface can be insecure.
-ERROR 1146 (42S02) at line 7: Table 'technical_support.SERVICE' doesn't exist
+.scripts/notation.sh: line 39: /Users/b300098957/Developer/INF1006-202-19A-01/Q.Query/300104524/300104524-schema.sql: No such file or directory
+.scripts/notation.sh: line 44: /Users/b300098957/Developer/INF1006-202-19A-01/Q.Query/300104524/300104524-data.sql: No such file or directory
 ```
 ###  =[END]============== Exécution du script 300104524 =============== 
 
@@ -21,12 +22,9 @@ ERROR 1146 (42S02) at line 7: Table 'technical_support.SERVICE' doesn't exist
 ###  =[BEGIN]============== Exécution du script 300104541 =============== 
 ```
 mysql: [Warning] Using a password on the command line interface can be insecure.
-ERROR 1064 (42000) at line 47: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Virtuelle
-nom VARCHAR (2) NOT NULL,
-Vente Virtuelle INT
-
-)' at line 1
+ERROR 1060 (42S21) at line 44: Duplicate column name 'diffusion'
 mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1406 (22001) at line 5: Data too long for column 'Consoles' at row 1
 ```
 ###  =[END]============== Exécution du script 300104541 =============== 
 
@@ -34,9 +32,7 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 ###  =[BEGIN]============== Exécution du script 300105201 =============== 
 ```
 mysql: [Warning] Using a password on the command line interface can be insecure.
-ERROR 1075 (42000) at line 30: Incorrect table definition; there can be only one auto column and it must be defined as a key
 mysql: [Warning] Using a password on the command line interface can be insecure.
-ERROR 1054 (42S22) at line 9: Unknown column 'John' in 'field list'
 ```
 ###  =[END]============== Exécution du script 300105201 =============== 
 
@@ -44,7 +40,9 @@ ERROR 1054 (42S22) at line 9: Unknown column 'John' in 'field list'
 ###  =[BEGIN]============== Exécution du script 300106918 =============== 
 ```
 mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1396 (HY000) at line 8: Operation CREATE USER failed for 'network_IT'@'localhost'
 mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1146 (42S02) at line 8: Table 'network_IT.SOLUTIONS' doesn't exist
 ```
 ###  =[END]============== Exécution du script 300106918 =============== 
 
@@ -69,7 +67,7 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 ```
 mysql: [Warning] Using a password on the command line interface can be insecure.
 mysql: [Warning] Using a password on the command line interface can be insecure.
-ERROR 1366 (HY000) at line 7: Incorrect integer value: 'BFA' for column 'Type_visa' at row 1
+ERROR 1146 (42S02) at line 15: Table 'immigration_consulting.VILLE_RESIDENCE' doesn't exist
 ```
 ###  =[END]============== Exécution du script 300110500 =============== 
 
@@ -77,6 +75,7 @@ ERROR 1366 (HY000) at line 7: Incorrect integer value: 'BFA' for column 'Type_vi
 ###  =[BEGIN]============== Exécution du script 300110529 =============== 
 ```
 mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1396 (HY000) at line 7: Operation CREATE USER failed for 'Carte_graphique'@'localhost'
 mysql: [Warning] Using a password on the command line interface can be insecure.
 ERROR 1049 (42000) at line 3: Unknown database 'carte-graphique'
 ```
@@ -85,10 +84,8 @@ ERROR 1049 (42000) at line 3: Unknown database 'carte-graphique'
 ## Etudiant 300111671 
 ###  =[BEGIN]============== Exécution du script 300111671 =============== 
 ```
-mysql: [Warning] Using a password on the command line interface can be insecure.
-ERROR 1824 (HY000) at line 42: Failed to open the referenced table 'COULEUR'
-mysql: [Warning] Using a password on the command line interface can be insecure.
-ERROR 1146 (42S02) at line 22: Table 'Boubou.COULEUR' doesn't exist
+.scripts/notation.sh: line 39: /Users/b300098957/Developer/INF1006-202-19A-01/Q.Query/300111671/300111671-schema.sql: No such file or directory
+.scripts/notation.sh: line 44: /Users/b300098957/Developer/INF1006-202-19A-01/Q.Query/300111671/300111671-data.sql: No such file or directory
 ```
 ###  =[END]============== Exécution du script 300111671 =============== 
 
@@ -109,8 +106,9 @@ ERROR 1049 (42000) at line 4: Unknown database 'vente_portable'
 ###  =[BEGIN]============== Exécution du script 300112017 =============== 
 ```
 mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1396 (HY000) at line 13: Operation CREATE USER failed for 'magasin'@'localhost'
 mysql: [Warning] Using a password on the command line interface can be insecure.
-ERROR 1054 (42S22) at line 19: Unknown column '$1000' in 'field list'
+ERROR 1146 (42S02) at line 7: Table 'magasin.clients' doesn't exist
 ```
 ###  =[END]============== Exécution du script 300112017 =============== 
 
@@ -118,7 +116,7 @@ ERROR 1054 (42S22) at line 19: Unknown column '$1000' in 'field list'
 ###  =[BEGIN]============== Exécution du script 300112687 =============== 
 ```
 mysql: [Warning] Using a password on the command line interface can be insecure.
-ERROR 1396 (HY000) at line 9: Operation CREATE USER failed for 'Assurance'@'localhost'
+ERROR 1007 (HY000) at line 4: Can't create database 'Assurance'; database exists
 mysql: [Warning] Using a password on the command line interface can be insecure.
 ERROR 1064 (42000) at line 8: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'plan, subscription plan) values (months, type )' at line 1
 ```
@@ -127,9 +125,8 @@ ERROR 1064 (42000) at line 8: You have an error in your SQL syntax; check the ma
 ## Etudiant 300112917 
 ###  =[BEGIN]============== Exécution du script 300112917 =============== 
 ```
-mysql: [Warning] Using a password on the command line interface can be insecure.
-mysql: [Warning] Using a password on the command line interface can be insecure.
-ERROR 1136 (21S01) at line 23: Column count doesn't match value count at row 1
+.scripts/notation.sh: line 39: /Users/b300098957/Developer/INF1006-202-19A-01/Q.Query/300112917/300112917-schema.sql: No such file or directory
+.scripts/notation.sh: line 44: /Users/b300098957/Developer/INF1006-202-19A-01/Q.Query/300112917/300112917-data.sql: No such file or directory
 ```
 ###  =[END]============== Exécution du script 300112917 =============== 
 
