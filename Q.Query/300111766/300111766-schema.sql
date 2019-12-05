@@ -47,8 +47,8 @@ CREATE TABLE products(
 ) ENGINE=INNODB;
 
 CREATE TABLE prices(
-invoicesId INT,
-productsId INT,
+invoiceId INT,
+productId INT,
 categoryId INT,
 priceID INT, 
 PRIMARY KEY (invoiceId, productId, categoryId),
@@ -57,7 +57,7 @@ REFERENCES invoices(invoiceId),
 FOREIGN KEY(productId) 
 REFERENCES products(productId),
 FOREIGN KEY(categoryId) 
-   REFERENCES categories(categoryId)
+REFERENCES categories(categoryId)
 
 );
  
