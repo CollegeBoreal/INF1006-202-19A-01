@@ -1,4 +1,4 @@
-CREATE DATABASE widesign;
+CREATE DATABASE IF NOT EXISTS widesign;
 
 
 
