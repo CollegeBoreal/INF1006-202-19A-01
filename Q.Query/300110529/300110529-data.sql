@@ -1,6 +1,6 @@
 -- Dans le domaine
 
-use carte-graphique;
+use carte_graphique;
 
 -- Données de la table étudiants
 
