@@ -63,7 +63,7 @@ jeux INT AUTO_INCREMENT,
 );
 
 CREATE TABLE SUPPORTS (
-Support INT AUTO_INCREMENT,
+support INT AUTO_INCREMENT,
 vente_virtuelle INT,
 Support VARCHAR(250),
 vente_physique INT,
