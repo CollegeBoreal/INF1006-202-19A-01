@@ -14,10 +14,10 @@ use immigration_consulting;
 -- Mes Tables
                                                                                                      
  CREATE TABLE TYPE_VISAS (
- Id_visa INT AUTO_INCREMENT,
- Type_visa VARCHAR(30) NOT NUL
- Profession VARCHAR(30) NOT NULL,
- PRIMARY KEY(Id_visa)
+ Type_visa INT AUTO_INCREMENT,
+ Passport VARCHAR(30) NOT NULL,
+ Profession VARCHAR(35) NOT NULL,
+ PRIMARY KEY(Type_visa)
   );                                                                                       
     
                                                                                                    
@@ -33,7 +33,7 @@ use immigration_consulting;
   CREATE TABLE VILLE_RESIDEMCE (
   Code VARCHAR(30) NOT NULL,
   Ville_Residesnce VARCHAR(30) NOT NULL,
-  Ville immigrationt VARCHAR(30) NOT NULL
+  Ville_immigration VARCHAR(30) NOT NULL
    );
                                                                                                  
    CREATE TABLE TYPE_SERVICES (
@@ -52,5 +52,6 @@ use immigration_consulting;
   Nom VARCHAR(30) NOT NULL, 
   Prenom VARCHAR(30) NOT NULL,
   Age INT,
-  Email VARCHAR(30) NOT NUL
+  Email VARCHAR(30) NOT NULl,
+  PRIMARY KEY(Id_client)
    );
