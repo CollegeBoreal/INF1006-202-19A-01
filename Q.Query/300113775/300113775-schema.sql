@@ -26,6 +26,13 @@ CREATE TABLE USES (
         format VARCHAR (50),
         PRIMARY KEY (format)
        );
+
+CREATE TABLE PAPIERS (
+      papier VARCHAR (40),
+      nomdupapier VARCHAR (40),
+      PRIMARY KEY (papier)
+        );
+
   
 CREATE TABLE FRAMES (
       frame VARCHAR (40) NOT NULL ,
@@ -41,21 +48,7 @@ CREATE TABLE FRAMES (
       );
       
       
- CREATE TABLE PAPIERS (
-      papier VARCHAR (40),
-      nomdupapier VARCHAR (40),
-      PRIMARY KEY (papier)
-        );
-        
-        
-        
  
- 
-
-
-
-
-
 
 CREATE TABLE DELIVERIES (
    delivery INT AUTO_INCREMENT,
