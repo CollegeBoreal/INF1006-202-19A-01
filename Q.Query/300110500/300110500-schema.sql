@@ -30,9 +30,9 @@ use immigration_consulting;
   );  
                                                                                                                                                                                                                       
                                                                                                      
-  CREATE TABLE VILLE_RESIDEMCE (
+  CREATE TABLE VILLE_RESIDENCE (
   Code VARCHAR(30) NOT NULL,
-  Ville_Residesnce VARCHAR(30) NOT NULL,
+  Ville_Residence VARCHAR(30) NOT NULL,
   Ville_immigration VARCHAR(30) NOT NULL
    );
                                                                                                  
