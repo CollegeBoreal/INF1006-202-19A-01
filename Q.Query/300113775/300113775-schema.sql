@@ -96,8 +96,7 @@ CREATE TABLE PRICES (
      REFERENCES IMAGES(image),
   FOREIGN KEY(delivery)
      REFERENCES DELIVERIES(delivery),
-  FOREIGN KEY(invoice)
-      REFERENCES INVOICES(invoice)
+
   );
        
        
