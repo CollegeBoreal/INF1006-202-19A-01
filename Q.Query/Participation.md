@@ -35,7 +35,7 @@ $ docker container exec --interactive some-mysql \
 | 10   | [300111766](300111766) | :heavy_check_mark: | [:x:](Corrections#etudiant-300111766)                | [:bar_chart:](300111766) | [vente_portable](Corrections/vente_portable.png) |
 | 11   | [300112017](300112017) | :heavy_check_mark: | [:x:](Corrections#etudiant-300112017)                | [:bar_chart:](300112017) | [magasin](Corrections/magasin.png) |
 | 12   | [300112687](300112687) | :heavy_check_mark: | [:x:](Corrections#etudiant-300112687)                | [:bar_chart:](300112687) | [Assurance](Corrections/Assurance.png) | 
-| 13   | [300112917](300112917) | :heavy_check_mark: | [:x:](Corrections#etudiant-300112917) | [:bar_chart:](300112917) | [hairasset](Corrections/hairasset.png) |
+| 13   | [300112917](300112917) | :x: | [:x:](Corrections#etudiant-300112917) | [:bar_chart:](300112917) | [hairasset](Corrections/hairasset.png) |
 | 14   | [300113775](300113775) | :heavy_check_mark: | [:heavy_check_mark:](Corrections#etudiant-300113775) | [:bar_chart:](300113775) | [widesign](Corrections/widesign.png) |
 
 ## [Corrections](Corrections)
