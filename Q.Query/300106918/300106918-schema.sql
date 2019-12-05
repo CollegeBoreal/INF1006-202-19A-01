@@ -16,7 +16,7 @@ use network_IT;
 -- Mes Tables
 
 CREATE TABLE SOLUTIONS ( solution INT NOT NULL AUTO_INCREMENT, date Date,
-                       Nom VARCHAR(30) NOT NULL,
+                       Nom_solution VARCHAR(30) NOT NULL,
                        PRIMARY KEY(solution)
                        );
   
@@ -44,7 +44,7 @@ CREATE TABLE CLIENTS (IDclient INT NOT NULL AUTO_INCREMENT,
                   );
                      
 CREATE TABLE INSTALLATIONS (installation INT NOT NULL AUTO_INCREMENT,
-                           Nom VARCHAR(30) NOT NULL,
+                           Nom_installation VARCHAR(30) NOT NULL,
                            PRIMARY KEY(installation)
                            );
   
