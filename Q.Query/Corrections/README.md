@@ -116,7 +116,7 @@ ERROR 1146 (42S02) at line 7: Table 'magasin.clients' doesn't exist
 ###  =[BEGIN]============== Exécution du script 300112687 =============== 
 ```
 mysql: [Warning] Using a password on the command line interface can be insecure.
-ERROR 1007 (HY000) at line 4: Can't create database 'Assurance'; database exists
+ERROR 1396 (HY000) at line 9: Operation CREATE USER failed for 'Assurance'@'localhost'
 mysql: [Warning] Using a password on the command line interface can be insecure.
 ERROR 1064 (42000) at line 8: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'plan, subscription plan) values (months, type )' at line 1
 ```
