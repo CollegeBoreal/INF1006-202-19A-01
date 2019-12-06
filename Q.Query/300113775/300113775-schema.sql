@@ -10,22 +10,13 @@ GRANT ALL ON widesign.* TO 'widesign'@'localhost';
 use widesign;
 
       
-CREATE TABLE IMAGES (
-  image INT AUTO_INCREMENT,
-  name VARCHAR(30) NOT NULL,
-  PRIMARY KEY(image)
-  );
-  
+
 CREATE TABLE USES (
   use INT AUTO_INCREMENT,
   social_networks VARCHAR(50) NOT NULL,
   PRIMARY KEY(use)
   );
-  
-CREATE TABLE FORMATS (
-  format VARCHAR (50),
-  PRIMARY KEY (format)
-       );
+
 
 CREATE TABLE PAPIERS (
  papier VARCHAR (40),
@@ -40,6 +31,16 @@ CREATE TABLE COLORS (
     PRIMARY KEY(color)
      
 );
+
+CREATE TABLE IMAGES (
+  image INT AUTO_INCREMENT,
+  Images VARCHAR(30) NOT NULL,
+  format INT,
+  color INT,
+  PRIMARY KEY(image),
+    FOREIGN KEY(color)
+       REFERENCES COLORS(color)
+  );
 
 CREATE TABLE SHIPPINGS (
 shipping INT AUTO_INCREMENT,
@@ -57,11 +58,8 @@ CREATE TABLE CUSTOMERS(
 
 CREATE TABLE DELIVERIES (
    delivery INT AUTO_INCREMENT,
-   image INT,
    social_networks VARCHAR(50) NOT NULL,
-   PRIMARY KEY(delivery, image),
-     FOREIGN KEY(image)
-       REFERENCES IMAGES(image)
+   PRIMARY KEY(delivery)
    );
    
 CREATE TABLE PRICES (
@@ -77,13 +75,10 @@ CREATE TABLE PRICES (
       frame VARCHAR (40) NOT NULL ,
       woodframe VARCHAR (40) NOT NULL ,
       metalframe VARCHAR (40) NOT NULL ,
-      format VARCHAR (50),
       papier VARCHAR (40),
       PRIMARY KEY(frame),
-            FOREIGN KEY(papier)
-              REFERENCES PAPIERS(papier),
-            FOREIGN KEY(format)
-              REFERENCES FORMATS(format)
+        FOREIGN KEY(papier)
+          REFERENCES PAPIERS(papier),
       );      
        
 CREATE TABLE INVOICES (
