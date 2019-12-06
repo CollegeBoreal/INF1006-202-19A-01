@@ -71,7 +71,7 @@ CREATE TABLE PRICES (
       papier VARCHAR (40),
       PRIMARY KEY(frame),
         FOREIGN KEY(papier)
-          REFERENCES PAPIERS(papier),
+          REFERENCES PAPIERS(papier)
       );      
        
 CREATE TABLE INVOICES (
