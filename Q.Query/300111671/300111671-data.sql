@@ -15,6 +15,14 @@ INSERT INTO PAYS ( name ) VALUES ( 'benin');
 INSERT INTO PAYS ( name ) VALUES ( 'mali');
 
 
+-- Données de la table delai
+
+
+INSERT INTO DELAI ( name ) VALUES ( '24h');
+INSERT INTO DELAI ( name ) VALUES ( '48h');
+INSERT INTO DELAI ( name ) VALUES ( '72h');
+
+
 -- Données de la table couleur
 
 
@@ -74,13 +82,6 @@ INSERT INTO PRIX ( name ) VALUES ( '500$');
 INSERT INTO lOGISTIQUE ( name ) VALUES ( 'aerienne');
 INSERT INTO lOGISTIQUE ( name ) VALUES ( 'ferroviere');
 INSERT INTO lOGISTIQUE ( name ) VALUES ( 'maritine');
-
-
---
-
-INSERT INTO COMMANDE ( 'logistique' , 'prix' , 'genre' ) values (1 ,1 ,1 )
-INSERT INTO COMMANDE ( 'logistique' , 'prix' , 'genre' ) values (2 ,2 ,2 )
-INSERT INTO COMMANDE ( 'logistique' , 'prix' , 'genre' ) values (2 ,2 ,2 )
 
 
 
