@@ -13,7 +13,7 @@ use widesign;
 
 CREATE TABLE USES (
   use INT AUTO_INCREMENT,
-  social_networks VARCHAR(50) NOT NULL,
+  social_networks VARCHAR(50),
   PRIMARY KEY(use)
   );
 
