@@ -15,88 +15,51 @@ GRANT ALL ON vente_portable.* TO 'thiam'@'localhost' ;
 
 --Mes tables
 
-		   
-CREATE TABLE customers (
-	             customerID INT NOT NULL AUTO_INCREMENT, 
-                     customerName VARCHAR(30) NOT NULL,
-		     city VARCHAR(30),
-                     phoneNumber INT, 
-                     PRIMARY KEY(customerID)
-                     );
-		     
-		     
-CREATE TABLE invoices (
-                   invoiceId INT NOT NULL AUTO_INCREMENT,
+	
+
+CREATE TABLE MARKS (
+                   mark INT NOT NULL AUTO_INCREMENT,
+                   name VARCHAR(30) NOT NULL,
+                   PRIMARY KEY (mark)
+                   );
+	
+	
+CREATE TABLE MODELS (
+                   model INT NOT NULL AUTO_INCREMENT,
+	           colour VARCHAR(30),
+                   PRIMARY KEY(model)
+		   );
+	
+	
+CREATE TABLE INVOICES (
+                   invoice INT NOT NULL AUTO_INCREMENT,
                    Nom VARCHAR(30) NOT NULL,
                    Date INT,
-                   PRIMARY KEY (invoiceId)
+                   PRIMARY KEY(invoice)
                    );
+CREATE TABLE PRIX (
+        mark INT,
+        model INT,
+        invoice INT,
+        prix INT,
+ 
+        PRIMARY KEY (mark, model, invoice),
+        FOREIGN KEY(mark)
+        REFERENCES MARKS(mark),
+        FOREIGN KEY(model)
+        REFERENCES MODELS(model),
+        FOREIGN KEY(invoice)
+        REFERENCES INVOICES(invoice)
+    
+       );
    
-CREATE TABLE categories(
-    categoryId INT AUTO_INCREMENT PRIMARY KEY,
-    categoryName VARCHAR(100) NOT NULL
-) ENGINE=INNODB;
- 
-CREATE TABLE products(
-    productId INT AUTO_INCREMENT PRIMARY KEY,
-    productName varchar(100) not null,
-    categoryId INT,
-    CONSTRAINT fk_category
-    FOREIGN KEY (categoryId) 
-        REFERENCES categories(categoryId)
-) ENGINE=INNODB;
-
-CREATE TABLE prices(
-invoiceId INT,
-productId INT,
-categoryId INT,
-priceID INT, 
-PRIMARY KEY (invoiceId, productId, categoryId),
-FOREIGN KEY(invoiceId) 
-REFERENCES invoices(invoiceId),
-FOREIGN KEY(productId) 
-REFERENCES products(productId),
-FOREIGN KEY(categoryId) 
-REFERENCES categories(categoryId)
-
-);
- 
- 
-		  
-
- 
-
-
-
- 
-
-
-
-
-
-
- 
-
- 
-
-
-
- 
-
-
-
-
-
-
- 
-
- 
-
-
-
- 
-
-
+CREATE TABLE CUSTOMERS (
+              ID int NOT NULL,
+              LastName varchar(255) NOT NULL,
+              FirstName varchar(255),
+              Age int,
+              CONSTRAINT UC_customer UNIQUE (ID,LastName)
+              );
 
 
 
