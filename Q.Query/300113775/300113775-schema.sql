@@ -78,6 +78,7 @@ CREATE TABLE INVOICES (
   invoice INT AUTO_INCREMENT,
   customer VARCHAR(4),
   price INT,
+  shipping INT,
   delivery INT,
   PRIMARY KEY(invoice, customer),
      FOREIGN KEY(customer)
@@ -85,5 +86,7 @@ CREATE TABLE INVOICES (
      FOREIGN KEY(price)
         REFERENCES PRICES(price),
      FOREIGN KEY(delivery)
-        REFERENCES DELIVERIES(delivery)
+        REFERENCES DELIVERIES(delivery),
+    FOREIGN KEY(shipping)
+     REFERENCES SHIPPPINGS(shipping)
  );
