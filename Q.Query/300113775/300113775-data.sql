@@ -12,11 +12,11 @@ use widesign;
 -- Données de la base widesign
 
 
-INSERT INTO IMAGES (image) VALUES ( 'portrait');
+INSERT INTO IMAGES (images) VALUES ( 'portrait');
 
-INSERT INTO IMAGES (image) VALUES ( 'paysage');
+INSERT INTO IMAGES (images) VALUES ( 'paysage');
 
-INSERT INTO IMAGES (image) VALUES ( 'flyer');
+INSERT INTO IMAGES (images) VALUES ( 'flyer');
 
 
 
