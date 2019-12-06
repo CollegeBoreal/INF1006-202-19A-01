@@ -26,7 +26,7 @@ CREATE TABLE MARKS (
 	
 CREATE TABLE MODELS (
                    model INT NOT NULL AUTO_INCREMENT,
-	           colour VARCHAR(30),
+	           modelName VARCHAR(30),
                    PRIMARY KEY(model)
 		   );
 	
@@ -37,11 +37,12 @@ CREATE TABLE INVOICES (
                    Date INT,
                    PRIMARY KEY(invoice)
                    );
-CREATE TABLE PRIX (
+		   
+CREATE TABLE PRICES (
         mark INT,
         model INT,
         invoice INT,
-        prix INT,
+        price INT,
  
         PRIMARY KEY (mark, model, invoice),
         FOREIGN KEY(mark)
