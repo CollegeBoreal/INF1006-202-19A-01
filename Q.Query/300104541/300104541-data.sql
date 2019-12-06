@@ -12,6 +12,14 @@ INSERT INTO VENTE_PHYSIQUES (Ventes, vente_physique) VALUES ('En Store', 1);
 INSERT INTO VENTE_PHYSIQUES (Ventes, vente_physique) VALUES ('THE SOURCE', 2);
 INSERT INTO VENTE_PHYSIQUES (Ventes, vente_physique) VALUES ('EB GAMES', 3);
 
+INSERT INTO PRICES (price, console, PRICES) VALUES (1, 1, 300);
+INSERT INTO PRICES (price, console, PRICES) VALUES (2, 2, 400);
+INSERT INTO PRICES (price, console, PRICES) VALUES (3, 3, 250);
+
+INSERT INTO CUSTOMERS (customer, FullName) VALUES (1, 'Jean Marc');
+
+INSERT INTO SHIPPINGS (price, customer, DateDeLivraison) VALUES (1, 1, '2019-12-09');
+
 INSERT INTO DIFFUSIONS (Diffusions, diffusion) VALUES ('Streaming' , 1);
 INSERT INTO DIFFUSIONS (Diffusions, diffusion) VALUES ('Mode Story' , 2);
 
