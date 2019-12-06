@@ -32,4 +32,4 @@ WHERE SHIPPINGS.DateDeLivraison = '2019-12-09';
 
 ## EXPLAIN 
 
-![image](jeux2.png)
+![image](jeux2.PNG)
