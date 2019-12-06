@@ -21,19 +21,19 @@ INSERT INTO IMAGES (images) VALUES ( 'flyer');
 
 
 
-INSERT INTO COLORS(colors) VALUES ('blue');
+INSERT INTO COLORS(Colors) VALUES ('blue');
 
-INSERT INTO COLORS(colors) VALUES ('original');
+INSERT INTO COLORS(Colors) VALUES ('original');
 
-INSERT INTO COLORS(colors) VALUES ('blacknwhite');
+INSERT INTO COLORS(Colors) VALUES ('blacknwhite');
 
-INSERT INTO COLORS(colors) VALUES ('sepian');
+INSERT INTO COLORS(Colors) VALUES ('sepian');
 
-INSERT INTO COLORS(colors) VALUES ('mono');
+INSERT INTO COLORS(Colors) VALUES ('mono');
 
-INSERT INTO COLORS(colors) VALUES ('dramatic');
+INSERT INTO COLORS(Colors) VALUES ('dramatic');
 
-INSERT INTO COLORS(colors) VALUES ('argentic');
+INSERT INTO COLORS(Colors) VALUES ('argentic');
 
 
 INSERT INTO SHIPPINGS(shipping) VALUES (1);
