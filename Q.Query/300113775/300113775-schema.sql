@@ -56,7 +56,7 @@ CREATE TABLE DELIVERIES (
    );
    
 CREATE TABLE PRICES (
-  price INT,
+  price INT AUTO_INCREMENT,
   image INT,
   PRIMARY KEY(image, price),
   FOREIGN KEY(image)
