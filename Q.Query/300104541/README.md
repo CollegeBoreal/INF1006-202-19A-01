@@ -29,3 +29,7 @@ JOIN CUSTOMERS
 ON (SHIPPINGS.customer = CUSTOMERS.customer)
 WHERE SHIPPINGS.DateDeLivraison = '2019-12-09';
 ```
+
+## EXPLAIN 
+
+![image](jeux2.png)
