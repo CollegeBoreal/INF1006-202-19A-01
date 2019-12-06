@@ -55,11 +55,10 @@ CREATE TABLE PRICES (
        );
    
 CREATE TABLE CUSTOMERS (
-    ID int NOT NULL,
-    LastName varchar(255) NOT NULL,
-    FirstName varchar(255),
-    Age int,
-    UNIQUE (ID)
+  customer INT(11) NOT NULL AUTO_INCREMENT,
+  name VARCHAR(30) NOT NULL,
+  age INT(11) NULL DEFAULT NULL,
+  PRIMARY KEY (customer)
 );
 
 
