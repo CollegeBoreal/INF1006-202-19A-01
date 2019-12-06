@@ -81,7 +81,7 @@ CREATE TABLE MODELS (
 
 CREATE TABLE CUSTOMERS(
   customer VARCHAR(4) NOT NULL,
-  Name VARCHAR(20),
+  LastName VARCHAR(20),
   FirstName VARCHAR(20),
   PRIMARY KEY(customer)
 );
