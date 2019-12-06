@@ -32,6 +32,7 @@ INSERT INTO COULEUR ( name ) VALUES ( 'rouge');
 
 INSERT INTO GENRE ( name ) VALUES ( 'dashiki');
 INSERT INTO GENRE ( name ) VALUES ( 'alabe');
+INSERT INTO GENRE ( name ) VALUES ( 'agbada');
 
 
 
@@ -61,8 +62,25 @@ INSERT INTO QUANTITE ( name ) VALUES ( '1 a 3');
 INSERT INTO QUANTITE ( name ) VALUES ( '1 douzaine ');
 INSERT INTO QUANTITE ( name ) VALUES ( '2 douzaine ');
 
+-- Données de la table PRIX
 
 
+INSERT INTO PRIX ( name ) VALUES ( '100$');
+INSERT INTO PRIX ( name ) VALUES ( '250$');
+INSERT INTO PRIX ( name ) VALUES ( '500$');
+
+-- Données de la table logistique
+
+INSERT INTO lOGISTIQUE ( name ) VALUES ( 'aerienne');
+INSERT INTO lOGISTIQUE ( name ) VALUES ( 'ferroviere');
+INSERT INTO lOGISTIQUE ( name ) VALUES ( 'maritine');
+
+
+--
+
+INSERT INTO COMMANDE ( 'logistique' , 'prix' , 'genre' ) values (1 ,1 ,1 )
+INSERT INTO COMMANDE ( 'logistique' , 'prix' , 'genre' ) values (2 ,2 ,2 )
+INSERT INTO COMMANDE ( 'logistique' , 'prix' , 'genre' ) values (2 ,2 ,2 )
 
 
 
