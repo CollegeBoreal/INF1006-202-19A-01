@@ -79,7 +79,7 @@ CREATE TABLE INVOICES (
   customer VARCHAR(4),
   price INT,
   delivery INT,
-  PRIMARY KEY(invoice,price),
+  PRIMARY KEY(invoice, customer),
      FOREIGN KEY(customer)
         REFERENCES CUSTOMERS(customer),
      FOREIGN KEY(price)
