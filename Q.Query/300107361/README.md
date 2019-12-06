@@ -15,21 +15,24 @@
 
 :one:
 ```sql
- SELECT * FROM MAKES 
- JOIN MODELS ON (MAKES.make = MODELS.make)
- WHERE MAKES.origin = 'usa';
+SELECT MODELS.Models, MAKES.Makes FROM MAKES
+JOIN MODELS 
+ON ( MODELS.make = MAKES.make)
+WHERE MAKES.origin = 'usa';
  ```
 
 :two:
 ```sql
- SELECT * from MODELS 
- JOIN PRICES ON (MODELS.price = PRICES.price)
- WHERE MODELS.colour = 'blk';
+SELECT MODELS.Models, PRICES.Prices FROM MODELS
+JOIN PRICES
+ON (MODELS.price = PRICES.price)
+WHERE MODELS.colour = 'blk' ;
 ```
 
 :three:
 ```sql
-  SELECT * FROM CUSTOMERS
+  SELECT CUSTOMERS.Name, CUSTOMERS.FirstName, PAYMENTS.DateOfTransaction 
+  FROM CUSTOMERS
   JOIN PAYMENTS
   ON (CUSTOMERS.customer = PAYMENTS.customer);
   ```
