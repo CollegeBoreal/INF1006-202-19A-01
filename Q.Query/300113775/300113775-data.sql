@@ -19,12 +19,6 @@ INSERT INTO IMAGES (name) VALUES ( 'paysage');
 INSERT INTO IMAGES (name) VALUES ( 'flyer');
 
 
-INSERT INTO USES (social_networks) VALUES ('facebook');
-
-INSERT INTO USES (social_networks) VALUES ('instagram');
-
-INSERT INTO USES (social_networks) VALUES ('linkedin');
-
 
 
 INSERT INTO COLORS(color) VALUES ('blue');
