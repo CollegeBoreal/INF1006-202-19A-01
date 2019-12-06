@@ -53,12 +53,17 @@ CREATE TABLE PRICES (
         REFERENCES INVOICES(invoice)
     
        );
-   
+
 CREATE TABLE CUSTOMERS (
   customer INT(11) NOT NULL AUTO_INCREMENT,
   name VARCHAR(30) NOT NULL,
+  invoice INT(11) NULL DEFAULT NULL,
   age INT(11) NULL DEFAULT NULL,
-  PRIMARY KEY (customer)
+  PRIMARY KEY (customer),
+  INDEX invoice (invoice ASC),
+  CONSTRAINT CUSTOMERS_ibfk_1
+    FOREIGN KEY (invoice)
+    REFERENCES INVOICES (invoice)
 );
 
 
