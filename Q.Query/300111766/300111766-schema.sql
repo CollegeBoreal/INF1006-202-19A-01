@@ -33,7 +33,7 @@ CREATE TABLE MODELS (
 	
 CREATE TABLE INVOICES (
                    invoice INT NOT NULL AUTO_INCREMENT,
-                   Nom VARCHAR(30) NOT NULL,
+                   Nom VARCHAR(255) NOT NULL,
                    Date INT,
                    PRIMARY KEY(invoice)
                    );
