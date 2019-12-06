@@ -40,14 +40,14 @@ INSERT INTO SHIPPINGS(shipp) VALUES ('2019-08-15');
 INSERT INTO SHIPPINGS(shipp) VALUES ('2019-09-22');
 INSERT INTO SHIPPINGS(shipp) VALUES ('2019-03-25');
 
-INSERT INTO CUSTOMERS(nom,prenom) VALUES ('Tochgaly','Etienne');
-INSERT INTO CUSTOMERS(nom,prenom) VALUES ('Fabrice','Jacques');
-INSERT INTO CUSTOMERS(nom,prenom) VALUES ('widby','Armand');
-INSERT INTO CUSTOMERS(nom,prenom) VALUES ('Mark','Jean');
-INSERT INTO CUSTOMERS(nom,prenom) VALUES ('Armand','Widby');
-INSERT INTO CUSTOMERS(nom,prenom) VALUES ('Sadissou','Abbas');
-INSERT INTO CUSTOMERS(nom,prenom) VALUES ('Joseph','Jhon');
-INSERT INTO CUSTOMERS(nom,prenom) VALUES ('Pierre','Magalie');
+INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (1, 'Tochgaly','Etienne');
+INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (2, 'Fabrice','Jacques');
+INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (3, 'widby','Armand');
+INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (4, 'Mark','Jean');
+INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (5, 'Armand','Widby');
+INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (6, 'Sadissou','Abbas');
+INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (7, 'Joseph','Jhon');
+INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (8, 'Pierre','Magalie');
 
 INSERT INTO PRICES(prices) VALUES (80);
 INSERT INTO PRICES(prices) VALUES (70);
