@@ -39,7 +39,32 @@ vente_physique INT,
 PRIMARY KEY(vente_physique) 
 );
 
+CREATE TABLE PRICES (
+price INT AUTO_INCREMENT,
+console INT,
+ Prices INT,
+  PRIMARY KEY(price),
+    FOREIGN KEY(console)
+      REFERENCES CONSOLES(console)
+  );
 
+CREATE TABLE CUSTOMERS (
+ customer INT AUTO_INCREMENT,
+  FullName VARCHAR(20),
+  PRIMARY KEY(customer)
+);
+
+CREATE TABLE SHIPPINGS (
+price INT,
+customer INT,
+ DateDeLivraison DATE,
+  PRIMARY KEY(price, customer),
+    FOREIGN KEY(price)
+      REFERENCES PRICES(price),
+    FOREIGN KEY(customer)
+      REFERENCES CUSTOMERS(customer)
+  
+);
 
 CREATE TABLE DIFFUSIONS (
 Diffusions VARCHAR (250) NOT NULL,
