@@ -55,12 +55,12 @@ CREATE TABLE PRICES (
        );
    
 CREATE TABLE CUSTOMERS (
-              ID int NOT NULL,
-              LastName varchar(255) NOT NULL,
-              FirstName varchar(255),
-              Age int,
-              CONSTRAINT UC_customer UNIQUE (ID,LastName)
-              );
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    UNIQUE (ID)
+);
 
 
 
