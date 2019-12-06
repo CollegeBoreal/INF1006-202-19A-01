@@ -9,13 +9,6 @@ GRANT ALL ON widesign.* TO 'widesign'@'localhost';
 
 use widesign;
 
-      
-
-CREATE TABLE USES (
-  use INT AUTO_INCREMENT,
-  social_networks VARCHAR(50),
-  PRIMARY KEY(use)
-  );
 
 
 CREATE TABLE PAPIERS (
