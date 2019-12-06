@@ -88,5 +88,5 @@ CREATE TABLE INVOICES (
      FOREIGN KEY(delivery)
         REFERENCES DELIVERIES(delivery),
     FOREIGN KEY(shipping)
-     REFERENCES SHIPPPINGS(shipping)
+     REFERENCES SHIPPINGS(shipping)
  );
