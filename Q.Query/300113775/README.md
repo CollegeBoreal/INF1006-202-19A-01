@@ -1,4 +1,4 @@
 
 ## WIDESIGN (MODELE )
 
-![image](widesign2.jpg)
+![image](modele1.jpg)
