@@ -87,12 +87,9 @@ CREATE TABLE VENTES (
    vente INT NOT NULL AUTO_INCREMENT, 
    DateDeVente DATE,
    marchandise INT,
-   client INT,
    PRIMARY KEY(vente),
      FOREIGN KEY(marchandise)
-       REFERENCES MARCHANDISES(marchandise),
-     FOREIGN KEY(client) 
-       REFERENCES CLIENTS(client)
+       REFERENCES MARCHANDISES(marchandise)
 );
 
 
