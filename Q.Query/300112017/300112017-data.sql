@@ -9,9 +9,9 @@ INSERT INTO MARCHANDISES (marchandise, Marchandises, description_marchandise) VA
 INSERT INTO MARCHANDISES (marchandise, Marchandises, description_marchandise) VALUES (2, 'Types de Motos', 'Les Cross, Les Trials, Les Roadsters');
 
 
-INSERT INTO PaysDeFabrication(paysdefabrication, Pays) VALUES (1, 'France');
-INSERT INTO PaysDeFabrication(paysdefabrication, Pays) VALUES (2, 'Italie');
-INSERT INTO PaysDeFabrication(paysdefabrication, Pays) VALUES (3, 'Japon');
+INSERT INTO PaysDeFabrications(paysdefabrication, Pays) VALUES (1, 'France');
+INSERT INTO PaysDeFabrications(paysdefabrication, Pays) VALUES (2, 'Italie');
+INSERT INTO PaysDeFabrications(paysdefabrication, Pays) VALUES (3, 'Japon');
 
 
 INSERT INTO COULEURS (couleur, Couleurs) VALUES (1, 'Bleu');
