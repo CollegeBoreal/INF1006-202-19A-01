@@ -4,41 +4,47 @@ use magasin;
 
 -- Données de la table clients
 
-INSERT INTO clients ( num_client, nom, prenom ) VALUES ( 1, 'Jean', 'BLANCHART');
-INSERT INTO clients ( num_client, nom, prenom ) VALUES ( 2, 'Orden', 'Brice');
-INSERT INTO clients ( num_client, nom, prenom ) VALUES ( 3, 'Franck', 'BLANCHART');
-INSERT INTO clients ( num_client, nom, prenom ) VALUES ( 4, 'ABDEL', 'BLANCHART');
-INSERT INTO clients ( num_client, nom, prenom ) VALUES ( 5, 'Shams', 'BLANCHART');
-INSERT INTO clients ( num_client, nom, prenom ) VALUES ( 6, 'jeanne', 'BLANCHART');
-INSERT INTO clients ( num_client, nom, prenom ) VALUES ( 7, 'francine', 'BLANCHART');
-INSERT INTO clients ( num_client, nom, prenom ) VALUES ( 8, 'jacques','BLANCHART');
-INSERT INTO clients ( num_client, nom, prenom ) VALUES ( 9, 'Evelyne', 'BLANCHART');
 
--- Données de la table marchandises
+INSERT INTO MARCHANDISES (marchandise, Marchandises, description_marchandise) VALUES (1, 'Accessoires de moto', 'Casques, Gants, Lunettes');
+INSERT INTO MARCHANDISES (marchandise, Marchandises, description_marchandise) VALUES (2, 'Types de Motos', 'Les Cross, Les Trials, Les Roadsters');
 
-INSERT INTO marchandises ( num_marchandise,nom_marchandise,prix_marchandise,description_marchandise  ) VALUES ( 18, 'Routiers', $1000,'Garantie de 3 ans, kilometrage illimite sur toutes les unites');
-INSERT INTO marchandises ( num_marchandise,nom_marchandise,prix_marchandise,description_marchandise  )  VALUES ( 48, 'roadsters', $8000,'Garantie de 3 ans, kilometrage illimite sur toutes les unites'9);
-INSERT INTO marchandises ( num_marchandise,nom_marchandise,prix_marchandise,description_marchandise  ) VALUES ( 13, 'Sportives', $9000,'Garantie de 3 ans, kilometrage illimite sur toutes les unites');
 
--- Données de la table payments
+INSERT INTO PaysDeFabrication(paysdefabrication, Pays) VALUES (1, 'France');
+INSERT INTO PaysDeFabrication(paysdefabrication, Pays) VALUES (2, 'Italie');
+INSERT INTO PaysDeFabrication(paysdefabrication, Pays) VALUES (3, 'Japon');
 
-INSERT INTO PAYMENTS ( nom ) VALUES ( 'Jean' );
 
--- Données de la table couleurs
+INSERT INTO COULEURS (couleur, Couleurs) VALUES (1, 'Bleu');
+INSERT INTO COULEURS (couleur, Couleurs) VALUES (2, 'Gris');
+INSERT INTO COULEURS (couleur, Couleurs) VALUES (3, 'Noir');
+INSERT INTO COULEURS (couleur, Couleurs) VALUES (4, 'Orange');
+INSERT INTO COULEURS (couleur, Couleurs) VALUES (5, 'Turquoise');
 
-INSERT INTO Couleurs ( nom ) VALUES ( 'Bleu' );
-INSERT INTO Couleurs ( nom ) VALUES ( 'noir' );
-INSERT INTO Couleurs ( nom ) VALUES ( 'gris' ); 
- 
- -- Données de la table marques
- 
- INSERT INTO Marques ( nom ) VALUES ( 'BMW' );
- INSERT INTO Marques ( nom ) VALUES ( 'HONDA' );
- INSERT INTO Marques ( nom ) VALUES ( 'YMAHA' );
- 
- Données de la table ventes
 
-INSERT INTO ventes ( num_vente, date_vente, marchandise_num,client_num ) VALUES ( 1, 2012, 13, 1234567);
-INSERT INTO ventes ( num_vente, date_vente, marchandise_num,client_num ) VALUES ( 2, 2014, 58, 4567567);
-INSERT INTO ventes ( num_vente, date_vente, marchandise_num,client_num ) VALUES ( 23, 2016, 23, 345678);
-INSERT INTO ventes ( num_vente, date_vente, marchandise_num,client_num ) VALUES ( 12, 2018, 12, 345678);
+INSERT INTO MARQUES (marque, Marques) VALUES (1, 'BMW');
+INSERT INTO MARQUES (marque, Marques) VALUES (2, 'HONDA');
+INSERT INTO MARQUES (marque, Marques) VALUES (3, 'KAWASAKI');
+INSERT INTO MARQUES (marque, Marques) VALUES (4, 'YAMAHA');
+
+
+INSERT INTO MODELS (model, Models, marque, couleur, paysdefabrication) VALUES (1, 'F800 GS', 1, 2, 3);
+INSERT INTO MODELS (model, Models, marque, couleur, paysdefabrication) VALUES (2, 'CRF250R EXPERT', 2, 3, 3);
+INSERT INTO MODELS (model, Models, marque, couleur, paysdefabrication) VALUES (3, 'Z650 ABS', 3, 1, 3);
+INSERT INTO MODELS (model, Models, marque, couleur, paysdefabrication) VALUES (4, 'YZF-R1M', 4, 4, 3);
+
+
+INSERT INTO PRICES (price, model, Prices) VALUES (1, 1, 17800.00);
+INSERT INTO PRICES (price, model, Prices) VALUES (2, 2, 15400.00);
+INSERT INTO PRICES (price, model, Prices) VALUES (3, 3, 19800.00);
+
+
+INSERT INTO CLIENTS (client, nom, prenom) VALUES (1, 'Paul', 'Rocher');
+INSERT INTO CLIENTS (client, nom, prenom) VALUES (2, 'EncoreVous', 'Ducobu');
+
+
+INSERT INTO VENTES (vente, DateDeVente, marchandise) VALUES (1, '2019-03-14', 1);
+INSERT INTO VENTES (vente, DateDeVente, marchandise) VALUES (2, '2019-12-28', 2);
+
+
+INSERT INTO PAYMENTS (payment, vente, client, Montant) VALUES (1, 1, 1, 20300.99);
+INSERT INTO PAYMENTS (payment, vente, client, Montant) VALUES (2, 2, 2, 16789.70);
