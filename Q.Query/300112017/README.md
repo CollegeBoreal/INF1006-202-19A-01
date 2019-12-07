@@ -1,3 +1,3 @@
 # MAGASIN
 
-![image](images/data.JPG)
+![image](Images/data.JPG)
