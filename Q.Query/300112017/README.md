@@ -3,6 +3,7 @@
 ![image](Images/data.JPG)
 
 Rapport
+
 1-imprimer la moyenne des prix des motos
 2-imprimer tous les marchandises vendus le 14 mars 2019
 3-Imprimer le model des motos d'origine japonaise 
