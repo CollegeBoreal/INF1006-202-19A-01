@@ -1,58 +1,110 @@
 -- Mon domaine
-		                                CREATE DATABASE magasin;
+
+
+CREATE DATABASE IF NOT EXISTS magasin;
 		
 	
 
-		-- Mon utilisateur
+-- Mon utilisateur
+
+
+CREATE USER IF NOT EXISTS 'magasin'@'localhost' IDENTIFIED BY 'etudiants_1';
+GRANT ALL ON magasin.* TO 'magasin'@'localhost';
+		
+
+-- selectionner la base de donnees
+
+
+use magasin;
 		
 	
 
-		
-	
+-- Mes Tables
 
-		CREATE USER 'magasin'@'localhost' IDENTIFIED BY 'etudiants_1';
-		GRANT ALL ON magasin.* TO 'magasin'@'localhost';
-		
-	
+CREATE TABLE MARCHANDISES (
+  marchandise INT NOT NULL AUTO_INCREMENT,
+  Marchandises VARCHAR(20),
+  description_marchandise TEXT,
+  PRIMARY KEY(marchandise)
+);
 
-		-- selectionner la base de donnees
-		use magasin;
-		
-	
 
-		
-	
+CREATE TABLE PaysDeFabrications (
+  paysdefabrication INT AUTO_INCREMENT,
+  Pays VARCHAR(30),
+  PRIMARY KEY (paysdefabrication)
+);
 
-		-- Mes Tables
-			 CREATE TABLE clients(
-		num_client INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-			     nom VARCHAR(30),
-			    prenom VARCHAR(20)
-			    );
-			CREATE TABLE marchandises(
-			       num_marchandise INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-			       nom_marchandise VARCHAR(20),
-			       prix_marchandise INT(20) NOT NULL,
-			       description_marchandise TEXT
-			      );
-			CREATE TABLE payments(
-			          nom VARCHAR(30) NOT NULL, 
-			          note INT
-			);
-			CREATE TABLE couleurs(
-			          nom VARCHAR(30) NOT NULL, 
-			          note INT
-			);
-			CREATE TABLE marques(
-			          nom VARCHAR(30) NOT NULL, 
-			          note INT
-			 ); 
+			
+CREATE TABLE COULEURS (
+  couleur INT AUTO_INCREMENT, 
+  Couleurs VARCHAR(30),
+  PRIMARY KEY(couleur)
+);
 		
-	                  CREATE TABLE ventes(
-	      num_vente INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	      date_vente DATE,
-	      marchandise_num INT,
-	      client_num INT,
-	       FOREIGN KEY (marchandise_num) REFERENCES marchandises (num_marchandise),
-	     FOREIGN KEY (client_num) REFERENCES clients (num_client)
-	     );
+
+CREATE TABLE MARQUES (			       
+  marque INT AUTO_INCREMENT, 
+  Marques VARCHAR(30),
+  PRIMARY KEY(marque)			
+ ); 
+
+CREATE TABLE MODELS (
+  model INT,
+  marque INT,
+  couleur INT,
+  paysdefabrication INT,
+  Models VARCHAR (30),
+  PRIMARY KEY(model, marque),
+    FOREIGN KEY(marque)
+       REFERENCES MARQUES(marque),
+    FOREIGN KEY(paysdefabrication)
+       REFERENCES PaysDeFabrications(paysdefabrication),
+    FOREIGN KEY(couleur)
+       REFERENCES COULEURS(couleur)
+);		
+
+
+CREATE TABLE PRICES (
+ price INT AUTO_INCREMENT,
+ model INT,
+ Prices DOUBLE,
+ PRIMARY KEY(price, model),
+    FOREIGN KEY(model)
+       REFERENCES MODELS(model)
+);
+
+
+CREATE TABLE CLIENTS (
+  client INT AUTO_INCREMENT,
+  nom VARCHAR(30),
+  prenom VARCHAR(20),
+  PRIMARY KEY(client)
+);
+
+	                  
+CREATE TABLE VENTES (
+   vente INT NOT NULL AUTO_INCREMENT, 
+   DateDeVente DATE,
+   marchandise INT,
+   client INT,
+   PRIMARY KEY(vente),
+     FOREIGN KEY(marchandise)
+       REFERENCES MARCHANDISES(marchandise),
+     FOREIGN KEY(client) 
+       REFERENCES CLIENTS(client)
+);
+
+
+CREATE TABLE PAYMENTS (
+  payment INT NOT NULL AUTO_INCREMENT, 
+  vente INT,
+  client INT,
+  Montant DOUBLE,
+  PRIMARY KEY(payment, client),
+    FOREIGN KEY(vente)
+      REFERENCES VENTES(vente),
+    FOREIGN KEY(client)
+      REFERENCES CLIENTS(client)
+);
+ 
