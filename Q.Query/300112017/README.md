@@ -34,8 +34,9 @@ WHERE PaysDeFabrications.Pays = 'Japon';
 ```
 
 EXPLAIN 
-
+```sql
 EXPLAIN SELECT MODELS.Models FROM MODELS
 JOIN PaysDeFabrications
 ON (MODELS.paysdefabrication = PaysDeFabrications.paysdefabrication)
 WHERE PaysDeFabrications.Pays = 'Japon';
+```
