@@ -1,4 +1,4 @@
 # magasin
 
 
-![image](Images/work.JPG)
+![image](Images/data.JPG)
