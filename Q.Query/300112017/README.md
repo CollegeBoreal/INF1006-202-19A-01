@@ -13,6 +13,7 @@
 
 
 ✔Requetes
+
 1-
 ```sql
 SELECT AVG(Prices) FROM PRICES;
