@@ -1,12 +1,18 @@
-# Log pour Olaitan, rechercher ses fichiers perdus
+# Log pour rechercher des fichiers perdus
+
+* Log simple
 
 ```
 $ git log --pretty=oneline | grep 012d8
 ```
 
+* Log formatté
+
 ```
 $ git log --pretty=format:"Qui? %an -> Tag %h, Quand? %ar -m \"%s\"" 300112017
 ```
+
+* log d'un répertoire 'deleté'
 
 ```
 $  git log --pretty=format:"Qui? %an -> Tag %h, Quand? %ar -m \"%s\"" -- .Q.Query 
