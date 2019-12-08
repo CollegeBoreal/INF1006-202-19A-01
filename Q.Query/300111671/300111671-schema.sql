@@ -40,6 +40,8 @@ PRIMARY KEY (genre)
 
   );
 CREATE TABLE MODELE(
+modele INT,
+NAME VARCHAR(30) NOT NULL,
 genre INT,
 couleur INT,
 quantite INT, 
@@ -120,6 +122,8 @@ PRIMARY KEY (paiement)
   
 
 CREATE TABLE COMMANDE (
+commande INT,
+NAME VARCHAR(30) NOT NULL,
 age INT,
 logistique INT,
 prix INT,
