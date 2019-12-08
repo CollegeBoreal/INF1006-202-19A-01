@@ -46,6 +46,9 @@ CREATE TABLE CUSTOMERS(
   customer VARCHAR(4) NOT NULL,
   nom VARCHAR(40),
   prenom VARCHAR(40),
+  adresse VARCHAR(100),
+  codepostal VARCHAR(8),
+  telephone VARCHAR(20),
   PRIMARY KEY(customer)
 );
 
@@ -78,6 +81,9 @@ CREATE TABLE PRICES (
 CREATE TABLE INVOICES (
   invoice INT AUTO_INCREMENT,
   customer VARCHAR(4),
+  reduction VARCHAR(20),
+  retour VARCHAR(20),
+  remboursement INT,
   price INT,
   shipping INT,
   delivery INT,
