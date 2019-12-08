@@ -34,14 +34,14 @@ INSERT INTO SHIPPINGS(shipp, shipping) VALUES ('2019-03-25',5);
 
 
 -- INSERT DANS LA TABLE CUSTOMERS 
-INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (1, 'Tochgaly','Etienne');
-INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (2, 'Fabrice','Jacques');
-INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (3, 'widby','Armand');
-INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (4, 'Mark','Jean');
-INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (5, 'Armand','Widby');
-INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (6, 'Sadissou','Abbas');
-INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (7, 'Joseph','Jhon');
-INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (8, 'Pierre','Magalie');
+INSERT INTO CUSTOMERS(customer, nom,prenom, adresse, codepostal, telephone) VALUES (1, 'Tochgaly', 'Etienne', '1 yonge', 'M5E 1A7', '416 -289-5130');
+INSERT INTO CUSTOMERS(customer, nom,prenom, adresse, codepostal, telephone) VALUES (2, 'Fabrice', 'Jacques', '2 yonge st', 'M5E 1B7', '416 -289-5230');
+INSERT INTO CUSTOMERS(customer, nom,prenom, adresse, codepostal, telephone) VALUES (3, 'widby', 'Armand', '3 yonge street', 'M5E 1C7', '416 -289-5330');
+INSERT INTO CUSTOMERS(customer, nom,prenom, adresse, codepostal, telephone) VALUES (4, 'Mark', 'Jean', '1 yonge street', 'M5E 1D7', '416 -289-5430');
+INSERT INTO CUSTOMERS(customer, nom,prenom, adresse, codepostal, telephone) VALUES (5, 'Armand', 'Widby', '8 yonge', 'M5E 1E7', '416 -289-5530');
+INSERT INTO CUSTOMERS(customer, nom,prenom, adresse, codepostal, telephone) VALUES (6, 'Sadissou', 'Abbas', '2 yonge', 'M5E 1F7', '416 -289-5630');
+INSERT INTO CUSTOMERS(customer, nom,prenom, adresse, codepostal, telephone) VALUES (7, 'Joseph', 'Jhon', '5 yonge', 'M5E 1D7', '416 -289-5730');
+INSERT INTO CUSTOMERS(customer, nom,prenom, adresse, codepostal, telephone) VALUES (8, 'Pierre', 'Magalie', '7 yonge', 'M5E 1G7', '416 -289-5830');
 
 
 
