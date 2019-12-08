@@ -82,7 +82,7 @@ CREATE TABLE INVOICES (
   invoice INT AUTO_INCREMENT,
   customer VARCHAR(4),
   reduction VARCHAR(20),
-  retour VARCHAR(20),
+  retour DATE,
   remboursement INT,
   price INT,
   shipping INT,
