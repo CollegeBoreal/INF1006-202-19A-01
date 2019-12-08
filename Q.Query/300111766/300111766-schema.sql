@@ -39,8 +39,8 @@ CREATE TABLE INVOICES (
                    );
 		   
 CREATE TABLE PRICES (
-        mark INT,
-        model INT,
+        mark VARCHAR(3O),
+        model VARCHAR(30),
         invoice INT,
         price INT,
  
