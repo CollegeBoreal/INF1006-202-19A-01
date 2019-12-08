@@ -20,14 +20,14 @@ GRANT ALL ON vente_portable.* TO 'thiam'@'localhost' ;
 CREATE TABLE MARKS (
                    mark_Id VARCHAR(30),
                    name VARCHAR(30) NOT NULL,
-                   PRIMARY KEY (mark)
+                   PRIMARY KEY (mark_Id)
                    );
 	
 	
 CREATE TABLE MODELS (
                    model_Id,
 	           modelName VARCHAR(30),
-                   PRIMARY KEY(model)
+                   PRIMARY KEY(model_Id)
 		   );
 	
 	
