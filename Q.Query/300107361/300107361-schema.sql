@@ -164,4 +164,5 @@ CREATE TABLE IF NOT EXISTS Car_Center.PAYMENTS (
     REFERENCES Car_Center.PRICES (price)
 );
 
+
 -- Author: <Etienne>
