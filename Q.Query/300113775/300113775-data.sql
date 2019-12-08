@@ -62,14 +62,14 @@ INSERT INTO PRICES(prices) VALUES (35);
 INSERT INTO PRICES(prices) VALUES (22);
 
 -- INSERT DANS LA TABLE INVOICES 
-INSERT INTO INVOICES(reduction, retour,  remboursement) VALUES ('10%', '12-02-2019', 10);
-INSERT INTO INVOICES(reduction, retour,  remboursement) VALUES ('12%', '12-01-2019', 20);
-INSERT INTO INVOICES(reduction, retour,  remboursement) VALUES ('15%', '12-03-2019', 30);
-INSERT INTO INVOICES(reduction, retour,  remboursement) VALUES ('18%', '12-04-2019', 40);
-INSERT INTO INVOICES(reduction, retour,  remboursement) VALUES ('20%', '12-01-2019', 50);
-INSERT INTO INVOICES(reduction, retour,  remboursement) VALUES ('30%', '12-05-2019', 70);
-INSERT INTO INVOICES(reduction, retour,  remboursement) VALUES ('40%', '12-06-2019', 60);
-INSERT INTO INVOICES(reduction, retour,  remboursement) VALUES ('50%', '12-07-2019', 80);
+INSERT INTO INVOICES(reduction, retour,  remboursement) VALUES ('10%', '2019-04-28', 10);
+INSERT INTO INVOICES(reduction, retour,  remboursement) VALUES ('12%', '2019-05-27', 20);
+INSERT INTO INVOICES(reduction, retour,  remboursement) VALUES ('15%', '2019-03-26', 30);
+INSERT INTO INVOICES(reduction, retour,  remboursement) VALUES ('18%', '2019-03-25', 40);
+INSERT INTO INVOICES(reduction, retour,  remboursement) VALUES ('20%', '2019-03-24', 50);
+INSERT INTO INVOICES(reduction, retour,  remboursement) VALUES ('30%', '2019-03-23', 70);
+INSERT INTO INVOICES(reduction, retour,  remboursement) VALUES ('40%', '2019-03-22', 60);
+INSERT INTO INVOICES(reduction, retour,  remboursement) VALUES ('50%', '2019-03-21', 80);
 
 
 
