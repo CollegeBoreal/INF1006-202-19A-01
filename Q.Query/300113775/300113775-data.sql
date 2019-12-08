@@ -15,7 +15,7 @@ INSERT INTO IMAGES (images) VALUES ( 'flyer');
 
 
 
-
+-- INSERT DANS LA TABLE COLORS 
 INSERT INTO COLORS(Colors) VALUES ('blue');
 INSERT INTO COLORS(Colors) VALUES ('original');
 INSERT INTO COLORS(Colors) VALUES ('blacknwhite');
@@ -60,3 +60,22 @@ INSERT INTO PRICES(prices) VALUES (55);
 INSERT INTO PRICES(prices) VALUES (45);
 INSERT INTO PRICES(prices) VALUES (35);
 INSERT INTO PRICES(prices) VALUES (22);
+
+-- INSERT DANS LA TABLE INVOICES 
+INSERT INTO INVOICES(reduction, retour,  remboursement,) VALUES ('10%', '12-02-2019', 10)
+INSERT INTO INVOICES(reduction, retour,  remboursement,) VALUES ('12%', '12-01-2019', 20)
+INSERT INTO INVOICES(reduction, retour,  remboursement,) VALUES ('15%', '12-03-2019', 30)
+INSERT INTO INVOICES(reduction, retour,  remboursement,) VALUES ('18%', '12-04-2019', 40)
+INSERT INTO INVOICES(reduction, retour,  remboursement,) VALUES ('20%', '12-01-2019', 50)
+INSERT INTO INVOICES(reduction, retour,  remboursement,) VALUES ('30%', '12-05-2019', 70)
+INSERT INTO INVOICES(reduction, retour,  remboursement,) VALUES ('40%', '12-06-2019', 60)
+INSERT INTO INVOICES(reduction, retour,  remboursement,) VALUES ('50%', '12-07-2019', 80)
+
+
+
+
+
+
+
+
+
