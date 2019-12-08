@@ -49,20 +49,20 @@ INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (8, 'Pierre','Magalie');
 
 
 -- INSERT DANS LA TABLE PRICES 
-INSERT INTO INVOICES(price, shipping, delivery) VALUES (80, 2, 3);
-INSERT INTO INVOICES(price, shipping, delivery) VALUES (70, 3, 4);
-INSERT INTO INVOICES(price, shipping, delivery) VALUES (60, 4, 5);
-INSERT INTO INVOICES(price, shipping, delivery) VALUES (50, 5, 6);
-INSERT INTO INVOICES(price, shipping, delivery) VALUES (40, 6, 7);
-INSERT INTO INVOICES(price, shipping, delivery) VALUES (30, 7, 8);
-INSERT INTO INVOICES(price, shipping, delivery) VALUES (20, 8, 9);
-INSERT INTO INVOICES(price, shipping, delivery) VALUES (85, 9, 8);
-INSERT INTO INVOICES(price, shipping, delivery) VALUES (75, 8, 7);
-INSERT INTO INVOICES(price, shipping, delivery) VALUES (65, 7, 6);
-INSERT INTO INVOICES(price, shipping, delivery) VALUES (55, 6, 5);
-INSERT INTO INVOICES(price, shipping, delivery) VALUES (45, 5, 4);
-INSERT INTO INVOICES(price, shipping, delivery) VALUES (35, 4, 3);
-INSERT INTO INVOICES(price, shipping, delivery) VALUES (22, 3, 2);
+INSERT INTO INVOICES(customer, price, shipping, delivery) VALUES (1, 80, 2, 3);
+INSERT INTO INVOICES(customer, price, shipping, delivery) VALUES (2, 70, 3, 4);
+INSERT INTO INVOICES(customer, price, shipping, delivery) VALUES (3, 60, 4, 5);
+INSERT INTO INVOICES(customer, price, shipping, delivery) VALUES (4, 50, 5, 6);
+INSERT INTO INVOICES(customer, price, shipping, delivery) VALUES (5, 40, 6, 7);
+INSERT INTO INVOICES(customer, price, shipping, delivery) VALUES (6, 30, 7, 8);
+INSERT INTO INVOICES(customer, price, shipping, delivery) VALUES (7, 20, 8, 9);
+INSERT INTO INVOICES(customer, price, shipping, delivery) VALUES (8, 85, 9, 8);
+INSERT INTO INVOICES(customer, price, shipping, delivery) VALUES (9, 75, 8, 7);
+INSERT INTO INVOICES(customer, price, shipping, delivery) VALUES (10, 65, 7, 6);
+INSERT INTO INVOICES(customer, price, shipping, delivery) VALUES (11, 55, 6, 5);
+INSERT INTO INVOICES(customer, price, shipping, delivery) VALUES (12, 45, 5, 4);
+INSERT INTO INVOICES(customer, price, shipping, delivery) VALUES (13, 35, 4, 3);
+INSERT INTO INVOICES(customer, price, shipping, delivery) VALUES (14, 22, 3, 2);
 
 
 
