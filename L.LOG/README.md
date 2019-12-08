@@ -12,7 +12,7 @@ $ git log --pretty=oneline | grep 012d8
 $ git log --pretty=format:"Qui? %an -> Tag %h, Quand? %ar -m \"%s\"" 300112017
 ```
 
-* log d'un répertoire 'deleté'
+* log d'un répertoire 'deleté' `--`
 
 ```
 $  git log --pretty=format:"Qui? %an -> Tag %h, Quand? %ar -m \"%s\"" -- .Q.Query 
