@@ -12,9 +12,9 @@ use widesign;
 -- Données de la base widesign
 
 
-INSERT INTO IMAGES (images) VALUES ( 'portrait');
-INSERT INTO IMAGES (images) VALUES ( 'paysage');
-INSERT INTO IMAGES (images) VALUES ( 'flyer');
+INSERT INTO IMAGES (images, format) VALUES ( 'portrait', 1);
+INSERT INTO IMAGES (images, format) VALUES ( 'paysage', 2);
+INSERT INTO IMAGES (images, format) VALUES ( 'flyer', 3);
 
 
 
@@ -49,20 +49,20 @@ INSERT INTO CUSTOMERS(customer, nom,prenom) VALUES (8, 'Pierre','Magalie');
 
 
 -- INSERT DANS LA TABLE PRICES 
-INSERT INTO PRICES(prices) VALUES (80);
-INSERT INTO PRICES(prices) VALUES (70);
-INSERT INTO PRICES(prices) VALUES (60);
-INSERT INTO PRICES(prices) VALUES (50);
-INSERT INTO PRICES(prices) VALUES (40);
-INSERT INTO PRICES(prices) VALUES (30);
-INSERT INTO PRICES(prices) VALUES (20);
-INSERT INTO PRICES(prices) VALUES (85);
-INSERT INTO PRICES(prices) VALUES (75);
-INSERT INTO PRICES(prices) VALUES (65);
-INSERT INTO PRICES(prices) VALUES (55);
-INSERT INTO PRICES(prices) VALUES (45);
-INSERT INTO PRICES(prices) VALUES (35);
-INSERT INTO PRICES(prices) VALUES (22);
+INSERT INTO INVOICES(price, shipping, delivery) VALUES (80, 2, 3);
+INSERT INTO INVOICES(price, shipping, delivery) VALUES (70, 3, 4);
+INSERT INTO INVOICES(price, shipping, delivery) VALUES (60, 4, 5);
+INSERT INTO INVOICES(price, shipping, delivery) VALUES (50, 5, 6);
+INSERT INTO INVOICES(price, shipping, delivery) VALUES (40, 6, 7);
+INSERT INTO INVOICES(price, shipping, delivery) VALUES (30, 7, 8);
+INSERT INTO INVOICES(price, shipping, delivery) VALUES (20, 8, 9);
+INSERT INTO INVOICES(price, shipping, delivery) VALUES (85, 9, 8);
+INSERT INTO INVOICES(price, shipping, delivery) VALUES (75, 8, 7);
+INSERT INTO INVOICES(price, shipping, delivery) VALUES (65, 7, 6);
+INSERT INTO INVOICES(price, shipping, delivery) VALUES (55, 6, 5);
+INSERT INTO INVOICES(price, shipping, delivery) VALUES (45, 5, 4);
+INSERT INTO INVOICES(price, shipping, delivery) VALUES (35, 4, 3);
+INSERT INTO INVOICES(price, shipping, delivery) VALUES (22, 3, 2);
 
 
 
