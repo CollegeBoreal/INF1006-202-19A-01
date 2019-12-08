@@ -26,9 +26,11 @@ INSERT INTO INVOICES ( Nom, Date) VALUES ('check', '2020-09-13');
 INSERT INTO INVOICES ( Nom, Date ) VALUES ('abbas', '2020-09-13');
 
 -- Données de la table CLIENTS
+INSERT INTO CUSTOMERS ( name, age ) VALUES ( 'cheikh', 26);
+INSERT INTO CUSTOMERS ( name, age ) VALUES ( 'olaitan', 28);
+INSERT INTO CUSTOMERS ( name, age ) VALUES ( 'abdel', 33);
+INSERT INTO CUSTOMERS ( name, age ) VALUES ( 'halima', 23);
+;
 
-INSERT INTO CUSTOMERS ( ) VALUES (40, 'olitan', 'toronto');
-INSERT INTO CUSTOMERS ( IDclient, Nom_client, ville) VALUES (50, 'aek', 'northyork');
-INSERT INTO CUSTOMERS (IDclient, Nom_client, ville) VALUES (60, 'jemma', 'mississauga');
-INSERT INTO CUSTOMERS ( IDclient, Nom_client, ville) VALUES (70, 'check', 'toronto');
-INSERT INTO CUSTOMERS ( IDclient, Nom_client, ville) VALUES (80, 'abbas', 'toronto');
+
+
