@@ -1,5 +1,7 @@
 # Log pour rechercher des fichiers perdus
 
+https://git-scm.com/docs/pretty-formats
+
 * Log simple
 
 ```
