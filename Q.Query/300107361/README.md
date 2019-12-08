@@ -7,8 +7,9 @@
 
 * 1- Imprimer le model et la marque des voitures d'origines Americaines.
 * 2- Imprimer le model et le prix des voitures de couleurs noirs.
-* 3- Imprimer le nom des clients et les dates des transactions effectuees. 
+* 3- Imprimer le nom et le prenom des clients et les dates des transactions effectuees. 
 * 4- Imprimer la moyenne des prix des voitures.
+* 5- Imprimer le nom des clients, le prix initial des voiture et le montant final des transactions effectuees le 27 novembre 2019.
 
 ========================
 
@@ -42,4 +43,13 @@ WHERE MODELS.colour = 'blk' ;
 ```sql
  SELECT AVG(Prices) FROM PRICES;
  ```
+ 
+ :five:
+ ```sql
+SELECT  CUSTOMERS.LastName, PRICES.Prices, PAYMENTS.Amount
+FROM PAYMENTS
+JOIN PRICES USING (price)
+JOIN CUSTOMERS USING (customer)
+WHERE PAYMENTS.DateOfTransaction = '2019-11-27';
+```
 Author: <.@Toch90>
