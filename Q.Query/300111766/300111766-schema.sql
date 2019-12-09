@@ -25,7 +25,7 @@ CREATE TABLE MARKS (
 	
 	
 CREATE TABLE MODELS (
-                   model_Id,
+                   model_Id VARCHAR(30),
 	           name VARCHAR(30) NOT NULL,
                    PRIMARY KEY(model_Id)
 		   );
@@ -44,7 +44,7 @@ CREATE TABLE PRICES (
         invoice INT,
         price INT,
  
-        PRIMARY KEY (mark, model, invoice),
+        PRIMARY KEY (mark_Id, model_Id, invoice),
         FOREIGN KEY(mark)
         REFERENCES MARKS(mark),
         FOREIGN KEY(model)
