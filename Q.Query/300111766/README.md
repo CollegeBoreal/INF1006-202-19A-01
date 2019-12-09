@@ -1,6 +1,4 @@
 # vente_portable
 
-
-![image](ma base de donnee
-.png)
+![](images/ma base de donnee.png)
 
