@@ -40,12 +40,11 @@ PRIMARY KEY (genre)
 
   );
 CREATE TABLE MODELE(
-modele INT,
-NAME VARCHAR(30) NOT NULL,
 genre INT,
 couleur INT,
-quantite INT, 
-PRIMARY KEY (genre ,couleur ,quantite ),
+quantite INT,
+modele INT,
+PRIMARY KEY (genre ,couleur ,quantite),
 FOREIGN KEY(genre) 
 REFERENCES GENRE(genre),
 FOREIGN KEY(couleur) 
@@ -122,12 +121,11 @@ PRIMARY KEY (paiement)
   
 
 CREATE TABLE COMMANDE (
-commande INT,
-NAME VARCHAR(30) NOT NULL,
 age INT,
 logistique INT,
 prix INT,
 genre INT,
+commande INT,
 PRIMARY KEY (age, logistique, prix, genre),
 FOREIGN KEY(age)
 REFERENCES AGE(age),
