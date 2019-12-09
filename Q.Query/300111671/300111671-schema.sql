@@ -121,20 +121,17 @@ PRIMARY KEY (paiement)
   
 
 CREATE TABLE COMMANDE (
+ genre INT,
 age INT,
-logistique INT,
 prix INT,
-genre INT,
 commande INT,
-PRIMARY KEY (age, logistique, prix, genre),
+PRIMARY KEY (genre ,age , prix),
+FOREIGN KEY(genre)
+REFERENCES GENRE(genre),
 FOREIGN KEY(age)
 REFERENCES AGE(age),
-FOREIGN KEY(logistique)
-REFERENCES LOGISTIQUE(logistique),
 FOREIGN KEY(prix)
-REFERENCES PRIX(prix),
-FOREIGN KEY(genre)
-REFERENCES GENRE(genre)
+REFERENCES PRIX(prix)
 
 
   );
