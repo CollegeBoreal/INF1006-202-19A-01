@@ -10,7 +10,7 @@ INSERT INTO MARKS ( name ) VALUES ('samsung');
 INSERT INTO MARKS ( name ) VALUES ('nokia');
 INSERT INTO MARKS ( name ) VALUES ('huawei');
 
--- Données de la table PRODUITS
+-- Données de la table MODELS
 
 INSERT INTO MODELS (name ) VALUES ('iphone10');
 INSERT INTO MODELS (name ) VALUES ('iphone11');
