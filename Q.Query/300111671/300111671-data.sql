@@ -86,10 +86,16 @@ INSERT INTO lOGISTIQUE ( name ) VALUES ( 'maritine');
 
 
 
+-- Données de la table MODELE
+
+INSERT INTO MODELE (genre ,couleur ,quantite ,modele) VALUES (1 ,1 ,1 ,10);
+INSERT INTO MODELE (genre ,couleur ,quantite ,modele) VALUES (2 ,2 ,2 ,20);
+INSERT INTO MODELE (genre ,couleur ,quantite ,modele) VALUES (3 ,3 ,3 ,30);
+  
 
 
 
-
+-- Données de la table COMMANDE
 
 
 
