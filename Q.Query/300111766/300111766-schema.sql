@@ -18,16 +18,16 @@ GRANT ALL ON vente_portable.* TO 'thiam'@'localhost' ;
 	
 
 CREATE TABLE MARKS (
-                   mark_Id VARCHAR(30),
+                   mark INT NOT NULL AUTO_INCREMENT,
                    name VARCHAR(30) NOT NULL,
-                   PRIMARY KEY (mark_Id)
+                   PRIMARY KEY(mark)
                    );
 	
 	
 CREATE TABLE MODELS (
-                   model_Id VARCHAR(30),
+                   model INT NOT NULL AUTO_INCREMENT,
 	           name VARCHAR(30) NOT NULL,
-                   PRIMARY KEY(model_Id)
+                   PRIMARY KEY(model)
 		   );
 	
 	
@@ -39,12 +39,12 @@ CREATE TABLE INVOICES (
                    );
 		   
 CREATE TABLE PRICES (
-        mark_Id VARCHAR(3O),
-        model_Id VARCHAR(30),
+        mark INT,
+        model INT,
         invoice INT,
         price INT,
  
-        PRIMARY KEY (mark_Id, model_Id, invoice),
+        PRIMARY KEY (mark, model, invoice),
         FOREIGN KEY(mark)
         REFERENCES MARKS(mark),
         FOREIGN KEY(model)
