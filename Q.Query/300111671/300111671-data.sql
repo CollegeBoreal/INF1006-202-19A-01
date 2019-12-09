@@ -6,6 +6,16 @@ use Boubou;
 
 
 
+-- Données de la table age
+
+
+
+INSERT INTO AGE ( name ) VALUES ('20ans');
+INSERT INTO AGE ( name ) VALUES ('30ans');
+INSERT INTO AGE ( name ) VALUES ('40ans');
+
+
+
 -- Données de la table pays
 
 
