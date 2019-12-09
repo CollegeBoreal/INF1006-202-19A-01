@@ -107,7 +107,9 @@ INSERT INTO MODELE (genre ,couleur ,quantite ,modele) VALUES (3 ,3 ,3 ,30);
 
 -- Données de la table COMMANDE
 
-
+INSERT INTO COMMANDE (genre ,age ,prix ,commande) VALUES (1 ,1 ,1 ,100);
+INSERT INTO COMMANDE (genre ,age ,prix ,commande) VALUES (2 ,2 ,2 ,200);
+INSERT INTO COMMANDE (genre ,age ,prix ,commande) VALUES (3 ,3 ,3 ,300);
 
 
 
