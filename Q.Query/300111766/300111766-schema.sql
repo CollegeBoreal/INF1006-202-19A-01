@@ -26,7 +26,7 @@ CREATE TABLE MARKS (
 	
 CREATE TABLE MODELS (
                    model_Id,
-	           modelName VARCHAR(30),
+	           modelName VARCHAR(30) NOT NULL,
                    PRIMARY KEY(model_Id)
 		   );
 	
