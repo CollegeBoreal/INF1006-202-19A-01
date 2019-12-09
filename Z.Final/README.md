@@ -35,7 +35,7 @@
 ##### :m: DATABASE
 
 ```SQL
-> CREATE DATABASE <name>;
+mysql> CREATE DATABASE <name>;
 ```
 
 
@@ -72,13 +72,13 @@
 :pushpin: Adresse IP Locale
 
 ```SQL
-> CREATE USER 'nom'@'localhost' IDENTIFIED BY 'passwd'; -- Utilisateur accedant a la machine locale
+mysql> CREATE USER 'nom'@'localhost' IDENTIFIED BY 'passwd'; -- Utilisateur accedant a la machine locale
 ```
 
 :pushpin: Adresse IP Distante (avec `wildcard` **%** )
 
 ```SQL
-> CREATE USER 'nom'@'%' IDENTIFIED BY 'passwd'; -- Utilisateur accedant a la machine distante
+mysql> CREATE USER 'nom'@'%' IDENTIFIED BY 'passwd'; -- Utilisateur accedant a la machine distante
 ```
 
 :two: DROP {DATABASE/TABLE} <name>;
@@ -86,18 +86,18 @@
 ##### :m: DATABASE
 
 ```SQL
-> DROP DATABASE <name>;
+mysql> DROP DATABASE <name>;
 ```
 
 ##### :m: TABLE 
 
 ```SQL
-> DROP TABLE <name>;
+mysql> DROP TABLE <name>;
 ```
 ##### :m: USER 
 
 ```SQL
-> DROP USER <name>;
+mysql> DROP USER <name>;
 ```
 
 :three: Keys :key:
@@ -155,13 +155,13 @@
 ##### :m: [GRANT](http://www.mysqltutorial.org/mysql-grant.aspx)
 
 ```
-> GRANT <Privilege> ON <base de donnee>.<tables> (ou `*` wildcard) TO <USER>;  
+mysql> GRANT <Privilege> ON <base de donnee>.<tables> (ou `*` wildcard) TO <USER>;  
 ```
 
 ##### :m: [REVOKE](http://www.mysqltutorial.org/mysql-revoke.aspx)
 
 ```
-> REVOKE <Privilege> ON <base de donnee>.<tables> (ou `*` wildcard) FROM <USER>;  
+mysql> REVOKE <Privilege> ON <base de donnee>.<tables> (ou `*` wildcard) FROM <USER>;  
 ```
 
 :pushpin: Privileges [:blue_book:](http://ask.xmodulo.com/create-configure-mysql-user-command-line.html) 
