@@ -38,6 +38,7 @@ CREATE DATABASE Assurance;
   paiement INT AUTO_INCREMENT,
   nom  VARCHAR(40) NOT NULL, 
   date INT,
+  client INT,
   PRIMARY KEY (paiement,client),
    FOREIGN KEY (client)
      REFERENCES CLIENTS(client)
