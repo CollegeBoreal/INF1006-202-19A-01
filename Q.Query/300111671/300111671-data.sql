@@ -87,11 +87,8 @@ INSERT INTO PRIX ( name ) VALUES ( '100$');
 INSERT INTO PRIX ( name ) VALUES ( '250$');
 INSERT INTO PRIX ( name ) VALUES ( '500$');
 
--- Données de la table logistique
 
-INSERT INTO lOGISTIQUE ( name ) VALUES ( 'aerienne');
-INSERT INTO lOGISTIQUE ( name ) VALUES ( 'ferroviere');
-INSERT INTO lOGISTIQUE ( name ) VALUES ( 'maritine');
+
 
 
 
