@@ -1,7 +1,7 @@
 
 ## WIDESIGN (MODELE )
 
-![image](modele4.jpg)
+![image](modele4.png)
 
 
 
