@@ -1,3 +1,3 @@
 vente_portable
-![](images/bd.png)
+![](images/bd2.png)
 
