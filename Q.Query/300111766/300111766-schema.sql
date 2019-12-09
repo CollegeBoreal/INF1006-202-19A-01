@@ -26,7 +26,7 @@ CREATE TABLE MARKS (
 	
 CREATE TABLE MODELS (
                    model_Id,
-	           modelName VARCHAR(30) NOT NULL,
+	           name VARCHAR(30) NOT NULL,
                    PRIMARY KEY(model_Id)
 		   );
 	
@@ -39,8 +39,8 @@ CREATE TABLE INVOICES (
                    );
 		   
 CREATE TABLE PRICES (
-        mark VARCHAR(3O),
-        model VARCHAR(30),
+        mark_Id VARCHAR(3O),
+        model_Id VARCHAR(30),
         invoice INT,
         price INT,
  
