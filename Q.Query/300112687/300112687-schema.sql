@@ -60,7 +60,7 @@ CREATE DATABASE IF NOT EXISTS Assurance;
  client INT,
  PRIMARY KEY (prix,client),
   FOREIGN KEY (client)
-     REFERNCES CLIENTS(client)
+     REFERENCES CLIENTS(client)
 
  );
 
