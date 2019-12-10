@@ -178,6 +178,23 @@ mysql> REVOKE <Privilege> ON <base de donnee>.<tables> (ou `*` wildcard) FROM <U
 voir l'explication  [`INSERT AUTO_INCREMENT`](https://dev.mysql.com/doc/mysql-tutorial-excerpt/5.7/en/example-auto-increment.html)
 
 
+## :x: DQL 
+
+http://code.openark.org/blog/mysql/mysql-joins-on-vs-using-vs-theta-style
+
+```
+MySQL joins: ON vs. USING vs. Theta-style
+July 11, 2012
+What is the difference between the following three syntaxes?
+
+  SELECT * FROM film JOIN film_actor ON (film.film_id = film_actor.film_id)
+  SELECT * FROM film JOIN film_actor USING (film_id)
+  SELECT * FROM film, film_actor WHERE film.film_id = film_actor.film_id
+
+The difference is mostly syntactic sugar, but with a couple interesting notes.
+
+To put names, the first two are called "ANSI-style" while the third is called "Theta-style".
+```
 
 ## :o2: MySQL Admin Commands
 
