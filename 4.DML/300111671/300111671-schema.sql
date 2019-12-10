@@ -42,8 +42,9 @@ PRIMARY KEY (genre)
 CREATE TABLE MODELE(
 genre INT,
 couleur INT,
-quantite INT, 
-PRIMARY KEY (genre ,couleur ,quantite ),
+quantite INT,
+modele INT,
+PRIMARY KEY (genre ,couleur ,quantite),
 FOREIGN KEY(genre) 
 REFERENCES GENRE(genre),
 FOREIGN KEY(couleur) 
@@ -120,21 +121,17 @@ PRIMARY KEY (paiement)
   
 
 CREATE TABLE COMMANDE (
+ genre INT,
 age INT,
-logistique INT,
 prix INT,
-genre INT,
-PRIMARY KEY (age, logistique, prix, genre),
+commande INT,
+PRIMARY KEY (genre ,age , prix),
+FOREIGN KEY(genre)
+REFERENCES GENRE(genre),
 FOREIGN KEY(age)
 REFERENCES AGE(age),
-FOREIGN KEY(logistique)
-REFERENCES LOGISTIQUE(logistique),
 FOREIGN KEY(prix)
-REFERENCES PRIX(prix),
-FOREIGN KEY(genre)
-REFERENCES GENRE(genre)
+REFERENCES PRIX(prix)
 
 
   );
-
-

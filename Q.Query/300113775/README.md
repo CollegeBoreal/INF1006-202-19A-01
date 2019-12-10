@@ -1,15 +1,17 @@
 
 ## WIDESIGN (MODELE )
 
-![image](modele3.jpg)
+![image](modele4.png)
 
 
 
 :one:-Imprimer le nombre total des clients 
 
+
 ```sql
-SELECT count(customer) FROM CUSTOMERS;
+EXPLAIN SELECT count(customer) FROM CUSTOMERS;
 ```
+![image](explain.png)
 
 :two:- Imprimer le nom et le numero de telephone des clients ainsi que les dates ils ont retournés leur produit 
 
@@ -29,3 +31,20 @@ FROM CUSTOMERS
 JOIN INVOICES 
 ON (CUSTOMERS.customer = INVOICES.customer);
 ```
+
+
+
+:four: IMPRIMER LE NOM ET LE PRENOM DES CLIENTSQUI ONT RETOURNES DES PRODUITS LE 28 AVRIL 2019
+
+```sql
+SELECT CUSTOMERS.nom, CUSTOMERS.prenom FROM CUSTOMERS 
+JOIN INVOICES
+ON (CUSTOMERS.customer = INVOICES.customer)
+WHERE INVOICES.retour = '2019-04-28';
+```
+
+:five: Plusieurs clients ne peut pas avoir le meme numero de telephone 
+![image](telephoneunique.png)
+
+
+
