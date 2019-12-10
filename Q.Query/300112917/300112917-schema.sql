@@ -32,7 +32,7 @@ CREATE TABLE PRODUITS (
   quantite INT,
   PRIMARY KEY(produit, couleur),
     FOREIGN KEY(couleur) 
-     REFERENCES COULEURS(couleur),
+     REFERENCES COULEURS(couleur)
 );
 
 
