@@ -58,7 +58,7 @@ quantity INT(10),
 note INT,
 client INT,
 vente INT,
-PRIMARY KEY(commande_num),
+PRIMARY KEY(commande_num, vente),
  FOREIGN KEY (client)
      REFERENCES CLIENTS(client),
  FOREIGN KEY (vente)
