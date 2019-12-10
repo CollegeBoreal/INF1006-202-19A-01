@@ -56,6 +56,7 @@ CREATE DATABASE Assurance;
  CREATE TABLE PRIX (
  prix  INT AUTO_INCREMENT,
  nom VARCHAR(30) NOT NULL,
+ client INT,
  PRIMARY KEY (prix,client)
   FOREIGN KEY (client)
      REFERNCES CLIENTS(client)
