@@ -52,12 +52,11 @@ CREATE TABLE VENTES(
 
 
 CREATE TABLE PAYMENTS(
-payment INT NOT NULL AUTO_INCREMENT,
 article VARCHAR(30) NOT NULL,
 quantity INT(10),
 client INT,
 vente INT,
-PRIMARY KEY(payment, vente),
+PRIMARY KEY(client, vente),
  FOREIGN KEY (client)
      REFERENCES CLIENTS(client),
  FOREIGN KEY (vente)
