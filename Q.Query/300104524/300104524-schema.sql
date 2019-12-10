@@ -55,16 +55,13 @@ CREATE TABLE PAYMENTS(
 commande_num INT NOT NULL AUTO_INCREMENT,
 article VARCHAR(30) NOT NULL,
 quantity INT(10),
-archivre_num INT,
 client INT,
 vente INT,
 PRIMARY KEY(commande_num, vente),
  FOREIGN KEY (client)
      REFERENCES CLIENTS(client),
  FOREIGN KEY (vente)
-     REFERENCES VENTES(vente),
- FOREIGN KEY (archivre_num)
-     REFERENCES NOTES(archivre_num)
+     REFERENCES VENTES(vente)
 );
  
  
