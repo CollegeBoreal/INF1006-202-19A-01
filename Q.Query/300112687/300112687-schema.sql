@@ -18,7 +18,7 @@ CREATE DATABASE IF NOT EXISTS Assurance;
  -- Mes Tables
 
    CREATE TABLE CLIENTS(
-  client INT AUTO_INCREMENT
+   client INT AUTO_INCREMENT,
    name VARCHAR(30) NOT NULL,
     num INT, 
     PRIMARY KEY (client)
@@ -46,6 +46,7 @@ CREATE DATABASE IF NOT EXISTS Assurance;
  );
  
  CREATE TABLE SERVICES(
+  service INT AUTO_INCREMENT,
   Incendie VARCHAR(20) NOT NULL,
   voyage VARCHAR(20) NOT NULL,
   voiture VARCHAR(30) NOT NULL,
@@ -57,7 +58,7 @@ CREATE DATABASE IF NOT EXISTS Assurance;
  prix  INT AUTO_INCREMENT,
  nom VARCHAR(30) NOT NULL,
  client INT,
- PRIMARY KEY (prix,client)
+ PRIMARY KEY (prix,client),
   FOREIGN KEY (client)
      REFERNCES CLIENTS(client)
 
