@@ -248,7 +248,16 @@ mysql> SELECT COUNT(*) FROM ETUDIANTS;
 
 ##### :m: Explain
 
+
+```sql
+mysql> EXPLAIN SELECT * from ETUDIANTS;
+```
+
 ![image](images/EXPLAIN_ALL.png)
+
+```sql
+mysql> EXPLAIN SELECT * from ETUDIANTS WHERE programme > 1 OR etudiant = 1;
+```
 
 ![image](images/EXPLAIN_KEY.png)
 
