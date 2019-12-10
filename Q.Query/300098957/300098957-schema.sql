@@ -56,15 +56,17 @@ CREATE TABLE IF NOT EXISTS `etudiants`.`ETUDIANTS` (
 CREATE TABLE IF NOT EXISTS `etudiants`.`NOTES` (
   `etudiant` INT NOT NULL DEFAULT '0',
   `devoir` INT NOT NULL DEFAULT '0',
-  `note` INT NULL DEFAULT NULL,
+  `note` INT NULL DEFAULT NULL CHECK ( `note` <= 100),
   PRIMARY KEY (`etudiant`, `devoir`),
   INDEX `devoir` (`devoir` ASC),
+  CONSTRAINT note_positive CHECK ( `note` > 0),
   CONSTRAINT `NOTES_ibfk_1`
     FOREIGN KEY (`etudiant`)
     REFERENCES `etudiants`.`ETUDIANTS` (`etudiant`),
   CONSTRAINT `NOTES_ibfk_2`
     FOREIGN KEY (`devoir`)
     REFERENCES `etudiants`.`DEVOIRS` (`devoir`)
+  
 );
 
 -- A vous de jouer
