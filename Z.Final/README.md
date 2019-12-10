@@ -152,6 +152,19 @@ mysql> DROP USER <name>;
 
 :pushpin: [Foreign Key](https://dev.mysql.com/doc/refman/8.0/en/create-table-foreign-keys.html#foreign-key-examples)
 
+```sql
+mysql> SHOW CREATE TABLE child\G
+*************************** 1. row ***************************
+       Table: child
+Create Table: CREATE TABLE `child` (
+  `id` int DEFAULT NULL,
+  `parent_id` int DEFAULT NULL,
+  KEY `par_ind` (`parent_id`),
+  CONSTRAINT `child_ibfk_1` FOREIGN KEY (`parent_id`) 
+  REFERENCES `parent` (`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+```
+
 #### :m: Data Quality Constraints
 
 :pushpin: [Check](https://dev.mysql.com/doc/refman/8.0/en/create-table-check-constraints.html)
