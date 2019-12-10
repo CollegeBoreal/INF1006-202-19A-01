@@ -67,6 +67,8 @@ CREATE TABLE IF NOT EXISTS `Boubou`.`COMMANDE` (
   PRIMARY KEY (`genre`, `age`, `prix`),
   INDEX `age` (`age` ASC) VISIBLE,
   INDEX `prix` (`prix` ASC) VISIBLE,
+  UNIQUE INDEX `age_UNIQUE` (`age` ASC) VISIBLE,
+  UNIQUE INDEX `prix_UNIQUE` (`prix` ASC) VISIBLE,
   CONSTRAINT `COMMANDE_ibfk_1`
     FOREIGN KEY (`genre`)
     REFERENCES `Boubou`.`GENRE` (`genre`),
@@ -100,7 +102,8 @@ COLLATE = utf8mb4_0900_ai_ci;
 CREATE TABLE IF NOT EXISTS `Boubou`.`DELAI` (
   `delai` INT(11) NOT NULL AUTO_INCREMENT,
   `NAME` VARCHAR(30) NOT NULL,
-  PRIMARY KEY (`delai`))
+  PRIMARY KEY (`delai`),
+  UNIQUE INDEX `delai_UNIQUE` (`delai` ASC) VISIBLE)
 ENGINE = InnoDB
 AUTO_INCREMENT = 4
 DEFAULT CHARACTER SET = utf8mb4
@@ -156,6 +159,7 @@ CREATE TABLE IF NOT EXISTS `Boubou`.`MODELE` (
   PRIMARY KEY (`genre`, `couleur`, `quantite`),
   INDEX `couleur` (`couleur` ASC) VISIBLE,
   INDEX `quantite` (`quantite` ASC) VISIBLE,
+  UNIQUE INDEX `modele_UNIQUE` (`modele` ASC) VISIBLE,
   CONSTRAINT `MODELE_ibfk_1`
     FOREIGN KEY (`genre`)
     REFERENCES `Boubou`.`GENRE` (`genre`),
