@@ -248,6 +248,12 @@ mysql> SELECT COUNT(*) FROM ETUDIANTS;
 
 ##### :m: Explain
 
+```
+Explain sert à montrer le chemin pris par la recherche de données.
+
+Le but étant de trouver la meilleure route pour accélérer le retour des données
+
+Activer un index indique une meilleur performance
 
 ```sql
 mysql> EXPLAIN SELECT * from ETUDIANTS;
