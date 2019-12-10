@@ -43,7 +43,7 @@ CREATE TABLE VENTES(
   article VARCHAR(120),
   service INT,
   client INT,
-  PRIMARY KEY(client, vente),
+  PRIMARY KEY(vente, client),
    FOREIGN KEY (client)
      REFERENCES CLIENTS (client),
     FOREIGN KEY (service)
