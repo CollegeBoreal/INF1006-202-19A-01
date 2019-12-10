@@ -4,7 +4,7 @@ use musicshop;
 
 -- Données des tables
 
-INSERT INTO SERVICES_OFFERED (service_offered, Services) VALUES (1, 'Instruments');
+INSERT INTO SERVICES_OFFERED (service_offered, Services) VALUES (6, 'Instruments');
 
 INSERT INTO CUSTOMERS (customer, Name, Phone_number) VALUES (1, 'John', 64773);
 INSERT INTO CUSTOMERS (customer, Name, Phone_number) VALUES (2, 'Jacques', 64774);
@@ -13,12 +13,12 @@ INSERT INTO CUSTOMERS (customer, Name, Phone_number) VALUES (4, 'Johnny', 64777)
 INSERT INTO CUSTOMERS (customer, Name, Phone_number) VALUES (5, 'Joseph', 64772);
 INSERT INTO CUSTOMERS (customer, Name, Phone_number) VALUES (6, 'Jean', 64779);
 
-INSERT INTO INSTRUMENTS (instrument, Types, Name) VALUES (1, 'Percusion', 'Piano');
-INSERT INTO INSTRUMENTS (instrument, Types, Name) VALUES (2, 'Strings', 'Guitar');
-INSERT INTO INSTRUMENTS (instrument, Types, Name) VALUES (3, 'Violan', 'Drums');
-INSERT INTO INSTRUMENTS (instrument, Types, Name) VALUES (4, 'Flute', 'Saxophone');
-INSERT INTO INSTRUMENTS (instrument, Types, Name) VALUES (5, 'Tambour', 'Keyboard');
-INSERT INTO INSTRUMENTS (instrument, Types, Name) VALUES (6, 'Harpe', 'Clarinette');
+INSERT INTO INSTRUMENTS (instrument, Types, Name) VALUES (1, 'instrument a corde', 'Piano');
+INSERT INTO INSTRUMENTS (instrument, Types, Name) VALUES (2, 'Instrument a corde', 'Guitar');
+INSERT INTO INSTRUMENTS (instrument, Types, Name) VALUES (3, 'Percusion', 'Drums');
+INSERT INTO INSTRUMENTS (instrument, Types, Name) VALUES (4, 'Instrument a vent', 'Saxophone');
+INSERT INTO INSTRUMENTS (instrument, Types, Name) VALUES (5, 'Instrument a corde', 'Keyboard');
+INSERT INTO INSTRUMENTS (instrument, Types, Name) VALUES (6, 'instrument a vent', 'Clarinette');
 
 
 INSERT INTO COLOURS (colour, Colors) VALUES (1, 'White');
