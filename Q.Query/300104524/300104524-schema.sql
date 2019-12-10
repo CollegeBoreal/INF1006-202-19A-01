@@ -6,10 +6,10 @@ GRANT ALL ON technical_support.* TO 'technical_support'@'localhost';
 use technical_support;
 
 CREATE TABLE CLIENTS(
-	client INT NOT NULL AUTO_INCREMENT,
-        nom VARCHAR(30),
-        prenom VARCHAR(20),
-	PRIMARY KEY(client)
+ client INT NOT NULL AUTO_INCREMENT,
+ nom VARCHAR(30),
+ prenom VARCHAR(20),
+ PRIMARY KEY(client)
 );
 
 CREATE TABLE SERVICES(
@@ -55,7 +55,7 @@ CREATE TABLE PAYMENTS(
 commande_num INT NOT NULL AUTO_INCREMENT,
 article VARCHAR(30) NOT NULL,
 quantity INT(10),
-note INT,
+archivre_num INT,
 client INT,
 vente INT,
 PRIMARY KEY(commande_num, vente),
@@ -63,8 +63,8 @@ PRIMARY KEY(commande_num, vente),
      REFERENCES CLIENTS(client),
  FOREIGN KEY (vente)
      REFERENCES VENTES(vente),
- FOREIGN KEY (note)
-     REFERENCES NOTES(note)
+ FOREIGN KEY (archivre_num)
+     REFERENCES NOTES(archivre_num)
 );
  
  
