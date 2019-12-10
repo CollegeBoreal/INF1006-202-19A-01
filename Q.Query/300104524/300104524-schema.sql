@@ -38,7 +38,7 @@ PRIMARY KEY(archivre_num)
 );
 
 CREATE TABLE VENTES(
-  vente INT NOT NULL, 
+  vente INT NOT NULL AUTO_INCREMENT, 
   date_vente DATE,
   article VARCHAR(120),
   service INT,
