@@ -19,11 +19,7 @@ CREATE TABLE IF NOT EXISTS hairasset.CLIENTS (
   client INT(11) NOT NULL AUTO_INCREMENT,
   initiale VARCHAR(30) NOT NULL,
   full_name VARCHAR(30) NOT NULL,
-  PRIMARY KEY (`client`))
-ENGINE = InnoDB
-AUTO_INCREMENT = 3
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_0900_ai_ci;
+  PRIMARY KEY (client));
 
 
 -- -----------------------------------------------------
