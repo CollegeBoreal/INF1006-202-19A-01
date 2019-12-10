@@ -32,14 +32,19 @@ JOIN INVOICES
 ON (CUSTOMERS.customer = INVOICES.customer);
 ```
 
+
+
 :four: IMPRIMER LE NOM ET LE PRENOM DES CLIENTSQUI ONT RETOURNES DES PRODUITS LE 28 AVRIL 2019
-
-
 
 ```sql
 SELECT CUSTOMERS.nom, CUSTOMERS.prenom FROM CUSTOMERS 
 JOIN INVOICES
 ON (CUSTOMERS.customer = INVOICES.customer)
 WHERE INVOICES.retour = '2019-04-28';
-```sql
+```
+
+:five: Plusieurs clients ne peut pas avoir le meme numero de telephone 
+![image](telephoneunique.png)
+
+
 
