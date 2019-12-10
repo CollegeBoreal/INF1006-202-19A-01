@@ -222,6 +222,8 @@ voir l'explication  [`INSERT AUTO_INCREMENT`](https://dev.mysql.com/doc/mysql-tu
 
 ## :x: DQL 
 
+##### :m: Join
+
 http://code.openark.org/blog/mysql/mysql-joins-on-vs-using-vs-theta-style
 
 ```
@@ -237,6 +239,19 @@ The difference is mostly syntactic sugar, but with a couple interesting notes.
 
 To put names, the first two are called "ANSI-style" while the third is called "Theta-style".
 ```
+
+##### :m: Stats
+
+```sql
+mysql> SELECT COUNT(*) FROM ETUDIANTS;
+```
+
+##### :m: Explain
+
+![image](images/EXPLAIN_ALL.png)
+
+![image](images/EXPLAIN_KEY.png)
+
 
 ## :o2: MySQL Admin Commands
 
