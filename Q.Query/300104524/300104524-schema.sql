@@ -114,29 +114,7 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
-CREATE TABLE VENTES(
-  vente INT NOT NULL AUTO_INCREMENT, 
-  date_vente DATE,
-  article VARCHAR(120),
-  service INT,
-  client INT,
-  PRIMARY KEY(vente, client),
-   FOREIGN KEY (client)
-     REFERENCES CLIENTS (client),
-    FOREIGN KEY (service)
-     REFERENCES SERVICES(service)
-);
 
-
-CREATE TABLE PAYMENTS(
-payment INT AUTO_INCREMENT,
-article VARCHAR(30) NOT NULL,
-quantity INT(10),
-vente INT,
-PRIMARY KEY(payment, vente),
- FOREIGN KEY(vente)
-     REFERENCES VENTES(vente)
-);
  
  
  
