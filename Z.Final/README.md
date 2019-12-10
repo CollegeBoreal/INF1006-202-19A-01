@@ -178,6 +178,16 @@ mysql> CREATE TABLE t1 (
 
 :pushpin: [unique](http://www.mysqltutorial.org/mysql-unique-constraint/)
 
+```sql
+mysql> CREATE TABLE `ETUDIANTS` (
+  `etudiant` INT NOT NULL AUTO_INCREMENT,
+  `prenom` VARCHAR(45) NOT NULL,
+  `nom` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`etudiant`),
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC)
+);
+```
 
 ## :b: DCL
 
