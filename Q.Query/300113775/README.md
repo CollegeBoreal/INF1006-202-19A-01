@@ -8,7 +8,7 @@
 :one:-Imprimer le nombre total des clients 
 
 ```sql
-SELECT count(customer) FROM CUSTOMERS;
+EXPLAIN SELECT count(customer) FROM CUSTOMERS;
 ```
 
 :two:- Imprimer le nom et le numero de telephone des clients ainsi que les dates ils ont retournés leur produit 
