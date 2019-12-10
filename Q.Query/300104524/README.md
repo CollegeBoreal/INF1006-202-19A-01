@@ -15,3 +15,10 @@
 ```sql
 SELECT COUNT(client) FROM CLIENTS;
 ```
+
+
+
+
+
+## Explain
+![image](explain.png)
