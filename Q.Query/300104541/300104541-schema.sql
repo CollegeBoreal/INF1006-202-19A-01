@@ -1,3 +1,23 @@
+-- Mon domaine
+
+CREATE DATABASE IF NOT EXISTS  Jeuxvideos; 
+
+-- Mon User
+
+CREATE USER IF NOT EXISTS  'romeo'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL ON Jeuxvideos.* TO 'romeo'@'localhost';
+
+-- selectionner la base de donnees 
+
+
+use Jeuxvideos;
+
+
+-- Mes tables
+
+
+
+
 -- -----------------------------------------------------
 -- Table Jeuxvideos.CONSOLES
 -- -----------------------------------------------------
@@ -31,7 +51,7 @@ CREATE TABLE IF NOT EXISTS Jeuxvideos.DIFFUSIONS (
 -- -----------------------------------------------------
 -- Table Jeuxvideos.JEUX
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Jeuxvideos`.`JEUX` (
+CREATE TABLE IF NOT EXISTS Jeuxvideos.JEUX (
   Jeux_Videos VARCHAR(250) NOT NULL,
   Categorie VARCHAR(250) NOT NULL,
   jeux INT(11) NOT NULL AUTO_INCREMENT,
