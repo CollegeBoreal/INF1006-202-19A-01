@@ -35,10 +35,10 @@ INSERT INTO  PRICES (price, Prices, instrument, colour) VALUES (4, 5600, 4, 4);
 INSERT INTO  PRICES (price, Prices, instrument, colour) VALUES (5, 5800, 5, 5);
 INSERT INTO  PRICES (price, Prices, instrument, colour) VALUES (6, 5900, 6, 6);
 
-INSERT INTO PAYMENTS (payment, transaction_date, price, customer) VALUES (1, '2019-04-08', 1, 1);
-INSERT INTO PAYMENTS (payment, transaction_date, price, customer) VALUES (1, '2019-05-07', 2, 2);
-INSERT INTO PAYMENTS (payment, transaction_date, price, customer) VALUES (1, '2019-04-10', 3, 3);
-INSERT INTO PAYMENTS (payment, transaction_date, price, customer) VALUES (1, '2019-04-11', 4, 4);
-INSERT INTO PAYMENTS (payment, transaction_date, price, customer) VALUES (1, '2019-04-15', 5, 5);
-INSERT INTO PAYMENTS (payment, transaction_date, price, customer) VALUES (1, '2019-04-18', 6, 6);
+INSERT INTO PAYMENTS ( transaction_date, price, customer) VALUES ( '2019-04-08', 1, 1);
+INSERT INTO PAYMENTS ( transaction_date, price, customer) VALUES ( '2019-05-07', 2, 2);
+INSERT INTO PAYMENTS ( transaction_date, price, customer) VALUES ( '2019-04-10', 3, 3);
+INSERT INTO PAYMENTS ( transaction_date, price, customer) VALUES ( '2019-04-11', 4, 4);
+INSERT INTO PAYMENTS ( transaction_date, price, customer) VALUES ( '2019-04-15', 5, 5);
+INSERT INTO PAYMENTS ( transaction_date, price, customer) VALUES ( '2019-04-18', 6, 6);
 
