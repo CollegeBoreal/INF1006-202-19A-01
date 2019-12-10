@@ -1,12 +1,12 @@
 -- MON de Domaine
 
 
-CREATE DATABASE Assurance;
+CREATE DATABASE IF NOT EXISTS Assurance;
 
 -- Mon  Utilisateur
 
 
- CREATE USER 'Assurance'@'localhost' IDENTIFIED BY 'Assurance_1';
+ CREATE USER IF NOT EXISTS 'Assurance'@'localhost' IDENTIFIED BY 'Assurance_1';
  
  GRANT ALL ON Assurance.* TO 'Assurrance'@'localhost';
  
