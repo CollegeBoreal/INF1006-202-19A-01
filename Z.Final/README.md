@@ -169,6 +169,13 @@ Create Table: CREATE TABLE `VILLES` (
 
 :pushpin: [Check](https://dev.mysql.com/doc/refman/8.0/en/create-table-check-constraints.html)
 
+```sql
+mysql> CREATE TABLE t1 (
+  c1 INT CHECK (c1 > 10),
+  CONSTRAINT c1_nonzero CHECK (c1 <> 0)
+);
+```
+
 :pushpin: [unique](http://www.mysqltutorial.org/mysql-unique-constraint/)
 
 
