@@ -1,3 +1,3 @@
 ## Music Shop :musical_keyboard:
 
-![image](musicshop.png)
+![image](musicshop.PNG)
