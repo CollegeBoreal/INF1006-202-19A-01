@@ -46,3 +46,10 @@ ON (COMMANDE.prix = PRIX.prix);
 
 ```
 
+
+
+### Explain plan Query
+
+
+![image](Explaindatabase.PNG)
+
