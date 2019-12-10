@@ -1,9 +1,11 @@
 # Capture de ma Base de donnees!
-## Car_Center
+# Car_Center
 
 ![image](database1.png)
 
-## :ab: Query Section
+# :ab: Query Section
+
+## Rapport
 
 * 1- Imprimer le model et la marque des voitures d'origines Americaines.
 * 2- Imprimer le model et le prix des voitures de couleurs noirs.
@@ -13,7 +15,7 @@
 
 ========================
 
-# Requetes
+## Requetes
 
 :one:
 ```sql
@@ -52,4 +54,10 @@ JOIN PRICES USING (price)
 JOIN CUSTOMERS USING (customer)
 WHERE PAYMENTS.DateOfTransaction = '2019-11-27';
 ```
+
+
+### EXPLAIN 
+![image](explain.png) 
+
+
 Author: <.@Toch90>
