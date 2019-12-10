@@ -254,12 +254,17 @@ Explain sert à montrer le chemin pris par la recherche de données.
 Le but étant de trouver la meilleure route pour accélérer le retour des données
 
 Activer un index indique une meilleur performance
+```
+
+:pushpin: Sans utiliser un index
 
 ```sql
 mysql> EXPLAIN SELECT * from ETUDIANTS;
 ```
 
 ![image](images/EXPLAIN_ALL.png)
+
+:pushpin: Utilise deux indexes
 
 ```sql
 mysql> EXPLAIN SELECT * from ETUDIANTS WHERE programme > 1 OR etudiant = 1;
