@@ -8,7 +8,7 @@ CREATE DATABASE IF NOT EXISTS Assurance;
 
  CREATE USER IF NOT EXISTS 'Assurance'@'localhost' IDENTIFIED BY 'Assurance_1';
  
- GRANT ALL ON Assurance.* TO 'Assurrance'@'localhost';
+ GRANT ALL ON Assurance.* TO 'Assurance'@'localhost';
  
  -- Selectionne la base de donnees
  
