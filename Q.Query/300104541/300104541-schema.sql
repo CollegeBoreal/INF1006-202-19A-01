@@ -1,100 +1,93 @@
--- Mon domaine
-
-CREATE DATABASE IF NOT EXISTS  Jeuxvideos; 
-
--- Mon User
-
-CREATE USER IF NOT EXISTS  'romeo'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL ON Jeuxvideos.* TO 'romeo'@'localhost';
-
--- selectionner la base de donnees 
+-- -----------------------------------------------------
+-- Table Jeuxvideos.CONSOLES
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS Jeuxvideos.CONSOLES (
+  Consoles VARCHAR(250) NOT NULL,
+  console INT(11) NOT NULL,
+  PRIMARY KEY (console))
+;
 
 
-use Jeuxvideos;
+-- -----------------------------------------------------
+-- Table Jeuxvideos.CUSTOMERS
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS Jeuxvideos.CUSTOMERS (
+  customer INT(11) NOT NULL AUTO_INCREMENT,
+  FullName VARCHAR(20) NULL DEFAULT NULL,
+  PRIMARY KEY (customer))
+;
 
 
--- Mes tables
+-- -----------------------------------------------------
+-- Table Jeuxvideos.DIFFUSIONS
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS Jeuxvideos.DIFFUSIONS (
+  Diffusions VARCHAR(250) NOT NULL,
+  diffusion INT(11) NOT NULL,
+  PRIMARY KEY (diffusion))
+;
 
 
-CREATE TABLE CONSOLES (
-  
-Consoles VARCHAR (250) NOT NULL, 
-console INT, 
-PRIMARY KEY(console)   
-);
+-- -----------------------------------------------------
+-- Table Jeuxvideos.JEUX
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Jeuxvideos`.`JEUX` (
+  Jeux_Videos VARCHAR(250) NOT NULL,
+  Categorie VARCHAR(250) NOT NULL,
+  jeux INT(11) NOT NULL AUTO_INCREMENT,
+  console INT(11) NULL DEFAULT NULL,
+  diffusion INT(11) NULL DEFAULT NULL,
+  PRIMARY KEY (jeux),
+  INDEX console (console),
+  INDEX diffusion (diffusion),
+  CONSTRAINT JEUX_ibfk_1
+    FOREIGN KEY (console)
+    REFERENCES Jeuxvideos.CONSOLES (console),
+  CONSTRAINT JEUX_ibfk_2
+    FOREIGN KEY (diffusion)
+    REFERENCES Jeuxvideos.DIFFUSIONS (diffusion))
+;
 
 
+-- -----------------------------------------------------
+-- Table Jeuxvideos.PRICES
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS Jeuxvideos.PRICES (
+  price INT(11) NOT NULL AUTO_INCREMENT,
+  console INT(11) NULL DEFAULT NULL,
+  Prices INT(11) NULL DEFAULT NULL,
+  PRIMARY KEY (price),
+  INDEX console (console),
+  CONSTRAINT PRICES_ibfk_1
+    FOREIGN KEY (console)
+    REFERENCES Jeuxvideos.CONSOLES (console))
+;
 
-CREATE TABLE VENTE_VIRTUELLES (
-Ventes VARCHAR (250) NOT NULL,
-vente_virtuelle INT,
-PRIMARY KEY(vente_virtuelle) 
-);
+
+-- -----------------------------------------------------
+-- Table Jeuxvideos.SHIPPINGS
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS Jeuxvideos.SHIPPINGS (
+  price INT(11) NOT NULL,
+  customer INT(11) NOT NULL,
+  DateDeLivraison DATE NULL DEFAULT NULL,
+  PRIMARY KEY (price, customer),
+  INDEX customer (customer),
+  CONSTRAINT SHIPPINGS_ibfk_1
+    FOREIGN KEY (price)
+    REFERENCES Jeuxvideos.PRICES (price),
+  CONSTRAINT SHIPPINGS_ibfk_2
+    FOREIGN KEY (customer)
+    REFERENCES Jeuxvideos.CUSTOMERS (customer))
+;
 
 
+-- -----------------------------------------------------
+-- Table `Jeuxvideos.VENTE_PHYSIQUES
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS Jeuxvideos.VENTE_PHYSIQUES (
+  Ventes VARCHAR(250) NOT NULL,
+  vente_physique INT(11) NOT NULL,
+  PRIMARY KEY (vente_physique))
+;
 
-CREATE TABLE VENTE_PHYSIQUES (
-Ventes VARCHAR (250) NOT NULL,
-vente_physique INT,
-PRIMARY KEY(vente_physique) 
-);
-
-CREATE TABLE PRICES (
-price INT AUTO_INCREMENT,
-console INT,
- Prices INT,
-  PRIMARY KEY(price),
-    FOREIGN KEY(console)
-      REFERENCES CONSOLES(console)
-  );
-
-CREATE TABLE CUSTOMERS (
- customer INT AUTO_INCREMENT,
-  FullName VARCHAR(20),
-  PRIMARY KEY(customer)
-);
-
-CREATE TABLE SHIPPINGS (
-price INT,
-customer INT,
- DateDeLivraison DATE,
-  PRIMARY KEY(price, customer),
-    FOREIGN KEY(price)
-      REFERENCES PRICES(price),
-    FOREIGN KEY(customer)
-      REFERENCES CUSTOMERS(customer)
-  
-);
-
-CREATE TABLE DIFFUSIONS (
-Diffusions VARCHAR (250) NOT NULL,
-diffusion INT,
-PRIMARY KEY(diffusion) 
-);
-
-CREATE TABLE JEUX (
-  
-Jeux_Videos VARCHAR (250) NOT NULL,
-Categorie VARCHAR (250) NOT NULL,
-jeux INT AUTO_INCREMENT,
- console INT,
- diffusion INT,
- PRIMARY KEY(jeux),
-  FOREIGN KEY(console)
-     REFERENCES CONSOLES(console),
-  FOREIGN KEY(diffusion)
-     REFERENCES DIFFUSIONS(diffusion)
-  
-);
-
-CREATE TABLE SUPPORTS (
-support INT AUTO_INCREMENT,
-vente_virtuelle INT,
-Supports VARCHAR(250),
-vente_physique INT,
-PRIMARY KEY(support),
-  FOREIGN KEY(vente_physique)
-     REFERENCES VENTE_PHYSIQUES(vente_physique),
-  FOREIGN KEY(vente_virtuelle)
-     REFERENCES VENTE_VIRTUELLES(vente_virtuelle)
-);
