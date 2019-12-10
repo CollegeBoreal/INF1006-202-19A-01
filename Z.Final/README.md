@@ -264,7 +264,7 @@ mysql> EXPLAIN SELECT * from ETUDIANTS;
 
 ![image](images/EXPLAIN_ALL.png)
 
-:pushpin: Utilise deux indexes
+:pushpin: Utilise deux indexes (i.e. possible keys)
 
 ```sql
 mysql> EXPLAIN SELECT * from ETUDIANTS WHERE programme > 1 OR etudiant = 1;
