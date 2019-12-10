@@ -153,15 +153,15 @@ mysql> DROP USER <name>;
 :pushpin: [Foreign Key](https://dev.mysql.com/doc/refman/8.0/en/create-table-foreign-keys.html#foreign-key-examples)
 
 ```sql
-mysql> SHOW CREATE TABLE child\G
+mysql> SHOW CREATE TABLE VILLES
 *************************** 1. row ***************************
-       Table: child
-Create Table: CREATE TABLE `child` (
-  `id` int DEFAULT NULL,
-  `parent_id` int DEFAULT NULL,
-  KEY `par_ind` (`parent_id`),
-  CONSTRAINT `child_ibfk_1` FOREIGN KEY (`parent_id`) 
-  REFERENCES `parent` (`id`) ON DELETE CASCADE
+       Table: VILLES
+Create Table: CREATE TABLE `VILLES` (
+  `ville` int DEFAULT NULL,
+  `pays` int DEFAULT NULL,
+  KEY `pay_ind` (`pays`),
+  CONSTRAINT `ville_ibfk_1` FOREIGN KEY (`pays`) 
+  REFERENCES `PAYS` (`pays`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
 ```
 
