@@ -115,18 +115,23 @@ PRIMARY KEY(vente_virtuelle)
 );
 
                                       
--- -------------------------------------
--- Table Jeuxvideos.SUPPORTS
--- -------------------------------------
-CREATE TABLE Jeuxvideos.SUPPORTS (	
-support INT AUTO_INCREMENT,	
-vente_virtuelle INT,	
-Supports VARCHAR(250),	
-vente_physique INT,	
-PRIMARY KEY(support),	
-  FOREIGN KEY(vente_physique)	
-     REFERENCES Jeuxvideos.VENTE_PHYSIQUES(vente_physique),	
-  FOREIGN KEY(vente_virtuelle)	
-     REFERENCES Jeuxvideos.VENTE_VIRTUELLES(vente_virtuelle)	
+
+- -----------------------------------------------------
+-- Table `Jeuxvideos`.`SUPPORTS`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS Jeuxvideos.SUPPORTS (
+  support INT(11) NOT NULL AUTO_INCREMENT,
+  vente_virtuelle INT(11) NULL DEFAULT NULL,
+  Supports VARCHAR(250) NULL DEFAULT NULL,
+  vente_physique INT(11) NULL DEFAULT NULL,
+  PRIMARY KEY (support),
+  INDEX vente_physique (vente_physique),
+  INDEX vente_virtuelle (vente_virtuelle),
+  CONSTRAINT SUPPORTS_ibfk_1
+    FOREIGN KEY (vente_physique)
+    REFERENCES Jeuxvideos.VENTE_PHYSIQUES (vente_physique),
+  CONSTRAINT SUPPORTS_ibfk_2
+    FOREIGN KEY (vente_virtuelle)
+    REFERENCES Jeuxvideos.VENTE_VIRTUELLES (vente_virtuelle)
 );                                    
                                       
