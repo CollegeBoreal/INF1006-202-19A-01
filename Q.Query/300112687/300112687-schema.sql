@@ -37,7 +37,7 @@ CREATE DATABASE IF NOT EXISTS Assurance;
  CREATE TABLE PAIEMENT(
   paiement INT AUTO_INCREMENT,
   nom  VARCHAR(40) NOT NULL, 
-  date INT,
+  date DATE,
   client INT,
   PRIMARY KEY (paiement,client),
    FOREIGN KEY (client)
