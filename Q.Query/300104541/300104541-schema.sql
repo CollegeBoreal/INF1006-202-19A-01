@@ -15,22 +15,6 @@ use Jeuxvideos;
 
 -- Mes tables
 
-
-
-
--- -----------------------------------------------------
--- Table Jeuxvideos.CONSOLES
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS Jeuxvideos.CONSOLES (
-  Consoles VARCHAR(250) NOT NULL,
-  console INT(11) NOT NULL,
-  PRIMARY KEY (console))
-;
-
-
--- -----------------------------------------------------
--- Table Jeuxvideos.CUSTOMERS
--- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS Jeuxvideos.CUSTOMERS (
   customer INT(11) NOT NULL AUTO_INCREMENT,
   FullName VARCHAR(20) NULL DEFAULT NULL,
@@ -92,13 +76,13 @@ CREATE TABLE IF NOT EXISTS Jeuxvideos.SHIPPINGS (
   customer INT(11) NOT NULL,
   DateDeLivraison DATE NULL DEFAULT NULL,
   PRIMARY KEY (price, customer),
-  INDEX customer (customer),
+  INDEX `customer (customer) ,
   CONSTRAINT SHIPPINGS_ibfk_1
     FOREIGN KEY (price)
     REFERENCES Jeuxvideos.PRICES (price),
   CONSTRAINT SHIPPINGS_ibfk_2
     FOREIGN KEY (customer)
-    REFERENCES Jeuxvideos.CUSTOMERS (customer))
+    REFERENCES `Jeuxvideos.CUSTOMERS (customer))
 ;
 
 
@@ -108,8 +92,6 @@ CREATE TABLE IF NOT EXISTS Jeuxvideos.SHIPPINGS (
 CREATE TABLE IF NOT EXISTS Jeuxvideos.VENTE_PHYSIQUES (
   Ventes VARCHAR(250) NOT NULL,
   vente_physique INT(11) NOT NULL,
-  
-  PRIMARY KEY (vente_physique)
-  )
+  PRIMARY KEY (vente_physique),
+  UNIQUE INDEX vente_physique_UNIQUE (vente_physique))
 ;
-
