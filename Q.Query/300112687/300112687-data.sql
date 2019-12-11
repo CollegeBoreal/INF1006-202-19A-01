@@ -11,7 +11,7 @@ INSERT INTO CLIENTS ( name,num ) VALUES ('Abas',  0003);
 
 
 -- Données de la table ABONNEMEMtS
-INSERT INTO ABONNEMENTS ( name, ) VALUES ('Abas');
+INSERT INTO ABONNEMENTS ( name) VALUES ('Abas');
 INSERT INTO ABONNEMENTS ( name ) VALUES ('orden');
 INSERT INTO ABONNEMENTS ( name ) VALUES ('joseph');
 
