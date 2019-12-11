@@ -3,6 +3,8 @@
 
 
 
+############################################
+
 
 -1 ---Pour obtenir seulement la liste des clients qui habitent à toronto, il faut effectuer la requête 
 -2 ---imprimer la quantité acheter pour chaque client et la date de livraison
