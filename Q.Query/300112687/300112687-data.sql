@@ -33,6 +33,7 @@ INSERT INTO PRIX  ( client,price) VALUES (3,500);
 INSERT INTO VENTES ( Abonnement ) VALUES ('iphone');
 INSERT INTO VENTES ( Abonnement ) VALUES ('samsung');
 INSERT INTO VENTES ( Abonnement ) VALUES ('nokia');
+
 -- Données de la table adresses
 INSERT INTO ADRESSES ( rue,ville,pays,code_postal,client ) VALUES ('boucherville','qubec','mapoto',1);
 INSERT INTO ADRESSES ( rue,ville,pays,code_postal,client ) VALUES ('pagebrook','toronto','ontario',2);
