@@ -2,12 +2,14 @@
 -- Schema Hijabfashion
 -- -----------------------------------------------------
 ```sql
+
 CREATE SCHEMA IF NOT EXISTS `Hijabfashion;
 ``
 -- -----------------------------------------------------
 -- Mon utilisateur
 -- -----------------------------------------------------
 ```sql
+
 CREATE USER IF NOT EXISTS 'halima'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL ON Hijabfashion.* TO 'halima'@'localhost';
 ``		
@@ -20,6 +22,7 @@ USE `Hijabfashion` ;
 -- Table Hijabfashion.ACCESSOIRES
 -- -----------------------------------------------------
 ```sql
+
 CREATE TABLE IF NOT EXISTS Hijabfashion.ACCESSOIRES(
   accessoire INT(11) NOT NULL AUTO_INCREMENT,
   nom VARCHAR(30) NOT NULL,
@@ -32,6 +35,7 @@ CREATE TABLE IF NOT EXISTS Hijabfashion.ACCESSOIRES(
 -- Table Hijabfashion.ADRESSES
 -- -----------------------------------------------------
 ```sql
+
 CREATE TABLE IF NOT EXISTS Hijabfashion.ADRESSES (
   adresse INT(11) NOT NULL AUTO_INCREMENT,
   rue VARCHAR(30) NOT NULL,
@@ -46,6 +50,7 @@ CREATE TABLE IF NOT EXISTS Hijabfashion.ADRESSES (
 -- Table Hijabfashion.VENTES
 -- -----------------------------------------------------
 ```sql
+
 CREATE TABLE IF NOT EXISTS Hijabfashion.VENTES (
   vente INT(11) NOT NULL AUTO_INCREMENT,
   commande DATE NULL DEFAULT NULL,
@@ -69,6 +74,7 @@ CREATE TABLE IF NOT EXISTS Hijabfashion.PRIX (
 -- Table Hijabfashion.CLIENTS
 -- -----------------------------------------------------
 ```sql
+
 CREATE TABLE IF NOT EXISTS Hijabfashion.CLIENTS (
   adresse INT(11) NOT NULL,
   vente INT(11) NOT NULL,
@@ -92,6 +98,7 @@ CREATE TABLE IF NOT EXISTS Hijabfashion.CLIENTS (
 -- Table Hijabfashion.COULEURS
 -- -----------------------------------------------------
 ```sql
+
 CREATE TABLE IF NOT EXISTS Hijabfashion.COULEURS (
   couleur INT(11) NOT NULL AUTO_INCREMENT,
   nom VARCHAR(30) NOT NULL,
@@ -102,6 +109,7 @@ CREATE TABLE IF NOT EXISTS Hijabfashion.COULEURS (
 -- Table Hijabfashion.PAYS_DE_FABRICATION
 -- -----------------------------------------------------
 ```sql
+               
 CREATE TABLE IF NOT EXISTS Hijabfashion.PAYS_DE_FABRICATION (
   pays_de_fabrication INT(11) NOT NULL AUTO_INCREMENT,
   nom VARCHAR(30) NOT NULL,
@@ -114,6 +122,7 @@ CREATE TABLE IF NOT EXISTS Hijabfashion.PAYS_DE_FABRICATION (
 -- Table Hijabfashion.TAILLES
 -- -----------------------------------------------------
 ```sql
+               
 CREATE TABLE IF NOT EXISTS Hijabfashion.TAILLES (
   taille INT(11) NOT NULL AUTO_INCREMENT,
   largeur VARCHAR(30) NOT NULL,
@@ -126,6 +135,7 @@ CREATE TABLE IF NOT EXISTS Hijabfashion.TAILLES (
 -- Table Hijabfashion.TISSUS
 -- -----------------------------------------------------
 ```sql
+               
 CREATE TABLE IF NOT EXISTS Hijabfashion.TISSUS (
   taille INT(11) NOT NULL,
   couleur INT(11) NOT NULL,
