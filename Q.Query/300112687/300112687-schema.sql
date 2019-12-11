@@ -29,21 +29,15 @@ CREATE DATABASE IF NOT EXISTS Assurance;
  CREATE TABLE ABONNEMENT (
  nom  VARCHAR(30) NOT NULL,
  abonnement VARCHAR(30) NOT NULL,
- PRIMARY KEY (abonnement)
+ client INT,
+ PRIMARY KEY (abonnement),
+  FOREIGN KEY(client)
+    REFERENCES CLIENTS(client)
 
  );
  
  
- CREATE TABLE PAIEMENT(
-  paiement INT AUTO_INCREMENT,
-  nom  VARCHAR(40) NOT NULL, 
-  date DATE,
-  client INT,
-  PRIMARY KEY (paiement,client),
-   FOREIGN KEY (client)
-     REFERENCES CLIENTS(client)
-
- );
+ 
  
  CREATE TABLE SERVICES(
   service INT AUTO_INCREMENT,
@@ -69,8 +63,26 @@ vente INT AUTO_INCREMENT,
 Abonnement VARCHAR(30) NOT NULL,
 PRIMARY KEY (vente)
 
+
 );
 
+
+
+CREATE TABLE PAIEMENT(
+  paiement INT AUTO_INCREMENT,
+  nom  VARCHAR(40) NOT NULL, 
+  date DATE,
+  vente INT,
+  client INT,
+  PRIMARY KEY (paiement,client),
+   FOREIGN KEY (client)
+     REFERENCES CLIENTS(client),
+   FOREIGN KEY(vente)
+     REFERENCES VENTES(vente)
+
+ );
+ 
+ 
 CREATE TABLE ADRESSES(
  adresse INT AUTO_INCREMENT,
 rue VARCHAR(30) NOT NULL,
