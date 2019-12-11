@@ -110,6 +110,6 @@ CREATE TABLE IF NOT EXISTS Jeuxvideos.VENTE_PHYSIQUES (
   vente_physique INT(11) NOT NULL,
   
   PRIMARY KEY (vente_physique)
-  
+  )
 ;
 
