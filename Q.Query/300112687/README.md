@@ -8,6 +8,7 @@
 ## Rapport
 1- IMPRIMER LE NOMBRE TOTAL DE CLIENTS.
 
+![image](IMPRIMER.png)
 
 
 ## REQUETES
