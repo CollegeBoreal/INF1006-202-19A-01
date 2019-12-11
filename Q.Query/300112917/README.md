@@ -7,8 +7,11 @@
 ### :two: Les Requêtes
 
 Imprimer toutes les tables produits.
+
 Imprimer toutes les tables clients.
+
 imprimer toutes les tables payements.
+
 Imprimer tout produit dont la couleur id = 1
 
 ### :three: Les Requêtes Sans Jointures
