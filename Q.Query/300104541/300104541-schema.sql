@@ -102,3 +102,9 @@ CREATE TABLE IF NOT EXISTS Jeuxvideos.VENTE_PHYSIQUES (
   PRIMARY KEY (vente_physique),
   UNIQUE INDEX vente_physique_UNIQUE (vente_physique))
 ;
+
+CREATE TABLE Jeuxvideos.VENTE_VIRTUELLES (	
+Ventes VARCHAR (250) NOT NULL,	
+vente_virtuelle INT,	
+PRIMARY KEY(vente_virtuelle) 	
+);
