@@ -37,7 +37,12 @@ LES QUERY
  ![image](https://github.com/CollegeBoreal/INF1006-202-19A-01/blob/master/Q.Query/300111766/images/inner%20join%202.png?raw=true)
  
   -- IMPRIMER TOUS LES NOMS DES CLIENTS ET TRIES PAR LEUR AGES 
-  ![image](https://github.com/CollegeBoreal/INF1006-202-19A-01/blob/master/Q.Query/300111766/images/ORDER%20BY.png?raw=true)
+  
+  SELECT name, age
+  FROM CUSTOMERS
+  ORDER BY  age ASC;
+
+ ![image](https://github.com/CollegeBoreal/INF1006-202-19A-01/blob/master/Q.Query/300111766/images/ORDER%20BY.png?raw=true)
 
 
 
