@@ -83,13 +83,13 @@ CREATE TABLE IF NOT EXISTS Jeuxvideos.SHIPPINGS (
   customer INT(11) NOT NULL,
   DateDeLivraison DATE NULL DEFAULT NULL,
   PRIMARY KEY (price, customer),
-  INDEX `customer (customer) ,
+  INDEX customer (customer) ,
   CONSTRAINT SHIPPINGS_ibfk_1
     FOREIGN KEY (price)
     REFERENCES Jeuxvideos.PRICES (price),
   CONSTRAINT SHIPPINGS_ibfk_2
     FOREIGN KEY (customer)
-    REFERENCES `Jeuxvideos.CUSTOMERS (customer))
+    REFERENCES Jeuxvideos.CUSTOMERS (customer))
 ;
 
 
