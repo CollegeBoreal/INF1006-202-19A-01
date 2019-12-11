@@ -56,7 +56,7 @@ CREATE DATABASE IF NOT EXISTS Assurance;
  
  CREATE TABLE PRIX (
  prix  INT AUTO_INCREMENT,
- nom VARCHAR(30) NOT NULL,
+ price INT,
  client INT,
  PRIMARY KEY (prix,client),
   FOREIGN KEY (client)
@@ -76,8 +76,11 @@ CREATE TABLE ADRESSES(
 rue VARCHAR(30) NOT NULL,
 ville VARCHAR(30) NOT NULL,
 pays VARCHAR(30) NOT NULL,
+ client INT,
 code_postal VARCHAR(30) NOT NULL,
-PRIMARY KEY (adresse)
+PRIMARY KEY (adresse,client),
+ FOREIGN KEY (client)
+     REFERENCES CLIENTS(client)
 
  
 );
