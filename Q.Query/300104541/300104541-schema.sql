@@ -92,7 +92,22 @@ CREATE TABLE IF NOT EXISTS Jeuxvideos.SHIPPINGS (
     REFERENCES Jeuxvideos.CUSTOMERS (customer))
 ;
 
-
+-- -------------------------------------
+-- Table Jeuxvideos.SUPPORTS
+-- -------------------------------------
+CREATE TABLE Jeuxvideos.SUPPORTS (	
+support INT AUTO_INCREMENT,	
+vente_virtuelle INT,	
+Supports VARCHAR(250),	
+vente_physique INT,	
+PRIMARY KEY(support),	
+  FOREIGN KEY(vente_physique)	
+     REFERENCES Jeuxvideos.VENTE_PHYSIQUES(vente_physique),	
+  FOREIGN KEY(vente_virtuelle)	
+     REFERENCES Jeuxvideos.VENTE_VIRTUELLES(vente_virtuelle)	
+);                                    
+                                     
+                                     
 -- -----------------------------------------------------
 -- Table Jeuxvideos.VENTE_PHYSIQUES
 -- -----------------------------------------------------
@@ -103,8 +118,15 @@ CREATE TABLE IF NOT EXISTS Jeuxvideos.VENTE_PHYSIQUES (
   UNIQUE INDEX vente_physique_UNIQUE (vente_physique))
 ;
 
+-- -------------------------------------
+-- Table Jeuxvideos.VENTE_VIRTUELLES
+-- -------------------------------------
 CREATE TABLE Jeuxvideos.VENTE_VIRTUELLES (	
 Ventes VARCHAR (250) NOT NULL,	
 vente_virtuelle INT,	
 PRIMARY KEY(vente_virtuelle) 	
 );
+
+                                      
+                                      
+                                      
