@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS  Assurance . ABONNEMENT  (
    abonnement  VARCHAR(30) NOT NULL,
    client  INT(11) NULL DEFAULT NULL,
   PRIMARY KEY ( abonnement ),
-  INDEX  client  ( client ) VISIBLE,
+  INDEX  client  ( client ) ,
   CONSTRAINT  ABONNEMENT_ibfk_1 
     FOREIGN KEY ( client )
     REFERENCES Assurance . CLIENTS  ( client ))
@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS  Assurance . ADRESSES  (
    client  INT(11) NOT NULL,
    code_postal  VARCHAR(30) NOT NULL,
   PRIMARY KEY ( adresse ,  client ),
-  INDEX  client  ( client ) VISIBLE,
+  INDEX  client  ( client ) ,
   CONSTRAINT  ADRESSES_ibfk_1 
     FOREIGN KEY ( client )
     REFERENCES  Assurance . CLIENTS ( client ))
@@ -81,8 +81,8 @@ CREATE TABLE IF NOT EXISTS  Assurance . PAIEMENT  (
    vente  INT(11) NULL DEFAULT NULL,
    client  INT(11) NOT NULL,
   PRIMARY KEY ( paiement ,  client ),
-  INDEX  client  ( client ) VISIBLE,
-  INDEX  vente  ( vente  ) VISIBLE,
+  INDEX  client  ( client ) ,
+  INDEX  vente  ( vente  ) ,
   CONSTRAINT  PAIEMENT_ibfk_1
     FOREIGN KEY ( client )
     REFERENCES  Assurance . CLIENTS  ( client ),
@@ -99,7 +99,7 @@ CREATE TABLE IF NOT EXISTS  Assurance . PRIX  (
    price  INT(11) NULL DEFAULT NULL,
    client  INT(11) NOT NULL,
   PRIMARY KEY ( prix , client ),
-  INDEX  client  ( client ) VISIBLE,
+  INDEX  client  ( client ),
   CONSTRAINT  PRIX_ibfk_1 
     FOREIGN KEY ( client )
     REFERENCES  Assurance . CLIENTS  ( client ))
