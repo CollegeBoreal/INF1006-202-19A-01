@@ -15,7 +15,7 @@ LES QUERY
     
     -- IMPRIMER LE PRIX DE PORTABLE LE PLUS CHER.
     
-    ![](https://github.com/CollegeBoreal/INF1006-202-19A-01/blob/master/Q.Query/300111766/images/LE%20PRIX%20DE%20PORTABLE%20LE%20PLUS%20CHER.png?raw=true)
+    ![image](https://github.com/CollegeBoreal/INF1006-202-19A-01/blob/master/Q.Query/300111766/images/LE%20PRIX%20DE%20PORTABLE%20LE%20PLUS%20CHER.png?raw=true)
     
     
     ![]()
