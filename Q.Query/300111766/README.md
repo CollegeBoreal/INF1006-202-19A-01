@@ -21,6 +21,14 @@ LES QUERY
     SELECT name FROM CUSTOMERS WHERE age>25;
     
   ![](https://github.com/CollegeBoreal/INF1006-202-19A-01/blob/master/Q.Query/300111766/images/TOUS%20LES%20CLIENS%20DONT%20LEURS%20AGE%20DEPASSENT%2025ANS.png?raw=true)
+  
+  -- IMPRIMER LE NOM DE MODEL ET LE PRIX DU PORTABLE;
+  EXPLAIN SELECT name
+  FROM MODELS
+  INNER JOIN PRICES
+  ON MODELS.name = PRICES.price;
+  
+ ![](https://github.com/CollegeBoreal/INF1006-202-19A-01/blob/master/Q.Query/300111766/images/inner%20join%202.png?raw=true)
    
 
 
