@@ -116,8 +116,8 @@ PRIMARY KEY(vente_virtuelle)
 
                                       
 
-- -----------------------------------------------------
--- Table `Jeuxvideos`.`SUPPORTS`
+-- -----------------------------------------------------
+-- Table Jeuxvideos.SUPPORTS
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS Jeuxvideos.SUPPORTS (
   support INT(11) NOT NULL AUTO_INCREMENT,
