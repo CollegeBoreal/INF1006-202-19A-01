@@ -22,7 +22,7 @@ INSERT INTO PAIEMENT  ( nom,date,client ) VALUES ('freddy','2019-04-23',3);
 
 -- Données  de la table SERVICES
 INSERT INTO SERVICES ( incendie,voyage,voiture ) VALUES ('maison','bagage','accident');
-INSERT INTO SERCICES ( incendie,voyage,voiture ) VALUES ('bureau','valise','vol');
+INSERT INTO SERVICES ( incendie,voyage,voiture ) VALUES ('bureau','valise','vol');
 
 -- Données dela table PRIX
 INSERT INTO PRIX  ( client,price ) VALUES (1,400);
