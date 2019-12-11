@@ -16,6 +16,10 @@
 :three: imprimer les accessoires des tissus fabriqués au maroc 
 
 
+:four: quel est la moyenne des prix des tissus fabriqué au yemen
+
+
+
 ## Requetes SQL:
 
 # R1
@@ -49,4 +53,8 @@ join TISSUS using (accessoire)
 join PAYS_DE_FABRICATION using (pays_de_fabrication)
 where PAYS_DE_FABRICATION.nom = 'maroc'
 
+```
+
+#R4
+```sql
 ```
