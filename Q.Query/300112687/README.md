@@ -8,7 +8,7 @@
 ## Rapport
 1- IMPRIMER LE NOMBRE TOTAL DE CLIENTS.
 
-![image](IMPRIMER.png)
+![image]()
 
 
 ## REQUETES
@@ -16,6 +16,8 @@
 ```sql
 SELECT COUNT(client) FROM CLIENTS;
 ```
+
+
 
 ## Rapport 
 2-  IMPRIMER LE NOM DE CLIENT QUI ONT PAYE DES PRODUITS LE 11 FEVIER 2019
