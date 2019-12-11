@@ -2,17 +2,15 @@
 -- Schema Hijabfashion
 -- -----------------------------------------------------
 ```sql
-
 CREATE SCHEMA IF NOT EXISTS `Hijabfashion;
-``
+```
 -- -----------------------------------------------------
 -- Mon utilisateur
 -- -----------------------------------------------------
 ```sql
-
 CREATE USER IF NOT EXISTS 'halima'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL ON Hijabfashion.* TO 'halima'@'localhost';
-``		
+```		
 USE `Hijabfashion` ;
 
 
