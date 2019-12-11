@@ -103,7 +103,7 @@ CREATE TABLE IF NOT EXISTS Jeuxvideos.SHIPPINGS (
 
 
 -- -----------------------------------------------------
--- Table `Jeuxvideos.VENTE_PHYSIQUES
+-- Table Jeuxvideos.VENTE_PHYSIQUES
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS Jeuxvideos.VENTE_PHYSIQUES (
   Ventes VARCHAR(250) NOT NULL,
