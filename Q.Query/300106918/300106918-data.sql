@@ -15,6 +15,8 @@ INSERT INTO SOLUTIONS ( solution, Nom_solution, date  ) VALUES (56, 'routeur', '
 INSERT INTO PRODUCTS ( IDproduit, Nom_produit, date, total_en_stock ) VALUES (10, 'router', '2020-11-09', 233);
 INSERT INTO PRODUCTS ( IDproduit, Nom_produit, Date, total_en_stock ) VALUES (20, 'switches','2014-10-04', 130);
 INSERT INTO PRODUCTS ( IDproduit, Nom_produit, Date, total_en_stock) VALUES (30, 'camera', '2014-10-01', 144);
+INSERT INTO PRODUCTS ( IDproduit, Nom_produit, Date, total_en_stock) VALUES (40, 'camera', '2014-10-01', 150);
+INSERT INTO PRODUCTS ( IDproduit, Nom_produit, Date, total_en_stock) VALUES (50, 'camera', '2014-10-01', 166);
 
 -- Données de la table CLIENTS
 
@@ -29,6 +31,8 @@ INSERT INTO CLIENTS ( IDclient, Nom_client, ville) VALUES (80, 'abbas', 'toronto
 INSERT INTO COMMANDES (IDfacture, IDproduit, IDclient, Quantit, Date_livraison) VALUES (2800, 10, 40, 200, '2020-09-13');
 INSERT INTO COMMANDES (IDfacture, IDproduit, IDclient, Quantit, Date_livraison) VALUES (2900, 20, 50, 100, '2020-09-13');
 INSERT INTO COMMANDES (IDfacture, IDproduit, IDclient, Quantit, Date_livraison) VALUES (3000, 30, 60, 100, '2020-09-13');
+INSERT INTO COMMANDES (IDfacture, IDproduit, IDclient, Quantit, Date_livraison) VALUES (3500, 40, 70, 200, '2019-01-01');
+INSERT INTO COMMANDES (IDfacture, IDproduit, IDclient, Quantit, Date_livraison) VALUES (4000, 50, 80, 100, '2020-12-09');
 
 -- Données de la table insttalation
 
