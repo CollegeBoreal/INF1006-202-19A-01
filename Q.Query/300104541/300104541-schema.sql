@@ -15,6 +15,13 @@ use Jeuxvideos;
 
 -- Mes tables
 
+CREATE TABLE IF NOT EXISTS Jeuxvideos.CONSOLES (
+  Consoles VARCHAR(250) NOT NULL,
+  console INT(11) NOT NULL,
+  PRIMARY KEY (console))
+;
+
+
 CREATE TABLE IF NOT EXISTS Jeuxvideos.CUSTOMERS (
   customer INT(11) NOT NULL AUTO_INCREMENT,
   FullName VARCHAR(20) NULL DEFAULT NULL,
