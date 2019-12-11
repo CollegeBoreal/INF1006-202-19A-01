@@ -17,5 +17,6 @@ SELECT * FROM PAYEMENTS
 ### :four: Les requettes avec Jointures
 
 SELECT * FROM PRODUITS JOIN COULEURS ON (COULEURS.couleur = PRODUITS.couleur)
+
 SELECT * FROM PRODUITS JOIN COULEURS USING (couleur)
 
