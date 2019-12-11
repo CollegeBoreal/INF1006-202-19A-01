@@ -40,3 +40,5 @@ JOIN CLIENTS USING (client)
 JOIN ABONNEMENT USING (client)
 WHERE ABONNEMENT.abonnement = 'orden';
 ```
+
+![image]()
