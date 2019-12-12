@@ -19,15 +19,7 @@ CREATE DATABASE IF NOT EXISTS Assurance;
 
 
 
-CREATE TABLE IF NOT EXISTS Assurance.ABONNEMENT (
-  nom VARCHAR(30) NOT NULL,
-  abonnement VARCHAR(30) NOT NULL,
-  client INT,
- PRIMARY KEY (abonnement),
-  FOREIGN KEY(client)
-    REFERENCES CLIENTS(client)
-)
-;
+
 -- -----------------------------------------------------
 -- Table `Assurance`.`CLIENTS`
 -- -----------------------------------------------------
@@ -36,6 +28,15 @@ CREATE TABLE IF NOT EXISTS Assurance. CLIENTS (
   name VARCHAR(30) NOT NULL,
   num INT(11) NULL DEFAULT NULL,
   PRIMARY KEY (client))
+; 
+CREATE TABLE IF NOT EXISTS Assurance.ABONNEMENT (
+  nom VARCHAR(30) NOT NULL,
+  abonnement VARCHAR(30) NOT NULL,
+  client INT,
+ PRIMARY KEY (abonnement),
+  FOREIGN KEY(client)
+    REFERENCES CLIENTS(client)
+)
 ;
 -- -----------------------------------------------------
 -- Table `Assurance`.`ADRESSES`
