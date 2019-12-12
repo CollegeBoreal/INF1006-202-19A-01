@@ -25,3 +25,12 @@ Requetes&screenshot
    -SELECT Nom_client, ville FROM CLIENTS WHERE ville = 'toronto';
    
 ![](images/r1.png)
+
+
+-2 -imprimer la quantité acheter pour chaque client et la date de livraison
+
+SELECT IDfacture, Nom_client, Nom_produit, Quantit, Date_livraison FROM PRODUCTS
+inner join COMMANDES ON PRODUCTS.IDproduit=COMMANDES.IDproduit
+inner join CLIENTS on COMMANDES.IDclient=CLIENTS.IDclient;
+
+![](images/r2.png)
