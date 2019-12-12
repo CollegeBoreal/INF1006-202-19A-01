@@ -26,7 +26,6 @@ CREATE DATABASE IF NOT EXISTS Assurance;
 CREATE TABLE IF NOT EXISTS Assurance.ABONNEMENT (
   nom VARCHAR(30) NOT NULL,
   abonnement VARCHAR(30) NOT NULL,
-  PRIMARY KEY (abonnement),
   client INT,
  PRIMARY KEY (abonnement),
   FOREIGN KEY(client)
