@@ -19,6 +19,8 @@ Rapport
 
 -4 -imprimer la somme des prix > 1000
 
+-5 -imprimer tous les produits "camera" acheter par les clients entre '2019-01-01' AND '2019-12-09'
+
 
 Requetes&screenshot
 
