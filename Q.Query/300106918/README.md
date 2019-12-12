@@ -82,10 +82,28 @@ AND Date_livraison BETWEEN '2019-01-01' AND '2019-12-09' ;
 
 
 
-  INDEX 
+  INDEX et CONSTRAINT
+  
   INDEX `installation` (`installation` ASC) VISIBLE,
+  
   INDEX `IDclient` (`IDclient` ASC) VISIBLE)
-
+  
+  -----------
+   PRIMARY KEY (`IDproduit`, `IDclient`),
+   
+  INDEX `IDclient` (`IDclient` ASC) VISIBLE,
+  
+  CONSTRAINT `COMMANDES_ibfk_1`
+  
+    FOREIGN KEY (`IDproduit`)
+    
+    REFERENCES `network_IT`.`PRODUCTS` (`IDproduit`),
+    
+  CONSTRAINT `COMMANDES_ibfk_2`
+  
+    FOREIGN KEY (`IDclient`)
+    
+    REFERENCES `network_IT`.`CLIENTS` (`IDclient`))
 
 
 
