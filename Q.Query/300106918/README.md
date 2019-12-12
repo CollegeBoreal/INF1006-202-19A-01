@@ -69,7 +69,7 @@ SELECT AVG(Prix) FROM PRIX;
 ![](images/r3.png)
 
 
-imprimer la somme des prix > 1000
+ -4 -imprimer la somme des prix > 1000
 
 SELECT IDfacture, Nom_client,  sum(prix) FROM PRIX
 inner join CLIENTS on PRIX.IDclient=CLIENTS.IDclient
@@ -78,3 +78,31 @@ GROUP BY IDfacture, Nom_client
 HAVING SUM(prix) > 1000
 
 ![](images/r4.png)
+
+
+
+  -5 -imprimer tous les produits  "camera" acheter par les clients entre '2019-01-01' AND '2019-12-09'
+
+SELECT IDfacture, Nom_client, Nom_produit, Date_livraison FROM PRODUCTS
+
+inner join COMMANDES ON PRODUCTS.IDproduit=COMMANDES.IDproduit
+
+inner join CLIENTS on COMMANDES.IDclient=CLIENTS.IDclient
+
+WHERE Nom_produit='camera' 
+
+AND Date_livraison BETWEEN '2019-01-01' AND '2019-12-09' ;
+
+
+![](images/r5.png)
+
+
+
+
+
+
+
+
+
+
+
