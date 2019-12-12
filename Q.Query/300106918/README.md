@@ -22,4 +22,5 @@ Requetes&screenshot
 
 1 -Pour obtenir seulement la liste des clients qui habitent à toronto, il faut effectuer la requête 
    SELECT Nom_client, ville FROM CLIENTS WHERE ville = 'toronto';
+   
 ![](images/r1.png)
