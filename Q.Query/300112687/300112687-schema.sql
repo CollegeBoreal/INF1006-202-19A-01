@@ -17,8 +17,17 @@ CREATE DATABASE IF NOT EXISTS Assurance;
  
  -- Mes Tables
 
-  
-  
+
+
+-- -----------------------------------------------------
+-- Table `Assurance`.`CLIENTS`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS Assurance. CLIENTS (
+  client INT(11) NOT NULL AUTO_INCREMENT,
+  name VARCHAR(30) NOT NULL,
+  num INT(11) NULL DEFAULT NULL,
+  PRIMARY KEY (client))
+;
 
 -- -----------------------------------------------------
 -- Table `Assurance`.`ABONNEMENT`
@@ -33,19 +42,7 @@ CREATE TABLE IF NOT EXISTS Assurance.ABONNEMENT (
 
 )
 ;
-
-
--- -----------------------------------------------------
--- Table `Assurance`.`CLIENTS`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS Assurance. CLIENTS (
-  client INT(11) NOT NULL AUTO_INCREMENT,
-  name VARCHAR(30) NOT NULL,
-  num INT(11) NULL DEFAULT NULL,
-  PRIMARY KEY (client))
-;
-
-
+               
 -- -----------------------------------------------------
 -- Table `Assurance`.`ADRESSES`
 -- -----------------------------------------------------
