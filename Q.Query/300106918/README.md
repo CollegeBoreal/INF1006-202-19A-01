@@ -19,6 +19,32 @@ Rapport
 
 
 Requetes&screenshot
+network_IT database
+
+![](images/BD.png)
+
+
+
+
+############################################
+Rapport
+
+-1 -Pour obtenir seulement la liste des clients qui habitent à toronto, il faut effectuer la requête 
+
+-2 -imprimer la quantité acheter pour chaque client et la date de livraison
+
+-3 -imprimer moyenne des prix
+
+-4 -imprimer la somme des prix > 1000
+
+
+Requetes&screenshot
+
+1 -Pour obtenir seulement la liste des clients qui habitent à toronto, il faut effectuer la requête 
+
+   -SELECT Nom_client, ville FROM CLIENTS WHERE ville = 'toronto';
+   
+![](images/r1.png)
 
 1 -Pour obtenir seulement la liste des clients qui habitent à toronto, il faut effectuer la requête 
 
@@ -41,3 +67,14 @@ inner join CLIENTS on COMMANDES.IDclient=CLIENTS.IDclient;
 SELECT AVG(Prix) FROM PRIX;
 
 ![](images/r3.png)
+
+
+imprimer la somme des prix > 1000
+
+SELECT IDfacture, Nom_client,  sum(prix) FROM PRIX
+inner join CLIENTS on PRIX.IDclient=CLIENTS.IDclient
+inner join COMMANDES ON CLIENTS.IDclient=COMMANDES.IDclient 
+GROUP BY IDfacture, Nom_client
+HAVING SUM(prix) > 1000
+
+![](images/r4.png)
