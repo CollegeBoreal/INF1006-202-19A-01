@@ -53,3 +53,4 @@ WHERE ABONNEMENT.abonnement = 'orden';
 ## EXPLAIN
 
 ![image](EXPLAIN.png)
+
