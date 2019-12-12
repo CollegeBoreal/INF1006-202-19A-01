@@ -82,6 +82,9 @@ AND Date_livraison BETWEEN '2019-01-01' AND '2019-12-09' ;
 
 
 
+  INDEX 
+  INDEX `installation` (`installation` ASC) VISIBLE,
+  INDEX `IDclient` (`IDclient` ASC) VISIBLE)
 
 
 
