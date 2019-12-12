@@ -55,6 +55,8 @@ where PAYS_DE_FABRICATION.nom = 'maroc'
 
 ```
 
-#R4
+# R4
 ```sql
 ```
+:pukin: Explain
+![image](explain.jpg)
