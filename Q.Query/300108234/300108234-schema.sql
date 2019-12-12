@@ -2,7 +2,7 @@
 -- Schema Hijabfashion
 -- -----------------------------------------------------
 
-CREATE SCHEMA IF NOT EXISTS `Hijabfashion;
+CREATE SCHEMA IF NOT EXISTS `Hijabfashion`;
 
 -- -----------------------------------------------------
 -- Mon utilisateur
