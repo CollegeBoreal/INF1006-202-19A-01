@@ -35,12 +35,12 @@ CREATE TABLE IF NOT EXISTS Assurance. CLIENTS (
 CREATE TABLE IF NOT EXISTS Assurance.ABONNEMENT (
   nom VARCHAR(30) NOT NULL,
   abonnement VARCHAR(30) NOT NULL,
-  client INT,
- PRIMARY KEY (abonnement),
-  FOREIGN KEY(client)
-    REFERENCES CLIENTS(client)
-
-)
+  client INT(11) NULL DEFAULT NULL,
+  PRIMARY KEY (abonnement),
+  INDEX client (client),
+  CONSTRAINT ABONNEMENT_ibfk_1
+    FOREIGN KEY (client)
+    REFERENCES Assurance.CLIENTS (client))
 ;
                
 -- -----------------------------------------------------
@@ -59,6 +59,26 @@ CREATE TABLE IF NOT EXISTS Assurance.ADRESSES (
     FOREIGN KEY (client)
     REFERENCES Assurance.CLIENTS (client))
 ;
+
+-- -----------------------------------------------------
+-- Table `Assurance`.`PAIEMENT`
+-- -----------------------------------------------------                            
+ CREATE TABLE IF NOT EXISTS Assurance.PAIEMENT (
+  paiement INT(11) NOT NULL AUTO_INCREMENT,
+  nom VARCHAR(40) NOT NULL,
+  date DATE NULL DEFAULT NULL,
+  vente INT(11) NULL DEFAULT NULL,
+  client INT(11) NOT NULL,
+  PRIMARY KEY (paiement, client),
+  INDEX client (client),
+  INDEX vente (vente),
+  CONSTRAINT PAIEMENT_ibfk_1
+    FOREIGN KEY (client)
+    REFERENCES Assurance.CLIENTS (client),
+  CONSTRAINT PAIEMENT_ibfk_2
+    FOREIGN KEY (vente)
+    REFERENCES Assurance.VENTES (vente))
+ ;
 
 
 
@@ -99,17 +119,4 @@ CREATE TABLE IF NOT EXISTS Assurance.VENTES (
   PRIMARY KEY (vente))
 ;
 
-CREATE TABLE PAIEMENT(
-  paiement INT AUTO_INCREMENT,
-  nom  VARCHAR(40) NOT NULL, 
-  date DATE,
-  vente INT,
-  client INT,
-  PRIMARY KEY (paiement,client),
-   FOREIGN KEY (client)
-     REFERENCES CLIENTS(client),
-   FOREIGN KEY(vente)
-     REFERENCES VENTES(vente)
-
- );
 
