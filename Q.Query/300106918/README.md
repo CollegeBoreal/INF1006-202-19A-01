@@ -34,3 +34,10 @@ inner join COMMANDES ON PRODUCTS.IDproduit=COMMANDES.IDproduit
 inner join CLIENTS on COMMANDES.IDclient=CLIENTS.IDclient;
 
 ![](images/r2.png)
+
+
+-3 -imprimer moyenne des prix
+---
+SELECT AVG(Prix) FROM PRIX;
+
+![](images/r3.png)
