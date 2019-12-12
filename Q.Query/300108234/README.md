@@ -9,14 +9,15 @@
 
 ## :ab: Requetes à chercher:
 
-:one: imprimer les pays des clients qui ont fait une commande au 2019-11-10
+:one: Imprimer les pays des clients qui ont fait une commande au 2019-11-10
 
-:two: imprimer les dates de livraison des tissus en couleur pale 
+:two: Imprimer les dates de livraison des tissus en couleur pale 
 
-:three: imprimer les accessoires des tissus fabriqués au maroc 
+:three: Imprimer les accessoires des tissus fabriqués au maroc 
 
+:four: Quel est la moyenne des prix ?
 
-:four: quel est la moyenne des prix des tissus fabriqué au yemen
+:five: Quel est le nombre des commandes faites ?
 
 
 
@@ -56,7 +57,16 @@ where PAYS_DE_FABRICATION.nom = 'maroc'
 ```
 
 # R4
+
 ```sql
+ SELECT AVG(prix) FROM PRIX;
 ```
-:pukin: Explain
+
+# R5
+
+```sql
+ SELECT count(commande) from VENTES;
+ ```
+ 
+## :pushpin: Explain
 ![image](explain.jpg)
