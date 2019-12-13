@@ -13,3 +13,5 @@ where Ville= 'vancouver' or ville= 'ottawa';
 ```
 
 ![image](ville.jpeg)
+
+:heavy_check_mark: 
