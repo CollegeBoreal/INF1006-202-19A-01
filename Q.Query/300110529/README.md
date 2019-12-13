@@ -50,5 +50,5 @@ GROUP BY nom_marchandise
 HAVING SUM(prix) > 805
 ```
 
-![image](groupe by.jpeg)
+![image](groupe.jpeg)
 
