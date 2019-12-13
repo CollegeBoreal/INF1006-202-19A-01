@@ -60,4 +60,6 @@ HAVING SUM(prix) > 805;
 
 ### :five: Requête
 
+SELECT AVG(prix) FROM MARCHANDISES;
+
 ![image](avg.jpeg)
