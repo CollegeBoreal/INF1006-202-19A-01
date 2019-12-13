@@ -9,6 +9,8 @@
 
 :heavy_check_mark: Imprimer les tables client, marchandise, prix et payment.
 
+:heavy_check_mark: Imprimer les noms des marchandises et la description où le numero de vente est 10.
+
 ### :one: Requête
 
 ```
@@ -27,3 +29,4 @@ inner join CLIENTS on PAYMENT.idclient=CLIENTS.idclient;
 ```
 
 ![image](join.jpeg)
+
