@@ -18,6 +18,7 @@ select * from CLIENTS order by Age;
 
 select * from HONORAIRE_PAYMENTS where Montant >500;
 
-### :four: Imprimer le montant total  des honorairesencaisses
+### :four: Imprimer le montant total  des honoraires encaisses
+
 SELECT SUM(Montant)
 FROM HONORAIRE_PAYMENTS;
