@@ -5,13 +5,13 @@ https://hub.docker.com/_/mysql/
 * Créer le conteneur
 
 ```
-$ docker run --name some-mysql --env MYSQL_ROOT_PASSWORD=password --publish 33060:3306 --detach mysql:latest
+$ docker container run --name some-mysql --env MYSQL_ROOT_PASSWORD=password --publish 3306:3306 --detach mysql:latest
 ```
 
 * Accéder au conteneur
 
 ```
-$ docker exec --interactive --tty some-mysql bash
+$ docker container exec --interactive --tty some-mysql bash
 ```
 
 
