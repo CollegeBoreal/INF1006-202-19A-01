@@ -1,10 +1,10 @@
 
-### :pushpin: ma capture immigration consulting
+# :pushpin: ma capture immigration consulting
 
 
 ![image](image.png)
 
-### :pushpin: Mes requetes
+## :pushpin: Mes requetes sql
 
 ### :one: 	Imprimer tous les enregistrements de la table TYPE_VISAS\
 
