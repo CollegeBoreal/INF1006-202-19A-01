@@ -44,3 +44,11 @@ inner join VENTES on PAYMENT.Idvente=VENTES.idvente where Num_vente= '10';
 
 ### :four: Requête
 
+```
+select nom_marchandise, SUM(prix) from MARCHANDISES
+GROUP BY nom_marchandise
+HAVING SUM(prix) > 805
+```
+
+![image](groupe by.jpeg)
+
