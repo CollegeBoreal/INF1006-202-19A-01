@@ -42,13 +42,13 @@ CREATE TABLE MARCHANDISES ( marchandise INT NOT NULL AUTO_INCREMENT,
   
   
   
- mysql> CREATE TABLE PAYMENT (Idclient INT,
+CREATE TABLE PAYMENT (Idclient INT,
 			      marchandise INT,
 			      Idvente INT,
 			      payment INT, 
-			      PRIMARY KEY (idclient, marchandise, Idvente), 
+			      PRIMARY KEY (Idclient, marchandise, idvente), 
 			      FOREIGN KEY(idclient) 
-			      REFERENCES CLIENTS(idclient),
+			      REFERENCES CLIENTS(Idclient),
 			      FOREIGN KEY(marchandise) 
 			      REFERENCES MARCHANDISES(marchandise),
 			      FOREIGN KEY(idvente) 
