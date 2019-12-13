@@ -13,6 +13,8 @@
 
 :heavy_check_mark: Imprimer le groupe des marchandises où la somme est plus grande que 805
 
+:heavy_check_mark: Imprimer la moyenne des prix de la table marchandise
+
 ### :one: Requête
 
 ```
@@ -55,3 +57,7 @@ HAVING SUM(prix) > 805;
 ## :pushpin: Si tu ne fais pas le > 805 la base de données va afficher tout le prix
 
 ![image](difference.jpeg)
+
+### :five: Requête
+
+![image](avg.jpeg)
