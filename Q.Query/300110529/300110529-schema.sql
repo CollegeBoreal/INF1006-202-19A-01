@@ -16,35 +16,42 @@ use Carte_graphique;
 
 -- Mes Tables
 
-		 CREATE TABLE clients(
-	num_client INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-		     nom VARCHAR(30),
-		    prenom VARCHAR(20)
-		    );
-		CREATE TABLE marchandises(
-		       num_marchandise INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-		       nom_marchandise VARCHAR(20),
-		       prix_marchandise INT(20) NOT NULL,
-		       description_marchandise TEXT
+
+
+
+ CREATE TABLE VENTES (idvente INT NOT NULL AUTO_INCREMENT,  
+		      Num_vente VARCHAR(30) NOT NULL,  date_vente Date,  
+		      PRIMARY KEY(idvente)      );
+
+
+ CREATE TABLE CLIENTS (Idclient INT NOT NULL AUTO_INCREMENT,
+		       Nom_client VARCHAR(30) NOT NULL, Ville VARCHAR(30) NOT NULL, 
+		       tlphone  INT,
+                       PRIMARY KEY(IDclient)                    
 		      );
-		CREATE TABLE PAYMENTS(
-		          nom VARCHAR(30) NOT NULL, 
-		          note INT
-		);
-		CREATE TABLE Capacites(
-		          nom VARCHAR(30) NOT NULL, 
-		          note INT
-		);
-		CREATE TABLE Modeles(
-		          nom VARCHAR(30) NOT NULL, 
-		          note INT
-		 ); 
-	
-                  CREATE TABLE ventes(
-      num_vente INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-      date_vente DATE,
-      marchandise_num INT,
-      client_num INT,
-       FOREIGN KEY (marchandise_num) REFERENCES marchandises (num_marchandise),
-     FOREIGN KEY (client_num) REFERENCES clients (num_client)
-     );
+		      
+		      
+
+CREATE TABLE MARCHANDISES ( marchandise INT NOT NULL AUTO_INCREMENT, 
+			   date Date,  
+			   nom_marchandise VARCHAR(30) NOT NULL,
+			   prix INT,
+                           description_marchandise VARCHAR(30), 
+			   PRIMARY KEY(marchandise)   
+			  );
+  
+  
+  
+ mysql> CREATE TABLE PAYMENT (Idclient INT,
+			      marchandise INT,
+			      Idvente INT,
+			      payment INT, 
+			      PRIMARY KEY (idclient, marchandise, Idvente), 
+			      FOREIGN KEY(idclient) 
+			      REFERENCES CLIENTS(idclient),
+			      FOREIGN KEY(marchandise) 
+			      REFERENCES MARCHANDISES(marchandise),
+			      FOREIGN KEY(idvente) 
+			      REFERENCES VENTES(idvente)  
+			     );
+
