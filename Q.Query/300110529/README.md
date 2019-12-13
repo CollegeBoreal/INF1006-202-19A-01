@@ -47,7 +47,7 @@ inner join VENTES on PAYMENT.Idvente=VENTES.idvente where Num_vente= '10';
 ```
 select nom_marchandise, SUM(prix) from MARCHANDISES
 GROUP BY nom_marchandise
-HAVING SUM(prix) > 805
+HAVING SUM(prix) > 805;
 ```
 
 ![image](groupe.jpeg)
