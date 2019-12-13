@@ -11,7 +11,7 @@
 
 :heavy_check_mark: Imprimer le nom des marchandises et la description où le numero de vente est 10.
 
-:heavy_check_mark: Imprimer le nom des marchandises où la somme est plus grande que 805
+:heavy_check_mark: Imprimer le groupe des marchandises où la somme est plus grande que 805
 
 ### :one: Requête
 
