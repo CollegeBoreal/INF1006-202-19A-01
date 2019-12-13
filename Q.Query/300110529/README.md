@@ -14,4 +14,6 @@ where Ville= 'vancouver' or ville= 'ottawa';
 
 ![image](ville.jpeg)
 
+### :two: Les Requêtes Avec Jointures
+
 :heavy_check_mark: 
