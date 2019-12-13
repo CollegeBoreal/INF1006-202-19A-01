@@ -23,7 +23,7 @@ select * from HONORAIRE_PAYMENTS where Montant >500;
 SELECT SUM(Montant)
 FROM HONORAIRE_PAYMENTS;
 
-### :five: imprimer les honoraire encaisses pour un visa dont le service est d'ordre 3
+### :five: imprimer l'honoraire encaisses pour un visa de type d'ordre 3
 
 select * from HONORAIRE_PAYMENTS
 join TYPE_VISAS using (Honoraire_payment)
@@ -37,7 +37,7 @@ join TYPE_VISAS using (Honoraire_payment)
 join TYPE_SERVICES using (Type_service)
 where TYPE_SERVICES.Type_visa = '3';
 
-### ::seven:les contaraintes:
+### ::seven:les contraintes:
 -- -----------------------------------------------------
 -- Schema mydb
 -- -----------------------------------------------------
