@@ -9,7 +9,9 @@
 
 :heavy_check_mark: Imprimer les tables client, marchandise, prix et payment.
 
-:heavy_check_mark: Imprimer les noms des marchandises et la description où le numero de vente est 10.
+:heavy_check_mark: Imprimer le nom des marchandises et la description où le numero de vente est 10.
+
+:heavy_check_mark: Imprimer le nom des marchandises où la somme est plus grande que 805
 
 ### :one: Requête
 
@@ -39,3 +41,6 @@ inner join VENTES on PAYMENT.Idvente=VENTES.idvente where Num_vente= '10';
 ```
 
 ![image](10.jpeg)
+
+### :four: Requête
+
