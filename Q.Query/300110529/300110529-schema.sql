@@ -1,3 +1,4 @@
+
 -- Mon domaine
 
 CREATE DATABASE Carte_graphique;
