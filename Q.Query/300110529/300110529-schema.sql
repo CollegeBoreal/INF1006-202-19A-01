@@ -19,9 +19,14 @@ use Carte_graphique;
 
 
 
- CREATE TABLE VENTES (idvente INT NOT NULL AUTO_INCREMENT,  
-		      Num_vente VARCHAR(30) NOT NULL,  date_vente Date,  
-		      PRIMARY KEY(idvente)      );
+ 
+		      CREATE TABLE VENTES (idvente INT NOT NULL AUTO_INCREMENT, date Date,
+
+                       Num_vente INT NOT NULL,
+
+                       PRIMARY KEY(idvente)
+
+                       );
 
 
  CREATE TABLE CLIENTS (Idclient INT NOT NULL AUTO_INCREMENT,
