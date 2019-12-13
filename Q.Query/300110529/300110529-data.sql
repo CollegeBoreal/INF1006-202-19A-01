@@ -27,5 +27,4 @@ INSERT INTO MARCHANDISES ( marchandise, nom_marchandise, prix, description_march
 
 INSERT INTO PAYMENT ( idclient, marchandise, idvente, payment ) VALUES ( 40, 60, 7, 233);
 INSERT INTO PAYMENT ( idclient, marchandise, idvente, payment ) VALUES ( 45, 66, 8, 444);
-INSERT INTO PAYMENT ( idclient, marchandise, idvente, payment ) VALUES ( 50, 77, 3, 556);
 INSERT INTO PAYMENT ( idclient, marchandise, idvente, payment ) VALUES ( 55, 79, 9, 110);
