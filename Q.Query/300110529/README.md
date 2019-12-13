@@ -53,3 +53,5 @@ HAVING SUM(prix) > 805;
 ![image](groupe.jpeg)
 
 ## Si tu ne fais pas le > 805 la base de donné te donnera tout le prix
+
+![image](difference.jpeg)
