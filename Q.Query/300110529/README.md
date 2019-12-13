@@ -30,3 +30,12 @@ inner join CLIENTS on PAYMENT.idclient=CLIENTS.idclient;
 
 ![image](join.jpeg)
 
+### :three: Requête
+
+```
+select Num_vente, nom_marchandise,  description_marchandise, prix from MARCHANDISES
+inner join PAYMENT on MARCHANDISES.marchandise=PAYMENT.marchandise
+inner join VENTES on PAYMENT.Idvente=VENTES.idvente where Num_vente= '10';
+```
+
+![image](10.jpeg)
