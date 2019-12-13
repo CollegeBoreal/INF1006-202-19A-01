@@ -9,7 +9,7 @@
 
 :heavy_check_mark: Imprimer les tables client, marchandise, prix et payment.
 
-### :one: Les Requêtes
+### :one: Requête
 
 ```
 select Nom_client, ville from CLIENTS 
@@ -18,7 +18,7 @@ where Ville= 'vancouver' or ville= 'ottawa';
 
 ![image](ville.jpeg)
 
-### :two: Les Requêtes Avec Jointures
+### :two: Requête
 
 ```
 SELECT Nom_client, nom_marchandise, prix, payment FROM MARCHANDISES
