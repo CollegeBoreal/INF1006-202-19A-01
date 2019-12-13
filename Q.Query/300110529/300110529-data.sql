@@ -1,6 +1,6 @@
 -- Dans le domaine
 
-use carte_graphique;
+use Carte_graphique;
 
 -- Données de la table VENTES
 
