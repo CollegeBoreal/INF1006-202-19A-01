@@ -37,7 +37,7 @@ join TYPE_VISAS using (Honoraire_payment)
 join TYPE_SERVICES using (Type_service)
 where TYPE_SERVICES.Type_visa = '3';
 
-### :les contaraintes:
+### ::seven:les contaraintes:
 -- -----------------------------------------------------
 -- Schema mydb
 -- -----------------------------------------------------
