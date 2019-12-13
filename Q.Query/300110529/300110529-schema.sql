@@ -16,11 +16,7 @@ use Carte_graphique;
 
 -- Mes Tables
 
-
-
-
- 
-		      CREATE TABLE VENTES (idvente INT NOT NULL AUTO_INCREMENT, date Date,
+CREATE TABLE VENTES (idvente INT NOT NULL AUTO_INCREMENT, date Date,
 
                        Num_vente INT NOT NULL,
 
@@ -32,7 +28,7 @@ use Carte_graphique;
  CREATE TABLE CLIENTS (Idclient INT NOT NULL AUTO_INCREMENT,
 		       Nom_client VARCHAR(30) NOT NULL, Ville VARCHAR(30) NOT NULL, 
 		       tlphone  INT,
-                       PRIMARY KEY(IDclient)                    
+                       PRIMARY KEY(idclient)                    
 		      );
 		      
 		      
