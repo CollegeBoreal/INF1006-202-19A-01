@@ -4,28 +4,28 @@ use Carte_graphique;
 
 -- Données de la table VENTES
 
-INSERT INTO VENTES ( idvente, Num_vente, date_vente ) VALUES (1, '10', '01-01-2010');
-INSERT INTO VENTES ( idvente, Num_vente, date_vente ) VALUES (2, '20', '09-02-2010');
-INSERT INTO VENTES ( idvente, Num_vente, date_vente ) VALUES (3, '30', '03-02-2011');
-INSERT INTO VENTES ( idvente, Num_vente, date_vente ) VALUES (4, '40', '03-03-2012');
+INSERT INTO VENTES ( idvente, Num_vente, date ) VALUES (7, '10', '2010-01-15');
+INSERT INTO VENTES ( idvente, Num_vente, date ) VALUES (8, '10', '2011-05-04');
+INSERT INTO VENTES ( idvente, Num_vente, date ) VALUES (9, '10', '2014-03-07');
+
 
 -- Données de la table CLIENTS
 
-INSERT INTO clients ( idclient, Nom_client, ville, telephone ) VALUES ( 15, 'Pauline', 'Toronto');
-INSERT INTO clients ( idclient, Nom_client, ville, telephone ) VALUES ( 25, 'Paul', 'ottawa');
-INSERT INTO clients ( idclient, Nom_client, ville, telephone ) VALUES ( 30, 'Dave', 'vancouver');
-INSERT INTO clients ( idclient, Nom_client, ville, telephone ) VALUES ( 35, 'Alain', 'montreal');
+INSERT INTO CLIENTS ( idclient, Nom_client, ville ) VALUES ( 40, 'Pauline', 'Toronto');
+INSERT INTO CLIENTS ( idclient, Nom_client, ville ) VALUES ( 45, 'Paul', 'ottawa');
+INSERT INTO CLIENTS ( idclient, Nom_client, ville ) VALUES ( 50, 'Dave', 'vancouver');
+INSERT INTO CLIENTS ( idclient, Nom_client, ville ) VALUES ( 55, 'Alain', 'montreal');
 
 -- Données de la table MARCHANDISES
 
-INSERT INTO MARCHANDISES ( marchandise, date, nom_marchandise, prix, description_marchandise ) VALUES ( 40, '02-02-2010', 'GTX960', '$275', '2GO');
-INSERT INTO MARCHANDISES ( marchandise, date, nom_marchandise, prix, description_marchandise ) VALUES ( 20, '04-03-2011', 'GTX1060' '$450', '2GO');
-INSERT INTO MARCHANDISES ( marchandise, date, nom_marchandise, prix, description_marchandise ) VALUES ( 30, '05-02-2012', 'GTX1070' '$805', '4GO');
-INSERT INTO MARCHANDISES ( marchandise, date, nom_marchandise, prix, description_marchandise ) VALUES ( 50, '03-04-2013', 'GTX1080' '$1100', '6GO');
+INSERT INTO MARCHANDISES ( marchandise, nom_marchandise, prix, description_marchandise ) VALUES ( 60, 'GTX960', '275', '2GO');
+INSERT INTO MARCHANDISES ( marchandise, nom_marchandise, prix, description_marchandise ) VALUES ( 66, 'GTX1060', '50', '2GO');
+INSERT INTO MARCHANDISES ( marchandise, nom_marchandise, prix, description_marchandise ) VALUES ( 77, 'GTX1070', '805', '4GO');
+INSERT INTO MARCHANDISES ( marchandise, nom_marchandise, prix, description_marchandise ) VALUES ( 79, 'GTX1080', '1100', '6GO');
 
 -- Données de la table PAYMENTS
 
-INSERT INTO PAYMENTS ( idclient, marchamdise, idvente, payment ) VALUES ( 15, 40, 1, 275);
-INSERT INTO PAYMENTS ( idclient, marchamdise, idvente, payment ) VALUES ( 25, 20, 2, 450);
-INSERT INTO PAYMENTS ( idclient, marchamdise, idvente, payment ) VALUES ( 30, 30, 3, 805);
-INSERT INTO PAYMENTS ( idclient, marchamdise, idvente, payment ) VALUES ( 35, 50, 4, 1100);
+INSERT INTO PAYMENT ( idclient, marchandise, idvente, payment ) VALUES ( 40, 60, 7, 233);
+INSERT INTO PAYMENT ( idclient, marchandise, idvente, payment ) VALUES ( 45, 66, 8, 444);
+INSERT INTO PAYMENT ( idclient, marchandise, idvente, payment ) VALUES ( 50, 77, 3, 556);
+INSERT INTO PAYMENT ( idclient, marchandise, idvente, payment ) VALUES ( 55, 79, 9, 110);
