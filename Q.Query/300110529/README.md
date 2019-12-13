@@ -6,6 +6,7 @@
 ### Rapport
 
 :heavy_check_mark: Imprimer les tables client, marchandise, prix et payment
+
 :heavy_check_mark: Imprimer les clients qui habites dans la ville de vancouver et ottawa.
 
 ### :one: Les Requêtes
