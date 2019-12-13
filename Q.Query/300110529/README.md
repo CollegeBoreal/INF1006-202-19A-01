@@ -52,6 +52,6 @@ HAVING SUM(prix) > 805;
 
 ![image](groupe.jpeg)
 
-## :pushpin: ## Si tu ne fais pas le > 805 la base de donné te donnera tout le prix
+## :pushpin: Si tu ne fais pas le > 805 la base de donné te donnera tout le prix
 
 ![image](difference.jpeg)
