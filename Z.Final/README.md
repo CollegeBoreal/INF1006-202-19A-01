@@ -189,6 +189,8 @@ mysql> CREATE TABLE `ETUDIANTS` (
 );
 ```
 
+![image](images/index.png)
+
 ## :b: DCL
 
 
@@ -239,6 +241,10 @@ The difference is mostly syntactic sugar, but with a couple interesting notes.
 
 To put names, the first two are called "ANSI-style" while the third is called "Theta-style".
 ```
+
+:pushpin: Produit Cartesien
+
+![image](images/cartesian_product.png)
 
 ##### :m: Stats
 
