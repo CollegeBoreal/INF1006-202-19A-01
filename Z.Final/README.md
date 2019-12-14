@@ -189,8 +189,6 @@ mysql> CREATE TABLE `ETUDIANTS` (
 );
 ```
 
-![image](images/index.png)
-
 ## :b: DCL
 
 
@@ -261,6 +259,8 @@ Le but étant de trouver la meilleure route pour accélérer le retour des donn�
 
 Activer un index indique une meilleur performance
 ```
+
+![image](images/index.png)
 
 :pushpin: Sans utiliser un index
 
