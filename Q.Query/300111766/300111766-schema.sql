@@ -1,19 +1,19 @@
---Mon domaine 
+-- Mon domaine 
  
 
 CREATE  DATABASE  IF NOT EXISTS vente_portable;
 	
 
---Mon utilsateur 
+-- Mon utilsateur 
 	
 
 CREATE  USER  IF NOT EXISTS 'thiam'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL ON vente_portable.* TO 'thiam'@'localhost' ;
 	
---Use vente_portable;
+-- Use vente_portable;
 	
 
---Mes tables
+-- Mes tables
 
 	
 
